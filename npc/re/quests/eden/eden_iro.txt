@@ -25,8 +25,8 @@ moc_para01,14,32,5	script	Aperture#acolytewarp	90,{
 	mes "I've been studying magic from all over Midgard to upgrade what I believe to be one of the greatest skills available to the acolyte class.";
 	next;
 
-	if (is_function("VIP_iRO_Acolyte"))
-		callfunc "VIP_iRO_Acolyte","[Aperture]","Prontera";
+//	if (is_function("VIP_iRO_Acolyte"))
+//		callfunc "VIP_iRO_Acolyte","[Aperture]","Prontera";
 
 	mes "[Aperture]";
 	mes "I am the one and only Acolyte that has attained the Level 10 Warp Portal skill!";
@@ -136,18 +136,18 @@ function	script	VIP_iRO_Acolyte	{
 moc_para01,26,15,3	script	Primo d'Buffer	790,{
 	mes "[Primo d'Buffer]";
 	mes "Hello adventurer, you look like you are itching to get out there and save the world!";
-	if (!vip_status(VIP_STATUS_ACTIVE)) {
-		mes "I can also tell that you haven't been blessed with '^6666ffVIP Status^000000'.";
-		next;
-		mes "[Primo d'Buffer]";
-		mes "My orders are to help out any Adventurer marked as VIP with special Buffs!";
-		mes "Currently I will give you ^ff0000+7 to all of your Stats for 30 minutes^000000 if you are VIP.";
-		next;
-		mes "[Primo d'Buffer]";
-		mes "If you would like to be VIP, you can use WarpPortal to ^FF8C42Power-UP^000000 your game account with VIP Status. Of course there are many other advantages to being VIP, like higher EXP and Drop Rates, more Storage, and special buff NPCs like me!";
-		mes "Happy Journeys!";
-		close;
-	}
+//	if (!vip_status(VIP_STATUS_ACTIVE)) {
+//		mes "I can also tell that you haven't been blessed with '^6666ffVIP Status^000000'.";
+//		next;
+//		mes "[Primo d'Buffer]";
+//		mes "My orders are to help out any Adventurer marked as VIP with special Buffs!";
+//		mes "Currently I will give you ^ff0000+7 to all of your Stats for 30 minutes^000000 if you are VIP.";
+//		next;
+//		mes "[Primo d'Buffer]";
+//		mes "If you would like to be VIP, you can use WarpPortal to ^FF8C42Power-UP^000000 your game account //with VIP Status. Of course there are many other advantages to being VIP, like higher EXP and Drop Rates, more //Storage, and special buff NPCs like me!";
+//		mes "Happy Journeys!";
+//		close;
+//	}
 	mes "I can also tell that you have been blessed with '^007FFFVIP Status^000000'.";
 	next;
 	mes "[Primo d'Buffer]";
@@ -179,14 +179,14 @@ moc_para01,53,30,3	script	Clearchus	470,{
 	mes "[Clearchus]";
 	mes "Our organization is 10,000 strong! Now let me see if you are registered for this service.";
 	next;
-	if (!vip_status(VIP_STATUS_ACTIVE)) {
-		mes "[Clearchus]";
-		mes "Unfortunately it appears that you are not VIP, please get VIP so that you can use this service. You can get a temporary VIP access by talking to Gramps at the Eden Group Headquarters.";
-		next;
-		mes "[Clearchus]";
-		mes "Vip is a very useful tool for adventurers to have, giving access to extra Kafra Services, discounted warps, exclusive content, and use of Primo d'Buffer. If an adventurer has full vip they even get an Exp, Drops, and storage boost!";
-		close;
-	}
+//	if (!vip_status(VIP_STATUS_ACTIVE)) {
+//		mes "[Clearchus]";
+//		mes "Unfortunately it appears that you are not VIP, please get VIP so that you can use this service. You //can get a temporary VIP access by talking to Gramps at the Eden Group Headquarters.";
+//		next;
+//		mes "[Clearchus]";
+//		mes "Vip is a very useful tool for adventurers to have, giving access to extra Kafra Services, //discounted warps, exclusive content, and use of Primo d'Buffer. If an adventurer has full vip they even get an //Exp, Drops, and storage boost!";
+//		close;
+//	}
 	mes "[Clearchus]";
 	mes "Your name is on the list.";
 	next;
@@ -404,31 +404,31 @@ moc_para01,50,39,4	script	Eve Natalia	882,{
 	mes "So I'm in town for a while to see if I can strike up some commerce with MVP hunters!";
 	mes "I'm willing to take some MVP gear and give you these upgrade Certificates I have in exchange;";
 	mes "if things go well enough I'll open up further business opportunities!";
-	next;
-	mes "[Eve Natalia]";
-	mes "So do you have any of the gears I'm looking for to get some random Safe to 7 Certificates?";
-	next;
-	switch(select("What gear?:Yes I am!:Never mind.")) {
-	case 1:
-		mes "[Eve Natalia]";
-		mes "Nidhoggur's Shadow Garb 4 Random Safe to 7 Certificates";
-		mes "Valkyrja's Shield 4 Random Safe to 7 Certificates";
-		mes "Valkyrian Armor 5 Random Safe to 7 Certificates";
-		mes "Diabolus Robe 5 Random Safe to 7 Certificates";
-		mes "Diabolus Armor 2 Random Safe to 7 Certificates";
-		mes "Diabolus Boots 2 Random Safe to 7 Certificates";
-		mes "Diabolus Manteau 4 Random Safe to 7 Certificates";
-		mes "Twin Edge of Naght Sieger Blue 2 Random Safe to 7 Certificates";
-		mes "Twin Edge of Naght Sieger Red 2 Random Safe to 7 Certificates";
-		close;
-	case 2:
-		mes "[Eve Natalia]";
-		mes "I'm going to ask you which piece of gear you want to trade in, please verify that the 1st one in your inventory is one you want to give up.";
-		mes "^CC0000So if it is carded, upgraded, enchanted etc, you should put it in storage before we continue.^000000";
-		next;
+//	next;
+//	mes "[Eve Natalia]";
+//	mes "So do you have any of the gears I'm looking for to get some random Safe to 7 Certificates?";
+//	next;
+//	switch(select("What gear?:Yes I am!:Never mind.")) {
+//	case 1:
+//		mes "[Eve Natalia]";
+//		mes "Nidhoggur's Shadow Garb 4 Random Safe to 7 Certificates";
+//		mes "Valkyrja's Shield 4 Random Safe to 7 Certificates";
+//		mes "Valkyrian Armor 5 Random Safe to 7 Certificates";
+//		mes "Diabolus Robe 5 Random Safe to 7 Certificates";
+//		mes "Diabolus Armor 2 Random Safe to 7 Certificates";
+//		mes "Diabolus Boots 2 Random Safe to 7 Certificates";
+//		mes "Diabolus Manteau 4 Random Safe to 7 Certificates";
+//		mes "Twin Edge of Naght Sieger Blue 2 Random Safe to 7 Certificates";
+//		mes "Twin Edge of Naght Sieger Red 2 Random Safe to 7 Certificates";
+//		close;
+//	case 2:
+//		mes "[Eve Natalia]";
+//		mes "I'm going to ask you which piece of gear you want to trade in, please verify that the 1st one in your inventory is one you want to give up.";
+//		mes "^CC0000So if it is carded, upgraded, enchanted etc, you should put it in storage before we continue.^000000";
+//		next;
 		set .@i, select("Wait a minute:Nidhoggur's Shadow Garb 4:Valkyrja's Shield 4:Valkyrian Armor 5:Diabolus Robe 5:Diabolus Armor 2:Diabolus Boots 2:Diabolus Manteau 4:Twin Edge of Naght Sieger Blue 2:Twin Edge of Naght Sieger Red 2")-2;
-		if (.@i == -1)
-			break;
+//		if (.@i == -1)
+//			break;
 
 		setarray .@items[0],   2554, 2115, 2357, 2374, 2375, 2433, 2537, 13412, 13413;
 		setarray .@tickets[0],    4,    4,    5,    5,    2,    2,    4,     2,     2;
@@ -462,14 +462,14 @@ moc_para01,50,39,4	script	Eve Natalia	882,{
 		for(set .@i,0; .@i<.@amount; set .@i,.@i+1) {
 			// Note: iRO lists item 6235 as "Safe to 7 Headgear Certificate", but it's Guarantee_Armor_6Up in our database.
 			if (rand(2))
-				getitem 6230,1; //Guarantee_Weapon_7Up
+				getitem 6870,1; //Guarantee_Weapon_7Up
 			else
-				getitem 6234,1; //Guarantee_Armor_7Up
+				getitem 6876,1; //Guarantee_Armor_7Up
 		}
 		close;
-	case 3:
-		break;
-	}
+//	case 3:
+//		break;
+//	}
 	mes "[Eve Natalia]";
 	mes "Fair enough, if you have business with me in the future don't be shy!";
 	close;
@@ -577,11 +577,11 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 	mes "I can take your Merit Badges and give you some useful stuff, or I can take some of your stuff and give you some Eden Merit Badges.";
 	mes "As I get more authorization I can offer more things to trade with you, so definitely keep me in mind when visiting the Eden Group.";
 	next;
-	// switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "Sky Fortress Tickets", "Weekly Special" ) ) {// Sky Fortress Tickets meaningless without the instance
-	switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "", "Weekly Special" ) ) {
+	 switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "Sky Fortress Tickets", "Weekly Special" ) ) {// Sky Fortress Tickets meaningless without the instance
+	//switch( select( "Redeem Badges", "Trade in FOR badges", "Exchange Rates", "15 Job Manuals - 1 JM Box", "", "Weekly Special" ) ) {
 	case 1:
 		setarray .@menu_list$[0],
-			"4 EMB for 10 KVM Badge",
+			"5 EMB for Miracle Buff",	// "5 EMB for Miracle Buff" (item doesn't exist in db)
 			"4 EMB for 10 Bravery Medals",
 			"4 EMB for 10 Valor Medals", 
 			"8 EMB for 1 Reset Stone",
@@ -591,9 +591,9 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			"20 EMB for 3X Battle Manual Buff",
 			"5 EMB for Bubblegum Buff", 
 			"10 EMB for HE Bubblegum Buff",
-			"",	// "5 EMB for Miracle Buff" (item doesn't exist in db)
+			"4 EMB for 10 KVM Badge",
 			"1 EMB for Yggdrasil Leaf",
-			"",	// "5 EMB for Rental Wing of Beelzebub" (item doesn't exist in db)
+			"5 EMB for Rental Wing of Beelzebub",	// "5 EMB for Rental Wing of Beelzebub" (item doesn't exist in db)
 			"5 EMB for Rental Halter Lead",
 			"5 EMB for 20 Blue Herbs",
 			"Token of Siegfried",
@@ -604,8 +604,26 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			mes "Sure thing, I have several options currently for your Badges!";
 			next;
 			switch( select(.@menu$) ) {
-			case 1:// "4 EMB for 10 KVM Badge"
-				callsub L_Exchange,4,6376,10;// KVM_Badge
+			case 1:// "5 EMB for Miracle Buff"
+				.@item_id = 22819;
+				if (countitem(6495) < 5) {
+					mes "[Merry Badger]";
+					mes "You don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!";
+					break;
+				}
+				mes "[Merry Badger]";
+				mes "Ok, I can give you ^ff0000" + getitemname(.@item_id) + "^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.";
+				mes "Do you want to?";
+				next;
+				if (select("Yes", "No") == 2) {
+					mes "[Merry Badger]";
+					mes "I understand, let's see if you'd like something different!";
+					break;
+				}
+				mes "[Merry Badger]";
+				mes "There you go! What else would you like?";
+				delitem 6495, 5;// Para_Logro_Badge
+				consumeitem .@item_id;
 				break;
 			case 2:// "4 EMB for 10 Bravery Medals"
 				callsub L_Exchange,4,7828,10;// BF_Badge1
@@ -634,26 +652,8 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			case 10:// "10 EMB for HE Bubblegum Buff"
 				callsub L_Exchange,10,12412,1;// HE_Bubble_Gum
 				break;
-			case 11:// "5 EMB for Miracle Buff"
-				.@item_id = 22819;
-				if (countitem(6495) < 5) {
-					mes "[Merry Badger]";
-					mes "You don't have enough ^00CC00Eden Merit Badges^000000. Let's start over!";
-					break;
-				}
-				mes "[Merry Badger]";
-				mes "Ok, I can give you ^ff0000" + getitemname(.@item_id) + "^000000 for ^0066CC5 of your Eden Merit Badge(s)^000000.";
-				mes "Do you want to?";
-				next;
-				if (select("Yes", "No") == 2) {
-					mes "[Merry Badger]";
-					mes "I understand, let's see if you'd like something different!";
-					break;
-				}
-				mes "[Merry Badger]";
-				mes "There you go! What else would you like?";
-				delitem 6495, 5;// Para_Logro_Badge
-				consumeitem .@item_id;
+			case 11:// "4 EMB for 10 KVM Badge"
+				callsub L_Exchange,4,6376,10;// KVM_Badge
 				break;
 			case 12:// "1 EMB for Yggdrasil Leaf"
 				callsub L_Exchange,1,610,1;// Leaf_Of_Yggdrasil
@@ -686,11 +686,11 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 				callsub L_Exchange,5,510,20;// Blue_Herb
 				break;
 			case 16:// Token of Siegfried
-				if (vip_status(VIP_STATUS_ACTIVE) == false) {
-					mes "[Merry Badger]";
-					mes "VIP Services offers those to any user with VIP!!";
-					close;
-				}
+//				if (vip_status(VIP_STATUS_ACTIVE) == false) {
+//					mes "[Merry Badger]";
+//					mes "VIP Services offers those to any user with VIP!!";
+//					close;
+//				}
 				// custom from here
 				.@date = gettime(DT_YYYYMMDD);
 				if (.@date <= eden_iro_token_date) {
@@ -742,7 +742,7 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 						mes "[Merry Badger]";
 						mes "There you go!  What else would you like?";
 						delitem 617,5;// Old_Violet_Box
-						getitem 6495,1;// Para_Logro_Badge
+						getitem 6495,5;// Para_Logro_Badge
 						next;
 					}
 				}
@@ -757,12 +757,12 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 				case 1:
 					.@item_req = 20717;// FaceWorm_Skin
 					.@item_name$ = "Giant Faceworm Snake Skin";
-					.@amount_reward = 5;
+					.@amount_reward = 25;
 					break;
 				case 2:
 					.@item_req = 20718;// FaceWorm_Skin_
 					.@item_name$ = "Giant Faceworm Snake Skin [1]";
-					.@amount_reward = 7;
+					.@amount_reward = 40;
 					break;
 				case 3:
 					mes "[Merry Badger]";
@@ -856,10 +856,10 @@ moc_para01,13,22,4	script	Merry Badger#xch	882,{
 			close;
 		}
 		delitem 6495,25;
-		if (vip_status(VIP_STATUS_ACTIVE))
+//		if (vip_status(VIP_STATUS_ACTIVE))
 			getitem 17570,1;// Sky Fortress Ticket 3 Hour Box
-		else
-			getitem 17569,1;// Sky Fortress Ticket 1 Hour Box
+//		else
+//			getitem 17569,1;// Sky Fortress Ticket 1 Hour Box
 		mes "[Merry Badger]";
 		mes "There you go! What else would you like?";
 		close;
@@ -1014,30 +1014,30 @@ moc_para01,35,168,1	cashshop	Kafra Utility Shop#eden	113,16677:25,13990:400,1639
 //============================================================
 /* Technically these NPC names are different, but it's not worth editing the original scripts. */
 
-// Weapon/Armor Refiner "Normalson" (merchants/refine.txt)
-moc_para01,14,185,4	script	Normalson#ed	826,{
-	callfunc "refinemain","Normalson",0;
-	end;
-}
+// // Weapon/Armor Refiner "Normalson" (merchants/refine.txt)
+// moc_para01,14,185,4	script	Normalson#ed	826,{
+// 	callfunc "refinemain","Normalson",0;
+// 	end;
+// }
 
-// Advanced Refiner "Suhnmi" (merchants/advanced_refiner.txt)
-moc_para01,26,185,4	duplicate(Suhnbi#cash)	Suhnmi#eden	85
+// // Advanced Refiner "Suhnmi" (merchants/advanced_refiner.txt)
+// moc_para01,26,185,4	duplicate(Suhnbi#cash)	Suhnmi#eden	85
 
-// HD Refiner "Blacksmith Mighty Hammer" (re/merchants/hd_refiner.txt)
-// A combination of the +7~9 and +10 and up refiner, currently a placeholder.
-moc_para01,38,185,4	duplicate(MightyHammer)	Mighty Hammer#ed	826
+// // HD Refiner "Blacksmith Mighty Hammer" (re/merchants/hd_refiner.txt)
+// // A combination of the +7~9 and +10 and up refiner, currently a placeholder.
+// moc_para01,38,185,4	duplicate(MightyHammer)	Mighty Hammer#ed	826
 
-// Refiner Effect
--	script	#eden_refine_effect	-1,{
-OnInit:
-	initnpctimer;
-	end;
-OnTimer5000:
-	specialeffect EF_REFINEOK,AREA,"Suhnmi#eden";
-	specialeffect EF_REFINEOK,AREA,"Mighty Hammer#ed";
-	initnpctimer;
-	end;
-}
+// // Refiner Effect
+// -	script	#eden_refine_effect	-1,{
+// OnInit:
+// 	initnpctimer;
+// 	end;
+// OnTimer5000:
+// 	specialeffect EF_REFINEOK,AREA,"Suhnmi#eden";
+// 	specialeffect EF_REFINEOK,AREA,"Mighty Hammer#ed";
+// 	initnpctimer;
+// 	end;
+// }
 
 // Gym Pass Trainer "Ripped Cabus" (other/gympass)
 moc_para01,33,162,6	duplicate(Ripped Cabus#GymPass)	Ripped Callus#ed	899

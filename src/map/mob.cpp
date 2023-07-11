@@ -48,7 +48,7 @@ using namespace rathena;
 #define IDLE_SKILL_INTERVAL 10	//Active idle skills should be triggered every 1 second (1000/MIN_MOBTHINKTIME)
 
 const t_tick MOB_MAX_DELAY = 24 * 3600 * 1000;
-#define RUDE_ATTACKED_COUNT 1	//After how many rude-attacks should the skill be used?
+#define RUDE_ATTACKED_COUNT 10000000	//After how many rude-attacks should the skill be used?
 
 // On official servers, monsters will only seek targets that are closer to walk to than their
 // search range. The search range is affected depending on if the monster is walking or not.

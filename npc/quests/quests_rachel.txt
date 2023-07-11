@@ -3779,7 +3779,7 @@ OnInit:
 //============================================================ 
 ra_temple,119,180,0	script	Temple Entrance#ra_tem	45,1,1,{
 OnTouch:
-	if ($rachel_donate >= 10000) {
+	if ($rachel_donate >= 100) {
 		if (MISC_QUEST & 8192) { warp "ra_temin",169,23; end; }
 
 		if (ra_tem_q < 10) {
@@ -3799,7 +3799,7 @@ OnTouch:
 
 ra_temple,116,174,3	script	Nemma#ra_temple	920,{
 	cutin "ra_nemma02",2;
-	if ($rachel_donate < 10000) {
+	if ($rachel_donate < 99) {
 		if (ra_have_donated == 0) {
 			cutin "ra_nemma03",2;
 			mes "[Priestess Nemma]";
@@ -4203,7 +4203,7 @@ S_Donate:
 		getitem 7570,.@num;// Temple_Lottery_Ticket
 		Zeny = Zeny - .@num *50000;
 		set ra_have_donated,1;
-		if ($rachel_donate > 9999) {
+		if ($rachel_donate > 99) {
 			cutin "ra_nemma03",2;
 			mes "[Priestess Nemma]";
 			mes "There you are~";
@@ -4215,7 +4215,7 @@ S_Donate:
 			return;
 		}
 		else {
-			set .@Remaining,10000-$rachel_donate;
+			set .@Remaining,100-$rachel_donate;
 			cutin "ra_nemma03",2;
 			mes "[Priestess Nemma]";
 			mes "Thank you so much! We'll be";
@@ -6703,26 +6703,26 @@ L_Lottery:
 		set .@bonus_donate,rand(100);
 		if (.@bonus_donate == 99) {
 			set .@bonus_donate2,rand(100);
-			if (.@bonus_donate2 > 0 && .@bonus_donate2 < 11) getitem 616,1;		//Old Card Album 0.1%
-			else if (.@bonus_donate2 > 10 && .@bonus_donate2 < 31) getitem 617,1;	//Old Violet Box 0.2%
-			else if (.@bonus_donate2 > 30 && .@bonus_donate2 < 61) getitem 603,1;	//Old Blue Box 0.3%
-			else getitem 607,1; //Yggdrasil Berry 0.4+%
+			if (.@bonus_donate2 > 0 && .@bonus_donate2 < 11) getitem 616,25;		//Old Card Album 0.1%
+			else if (.@bonus_donate2 > 10 && .@bonus_donate2 < 31) getitem 617,50;	//Old Violet Box 0.2%
+			else if (.@bonus_donate2 > 30 && .@bonus_donate2 < 61) getitem 603,100;	//Old Blue Box 0.3%
+			else getitem 607,100; //Yggdrasil Berry 0.4+%
 		}
-		else if (.@bonus_donate > 88 && .@bonus_donate < 96) getitem 644,1;	//Gift Box 7%
-		else if (.@bonus_donate > 76 && .@bonus_donate < 89) getitem 607,1;	//Yggdrasil Berry 12%
-		else if (.@bonus_donate > 65 && .@bonus_donate < 77) getitem 505,1;	//Blue Potion 11%
-		else if (.@bonus_donate > 57 && .@bonus_donate < 66) getitem 604,1;	//Dead Branch 8%
-		else if (.@bonus_donate > 45 && .@bonus_donate < 58) getitem 608,1;	//Yggdrasil Seed 12%
-		else if (.@bonus_donate > 5 && .@bonus_donate < 11) getitem 518,1;	//Honey 5%
-		else if (.@bonus_donate > 0 && .@bonus_donate < 6) getitem 526,1;	//Royal Jelly 5%
-		else getitem 547,1; //Condensed White Potion 39%
+		else if (.@bonus_donate > 88 && .@bonus_donate < 96) getitem 644,100;	//Gift Box 7%
+		else if (.@bonus_donate > 76 && .@bonus_donate < 89) getitem 607,50;	//Yggdrasil Berry 12%
+		else if (.@bonus_donate > 65 && .@bonus_donate < 77) getitem 505,100;	//Blue Potion 11%
+		else if (.@bonus_donate > 57 && .@bonus_donate < 66) getitem 12103,10;	//Dead Branch 8%
+		else if (.@bonus_donate > 45 && .@bonus_donate < 58) getitem 608,200;	//Yggdrasil Seed 12%
+		else if (.@bonus_donate > 5 && .@bonus_donate < 11) getitem 518,100;	//Honey 5%
+		else if (.@bonus_donate > 0 && .@bonus_donate < 6) getitem 526,100;	//Royal Jelly 5%
+		else getitem 547,300; //Condensed White Potion 39%
 		goto L_End;
 	}
 	mes "[Priestess Panno]";
 	mes "You...";
 	mes "Don't have any Lottery";
 	mes "Tickets to redeem.";
-	if ($rachel_donate > 9999) {
+	if ($rachel_donate > 99) {
 		mes "We're not distributing";
 		mes "them now, but maybe you";
 		mes "can ask your friends for one.";

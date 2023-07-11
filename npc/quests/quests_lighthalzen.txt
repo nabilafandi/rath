@@ -7321,7 +7321,7 @@ yuno_pre,69,20,4	script	Secretary#1	4_F_LGTGIRL,{
 					mes "Membership Card.^000000";
 					close;
 				}
-				if(((gettime(DT_HOUR) > 10) && (gettime(DT_HOUR) < 15)) || ((gettime(DT_HOUR) > 19) && (gettime(DT_HOUR) <= 23)))
+				if(((gettime(DT_HOUR) > 10) ))
 				{
 					mes "^3355FFYou suavely flash";
 					mes "your ''Secret Wing''";

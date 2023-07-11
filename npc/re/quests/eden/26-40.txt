@@ -25,10 +25,10 @@ moc_para01,38,38,3	script	Mission [26 - 40]	857,{
 	mes "- Many missions are -";
 	mes "- on the bulletin board. -";
 	next;
-	if ((BaseLevel < 26) || (BaseLevel > 40)) {
-		mes "Your level is not qualified. You can not use the bulletin board.";
-		close;
-	}
+//	if ((BaseLevel < 26) || (BaseLevel > 40)) {
+//		mes "Your level is not qualified. You can not use the bulletin board.";
+//		close;
+//	}
 	switch(select("Hunting Mission:Delivery Mission:Gathering Mission:Escort Mission")) {
 	case 1:
 		mes "[Hunting Mission Board]";
@@ -74,10 +74,10 @@ moc_para01,38,38,3	script	Mission [26 - 40]	857,{
 L_Quest:
 	//QuestID,ReqLvl,Quest,Client,Loc,Desc
 	.@string$ = getarg(2);
-	if (BaseLevel < getarg(1,26)) {
-		mes "Your level doesn't meet the requirements. You can't take the '"+ .@string$ +"' mission.";
-		close;
-	}
+//	if (BaseLevel < getarg(1,26)) {
+//		mes "Your level doesn't meet the requirements. You can't take the '"+ .@string$ +"' mission.";
+//		close;
+//	}
 	mes "["+ .@string$ +" !!]";
 	mes "Client : "+getarg(3);
 	mes "Client Location : "+getarg(4);

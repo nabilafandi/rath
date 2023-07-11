@@ -1,0 +1,272 @@
+// Costume enchant (garment)
+mal_in01,18,107,3	script	Lace La Zard2#cos_ect2	4_FROG,{
+	disable_items;
+	mes "[Lace La Zard]";
+	mes "Welcome to Fashion Stone!!";
+	mes "My name is Lace La Zard who will make your 'Power Shoulder' dream come true.";
+	next;
+	mes "[Lace La Zard]";
+	mes "Bring your ^ff0000Costume Garment^000000 and ^ff0000Garment Stone^000000, I will complete the perfect upgrade for you.!";
+	mes "I found this formula while working on my own humble body upgrading!";
+	next;
+	if (select( "Apply enchant.", "End Conversation." ) == 2) {
+		mes "[Lace La Zard]";
+		mes "Yes? Do you want to keep looking?";
+		close;
+	}
+	if (checkweight(1119,3) == 0) {
+		mes "[Lace La Zard]";
+		mes "Well... Your heavy shoulder doesn't seem capable for an upgrade...!";
+		mes "Don't be so cruel to your shoulder!";
+		next;
+		mes "It seems you have too many items on you.";
+		mes "Come back after clearing some inventory space.";
+		close;
+	}
+	.@part = EQI_COSTUME_GARMENT;
+	.@equip_id = getequipid(.@part);
+	if (.@equip_id == -1) {
+		mes "[Lace La Zard]";
+		mes "Put the garment on your shoulder.";
+		mes "I need to have a look at it before I can tell if it's worth to be upgraded..";
+		close;
+	}
+
+	// costume garment list allowed (incomplete)
+	switch(.@equip_id) {
+		case 20500:	// T_Archangel_Wing
+		case 20501:	// C_Mechanic_Wing
+		case 20502:	// C_Devil_Wing
+		case 20504:	// C_Cupid_Wing_Pink
+		case 20505:	// C_Cupid_Wing_Skyblue
+		case 20506:	// Invisible_Manteau
+		case 20507:	// C_Poring_Bag
+		case 20509:	// C_Wings_of_Uriel
+		case 20510:	// C_SwordWing
+		case 20511:	// C_Blue_Fairy_Wing
+		case 20512:	// C_Bag_of_Adventurer_j
+		case 20513:	// C_EXE_Backpack
+		case 20514:	// C_Thanatos_Sword
+		case 20515:	// C_Magic_Circle
+		case 20516:	// C_Wings_of_Michael
+		case 20517:	// C_GiantCatBag_TW
+		case 20518:	// C_Gerhard_Von_Devi_Bag
+		case 20519:	// C_Full_BloomCherry_Tree
+		case 20521:	// C_BlackCatBag_TW
+		case 20523:	// C_2018_RTC_Cape_TW
+		case 20524:	// C_Shining_Angel_Wings
+		case 20525:	// C_Bloody_Wing
+		case 20526:	// C_BlueAngeling_Wing
+		case 20527:	// C_PinkButterfly_Wing
+		case 20528:	// C_GoldButterfly_Wing
+		case 20530:	// C_Wings_of_Gabriel
+		case 20533:	// C_PinkButterfly_Wing_T
+		case 20535:	// C_Digital_Space
+		case 20537:	// C_Maple_Which_Falls_Rd
+		case 20538:	// C_Magic_Circle_Rainbow
+		case 20539:	// C_CherryFesRibbon_TW
+		case 20541:	// C_AngelRibbonWing_TW
+		case 20542:	// C_BlackBearBackpack_TW
+		case 20543:	// C_Halloween_Poring_Bag
+		case 20545:	// C_Chrismas_Tree
+		case 20546:	// C_Backside_Ribbon_Bell
+		case 20547:	// C_Ghost_Effect
+		case 20548:	// Costume_Popping_Poring_Aura
+		case 20549:	// C_99LV_Royal_Guard_Blue
+		case 20550:	// C_99LV_Warlock_Violet
+		case 20551:	// C_99LV_Sorcerer_LBlue
+		case 20552:	// C_99LV_Ranger_Green
+		case 20553:	// C_99LV_Minstrel_Pink
+		case 20554:	// C_99LV_Archbishop_White
+		case 20555:	// C_99LV_Guill_Silver
+		case 20556:	// C_99LV_ShadowC_Black
+		case 20557:	// C_99LV_Mechanic_Gold
+		case 20558:	// C_99LV_Genetic_YGreen
+		case 20559:	// C_160LV_Rune_Red
+		case 20560:	// C_160LV_Royal_G_Blue
+		case 20561:	// C_160LV_Warlock_Violet
+		case 20562:	// C_160LV_Sorcerer_LBlue
+		case 20563:	// C_160LV_Ranger_Green
+		case 20564:	// C_160LV_Minstrel_Pink
+		case 20565:	// C_160LV_Archb_White
+		case 20566:	// C_160LV_Guill_Silver
+		case 20567:	// C_160LV_ShadowC_Black
+		case 20568:	// C_160LV_Mechanic_Gold
+		case 20569:	// C_160LV_Genetic_YGreen
+		case 20570:	// C_HeartChocoBag
+		case 20571:	// C_Valkyrie_Wing
+		case 20572:	// C_WingOfHeart
+		case 20573:	// C_VioletHalo
+		case 20575:	// C_School_Bag_BL
+		case 20576:	// C_Cat_Fork
+		case 20577:	// C_Balloon_Wing
+		case 20578:	// C_Wings_Of_Raguel
+		case 20579:	// C_Wings_Of_Raphael
+		case 20582:	// C_T_Bear_Bag
+		case 20584:	// C_Big_Foxtail
+		case 20585:	// C_Ru_Bear_Bag
+		case 20586:	// C_Loli_Ruri_Moon
+		case 20587:	// C_Light_Darkness_Wing
+		case 20588:	// C_Nifl_Bloom
+		case 20589:	// C_Gimmick_One_Feather
+		case 20590:	// C_Evil_Druid_Cross
+		case 20591:	// C_Bow_On_the_Back
+		case 20592:	// C_Santa_Backpack
+		case 20593:	// C_Ice_Wing
+		case 20594:	// C_Big_Ribbon_Cloak
+		case 20595:	// C_School_Bag_RD_E
+		case 20596:	// C_BlackBear_Back_TW
+		case 20597:	// C_Evil_Scythe
+		case 20598:	// C_GiantCatBag_JP_BL
+		case 20599:	// C_Sakura_Wing
+		case 20600:	// Fantastic_Aura
+		case 20602:	// C_Seraphim_Wing_TW
+		case 20603:	// C_P_Ulysses_Feather
+		case 20604:	// C_Blessed_Veil
+		case 20605:	// C_Leaf_Umbrella
+		case 20607:	// C_Baldr_Wing_TW
+		case 20612:	// C_Ten_G_Shield_TW
+		case 20613:	// C_Wing_Of_Spider
+		case 20614:	// C_Kyel_hyre_Ulti_TW
+		case 20615:	// C_School_Bag_BU
+		case 20616:	// C_School_Bag_PU
+		case 20617:	// aegis_20617
+		case 20727:	// Brilliant_Golden_Wings
+		case 20737:	// C_Kirin_Wing
+		case 20746:	// C_Rudra_Wing
+		case 20761:	// C_Wing_Of_Happiness
+		case 20762:	// C_GreatDevilWing
+		case 20763:	// C_Amistr_Bag
+		case 20764:	// C_Fallen_Angel_Wing
+		case 20765:	// C_Archangel_Wing
+		case 20985:	// C_Gourd_bottle_J
+		case 20987:	// C_Heart_Wing_Bag_J
+		case 20988:	// C_Mechanical_Butterfly
+		case 20989:	// C_Mainspring_Screw
+		case 20990:	// C_Rotating_Gears
+		case 20992:	// C_Fairy_Of_Eden
+		case 31737:	// C_Wings_Of_Lucifer
+		case 31917:	// C_2018_RTC_Cape4_TW_J
+		case 400171:	// C_Angel_feather
+		case 480052:	// C_Sakura_Fes_TW
+		case 480055:	// C_Wing_Of_Angel_Move_RD
+		case 480056:	// aegis_480056
+		case 480058:	// aegis_480058
+		case 480069:	// C_Wing_Of_Angel_Move
+		case 480071:	// Calabash
+		case 480082:	// C_Sandalphon_Wing_TW
+		case 480086:	// C_CAPOO_Bag_TW
+		case 480092:	// aegis_480092
+		case 480093:	// C_Scepter
+		case 480095:	// C_Giant_White_Rabbit
+		case 480096:	// C_Put_On_Coat
+		case 480097:	// C_Snow_Powder
+		case 480107:	// C_Kings_Twin_Sword
+		case 480108:	// aegis_480108
+		case 480110:	// C_Adventure_Cat_Bag
+		case 480111:	// C_Flower_Wing
+		case 480117:	// C_Elec_Guitar_Of_Phen
+		case 480118:	// C_G_DaeHyon_Sword_TW
+		case 480119:	// aegis_480119
+		case 480121:	// aegis_480121
+		case 480122:	// C_Samba_Carnival
+		case 480123:	// aegis_480123
+		case 480126:	// C_Giant_Shark
+		case 480127:	// C_Hooked_Straw_Hat
+		case 480129:	// C_Triple_Ice_Cream
+		case 480130:	// C_Beer_Server
+		case 480131:	// C_Swirling_Flame
+		case 480137:	// aegis_480137
+		case 480152:	// C_Spoon_Fork_Set
+		case 480158:	// C_Lunatic_Bag
+		case 480167:	// C_Heart_Stick_Choco
+		case 480177:	// C_Clutch_Bouquet
+		case 480198:	// aegis_480198
+		case 480199:	// aegis_480199
+		case 480201:	// aegis_480201
+		case 480202:	// aegis_480202
+		case 480203:	// aegis_480203
+		case 480205:	// C_Astra_Blessing
+		break;
+	default:
+		mes "[Lace La Zard]";
+		mes "I need to have a look at it to check for upgrading posibility..";// custom
+		close;
+	}
+
+	.@equip_refine = getequiprefinerycnt(.@part);
+	setarray .@card[0], getequipcardid(.@part, 0), getequipcardid(.@part, 1), getequipcardid(.@part, 2), getequipcardid(.@part, 3);
+
+	mes "[Lace La Zard]";
+	mes "Wow a ^0000FF" + getitemname(.@equip_id) + "^000000!!! You got some taste right there, don't you?";
+	mes "Great!! I'm fully ready for this upgrade!!";
+	next;
+	setarray .@data$[0],
+		1000520,310654,"ASPD+1(Dual)",	//ASPDStone_Robe_D	aegis_310654
+		1000521,310658,"MinorCastingReduction(Dual)",	//MinorCastStone_Robe_D	aegis_310658
+		1000522,310659,"VariableCastingTimeReduction(Dual)",	//CastStone_Robe_D	aegis_310659
+		1000523,310660,"RangedStone(Dual)",	//Range_Stone_Robe_D	Range_Robe_D
+		1000524,310661,"MeleeStone(Dual)",	//Melee_Stone_Robe_D	Melee_Robe_D
+		1000525,310663,"HPAbsorbtion(Dual)",	//SPdrainStone_Robe_D	SPdrain_Robe_D
+		1000526,310662,"SPAbsorbtion(Dual)",	//HPdrainStone_Robe_D	HPdrain_Robe_D
+		1000527,310667,"MagicPowerStone(Dual)",	//Magic_Stone_Robe_D	Magic_Robe_D
+		1000675,311014,"ReloadStone(Dual)",	//ReloadStone_Robe_D	aegis_311014
+		1000676,311015,"CreativeStone(Dual)",	//CrtStone_Robe_D	aegis_311015
+		1000855,311354,"CriticalStone(Dual)",	//CriticalStone_Robe_D	aegis_311354
+		1000856,311355,"ConcentrationStone(Dual)",	//ConStone_Robe_D	Con_Robe_D
+		1000921,311425,"SpellStone(Dual)",	//SplStone_Robe_D	aegis_311425
+		1001055,311471,"PowerStone(Dual)",	//POWStone_Robe_D	aegis_311471
+		1001172,311925,"StaminaWisdomStone(Dual)";	//StaminaWISStone_Robe_D	aegis_311925
+
+	.@size = getarraysize(.@data$);
+	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
+		.@id = atoi(.@data$[.@i]);
+		.@menu$ += sprintf( "%d. %s (%d) left:", (.@j+1), getitemname(.@id), countitem(.@id) );
+		.@j++;
+	}
+	.@menu$ += "End Conversation.";
+	.@s = (select(.@menu$) - 1) * 3;
+	if (.@s == .@size) {
+		mes "[Lace La Zard]";
+		mes "Yes? Do you want to keep looking?";
+		close;
+	}
+	.@id = atoi(.@data$[.@s]);
+	.@enchant = atoi(.@data$[.@s+1]);
+	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
+		mes "[Lace La Zard]";
+		mes "You must have both, the costume and an enchant stone for this upgrade.";
+		close;
+	}
+	mes "^FF0000   !!! Caution !!!^000000";
+	mes "^ff0000This upgrade can fail.^000000";
+	mes "^ff0000If the item already has an enchant, it will be reset and only the " + .@data$[.@s+2] + " will be returned.^000000";
+	mes "^ff0000Are you sure about upgrading this item?^000000";
+	next;
+	if (select( "Yes.", "No." ) == 2) {
+		mes "[Lace La Zard]";
+		mes "Yes? Do you want to keep looking?";
+		close;
+	}
+
+	// anti-hack
+	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine))
+		close;
+
+	delitem .@id, 1;
+	delequip .@part;
+	if (rand(100) < 99) {
+		mes "[Lace La Zard]";
+		mes "Beautiful!!";
+		mes "Did I really made this myself?!!!";
+		.@card[1] = .@enchant;
+	}
+	else {
+		mes "[Lace La Zard]";
+		mes "Oh no!";
+		mes "Crash!!!!! I cannot show this failure to the world!!!";
+		.@card[1] = 0;
+	}
+	getitem2 .@equip_id,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+	close;
+}

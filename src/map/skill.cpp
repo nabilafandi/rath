@@ -970,6 +970,7 @@ bool skill_isNotOk(uint16 skill_id, map_session_data *sd)
 			}
 			break;
 		case GD_EMERGENCYCALL:
+			return false; // always allowed
 		case GD_ITEMEMERGENCYCALL:
 			if (
 				!(battle_config.emergency_call&((is_agit_start())?2:1)) ||
@@ -977,7 +978,7 @@ bool skill_isNotOk(uint16 skill_id, map_session_data *sd)
 				(battle_config.emergency_call&16 && mapdata->getMapFlag(MF_NOWARPTO) && !(mapdata->getMapFlag(MF_GVG_CASTLE) || mapdata->getMapFlag(MF_GVG_TE_CASTLE)))
 			)	{
 				clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
-				return true;
+				return false;
 			}
 			break;
 		case WM_SIRCLEOFNATURE:
@@ -7742,7 +7743,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 				skill_attack(BF_MISC,src,src,bl,skill_id,skill_lv,tick,flag);
 			break;
 		}
-		sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv));
+		sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 10.0));
 		break;
 	case CR_REFLECTSHIELD:
 	case MS_REFLECTSHIELD:
@@ -8185,25 +8186,43 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case SM_PROVOKE:
 	case SM_SELFPROVOKE:
 	case MER_PROVOKE:
-		if( status_has_mode(tstatus,MD_STATUSIMMUNE) || battle_check_undead(tstatus->race,tstatus->def_ele) ) {
-			map_freeblock_unlock();
-			return 1;
-		}
-		// Official chance is 70% + 3%*skill_lv + srcBaseLevel% - tarBaseLevel%
-		if(!(i = sc_start(src, bl, type, skill_id == SM_SELFPROVOKE ? 100 : (70 + 3 * skill_lv + status_get_lv(src) - status_get_lv(bl)), skill_lv, skill_get_time(skill_id, skill_lv))))
-		{
-			if( sd )
-				clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
-			map_freeblock_unlock();
-			return 0;
-		}
-		clif_skill_nodamage(src, bl, skill_id == SM_SELFPROVOKE ? SM_PROVOKE : skill_id, skill_lv, i);
-		unit_skillcastcancel(bl, 2);
+	if (skill_id != SM_PROVOKE || flag & 1) {
+	//		if (status_has_mode(tstatus, MD_STATUSIMMUNE) || battle_check_undead(tstatus->race, tstatus->def_ele)) {
+	//			map_freeblock_unlock();
+	//			return 1;
+	//		}
+			// Official chance is 70% + 3%*skill_lv + srcBaseLevel% - tarBaseLevel%
+			if (!(i = sc_start(src, bl, type, skill_id == SM_SELFPROVOKE ? 100 : (90 + 3 * skill_lv + status_get_lv(src) - status_get_lv(bl)), skill_lv, skill_get_time(skill_id, skill_lv))))
+			{
+				if (sd)
+					clif_skill_fail(sd, skill_id, USESKILL_FAIL_LEVEL, 0);
+				map_freeblock_unlock();
+				return 0;
+			}
+			clif_skill_nodamage(src, bl, skill_id == SM_SELFPROVOKE ? SM_PROVOKE : skill_id, skill_lv, i);
+			unit_skillcastcancel(bl, 2);
+		if (tsc && tsc->count)
+			{
+				status_change_end(bl, SC_FREEZE, INVALID_TIMER);
+				if (tsc->getSCE(SC_STONE) && tsc->opt1 == OPT1_STONE)
+					status_change_end(bl, SC_STONE, INVALID_TIMER);
+				status_change_end(bl, SC_SLEEP, INVALID_TIMER);
+				status_change_end(bl, SC_TRICKDEAD, INVALID_TIMER);
+			}
 
-		if( dstmd )
-		{
-			dstmd->state.provoke_flag = src->id;
-			mob_target(dstmd, src, skill_get_range2(src, skill_id, skill_lv, true));
+			if (dstmd)
+			{
+				dstmd->state.provoke_flag = src->id;
+				mob_target(dstmd, src, skill_get_range2(src, skill_id, skill_lv, true));
+			}
+		}
+		else {
+			skill_area_temp[2] = 0; //For SD_PREAMBLE
+			//clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
+			map_foreachinallrange(skill_area_sub, bl,
+				skill_get_splash(skill_id, skill_lv), BL_CHAR,
+				src, SM_PROVOKE, (sd) ? pc_checkskill(sd, SM_PROVOKE) : skill_lv, tick, flag | BCT_ENEMY | SD_PREAMBLE | 1,
+				skill_castend_nodamage_id);
 		}
 		break;
 
@@ -8703,7 +8722,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			if (check_distance_bl(src, bl, AREA_SIZE))
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv, 1);
 
-			sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv));
+			sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 10.0));
 		}
 		else if (sd)
 			party_foreachsamemap(skill_area_sub, sd, skill_get_splash(skill_id, skill_lv), src, skill_id, skill_lv, tick, flag | BCT_PARTY | 1, skill_castend_nodamage_id);
@@ -10846,7 +10865,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			if (skill_id == AB_PRAEFATIO)
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv, sc_start4(src, bl, type, 100, skill_lv, 0, 0, (sd && sd->status.party_id ? party_foreachsamemap(party_sub_count, sd, 0) : 1 ), skill_get_time(skill_id, skill_lv)));
 			else
-				clif_skill_nodamage(bl, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
+				clif_skill_nodamage(bl, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 10.0)));
 		} else if( sd )
 			party_foreachsamemap(skill_area_sub, sd, skill_get_splash(skill_id, skill_lv), src, skill_id, skill_lv, tick, flag|BCT_PARTY|1, skill_castend_nodamage_id);
 		break;
@@ -12465,7 +12484,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 
 	case AB_VITUPERATUM:
 		if (flag&1)
-			clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
+			clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 10.0)));
 		else {
 			map_foreachinrange(skill_area_sub, bl, skill_get_splash(skill_id, skill_lv), BL_CHAR, src, skill_id, skill_lv, tick, flag|BCT_ENEMY|1, skill_castend_nodamage_id);
 			clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
@@ -17415,17 +17434,17 @@ bool skill_check_condition_castbegin(map_session_data* sd, uint16 skill_id, uint
 					status_zap(&sd->bl, 0, require.sp);
 			}
 			return false;
-		case GD_BATTLEORDER:
-		case GD_REGENERATION:
-		case GD_RESTORE:
-		case GD_CHARGESHOUT_FLAG:
-		case GD_CHARGESHOUT_BEATING:
-		case GD_EMERGENCY_MOVE:
-			if (!map_flag_gvg2(sd->bl.m)) {
-				clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
-				return false;
-			}
-		case GD_EMERGENCYCALL:
+		// case GD_BATTLEORDER:
+		// case GD_REGENERATION:
+		// case GD_RESTORE:
+		// case GD_CHARGESHOUT_FLAG:
+		// case GD_CHARGESHOUT_BEATING:
+		// case GD_EMERGENCY_MOVE:
+		// 	if (!map_flag_gvg2(sd->bl.m)) {
+		// 		clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
+		// 		return false;
+		// 	}
+		// case GD_EMERGENCYCALL:
 		case GD_ITEMEMERGENCYCALL:
 			// other checks were already done in skill_isNotOk()
 			if (!sd->status.guild_id || (sd->state.gmaster_flag == 0 && skill_id != GD_CHARGESHOUT_BEATING))

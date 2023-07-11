@@ -26,7 +26,7 @@
 // Lost Puppies :: dogdog.sc
 //============================================================
 brasilis,297,307,5	script	Angelo#br	1_M_04,{
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Angelo]";
 		mes "Pets went out the village~!!";
 		mes "Gosh... what can I do... ?";
@@ -158,7 +158,7 @@ brasilis,192,133,6	script	Lucia#brasilis	4_F_BRZ_WOMAN,{
 		getitem 6221,1; //Mystic_Leaf_Cat_Ball
 	}
 	--------------------------------------------------- */
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Lucia]";
 		mes "Hello.";
 		mes "I'm worried about ^FF0000Strange Hydra^000000's on";
@@ -567,7 +567,7 @@ bra_in01,95,179,3	script	Cherto	4_M_BRZ_MAN2,{
 		mes "- I tell Cherto about the kid making animal-like sounds. -";
 		next;
 		mes "[Cherto]";
-		mes "Hoooh. That's unbelievable.";
+		mes "Hoooh. That's unbelivable.";
 		mes "That kid might be a guarana kid. Sure...";
 		mes "According to the story the kid can have conversations with animals.";
 		next;
@@ -2455,7 +2455,7 @@ OnInit:
 }
 
 bra_in01,7,181,5	script	Curator#bra	4_M_BRZ_MAN2,{
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Curator]";
 		mes "I'm sorry but this area is under construction right now.";
 		close;
@@ -2690,7 +2690,7 @@ brasilis,315,334,5	script	Shaman#nk	4_F_BRZ_INDOLD,{
 			}
 		}
 		else {
-			if (BaseLevel < 40) {
+			if (BaseLevel < 1) {
 				mes "[Anori]";
 				mes "Ah... we need a strong adventurer.";
 				mes "The tribe is facing a major threat.";

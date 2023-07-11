@@ -18,182 +18,168 @@
 //============================================================ 
 
 prontera,115,90,0	script	Putty	4_F_01,{
-	disable_items;
-	setarray .@card1[0], 4001,4006,4009,4019,4075,4033,4012,4016,4026,4022,
-				4027,4028,4038,4025,4021,4050,4079,4081,4090,4094,
-				4101,4104,4110,4114,4119,4108,4095,4231,4280,4008,
-				4011,4013,4014,4015,4020,4032,4037,4039,4041,4045,
-				4046,4010,4023,4029,4052,4048,4056,4071,4093,4031,
-				4036,4034,4042,4055,4061,4087,4096,4116,4122,4170,
-				4215,4220,4228,4226,4212,4227,4267,4257,4278,4286,
-				4287,4292,4311,4315,4319,4322,4084,4078,4113,4149,
-				4153,4196,4240,4247,4256,4057,4066,4067,4112,4150,
-				4152,4186,4187,4181,4173,4167,4162,4176,4195,4193,
-				4200,4223,4194,4190,4189,4192,4224,4244,4248,4261,
-				4260,4259,4274,4275,4313,4299,4304,4294,4076,4127,
-				4154,4157,4156,4213,4214,4225,4235;
-	setarray .@card2[0], 4293,4297,4288,4283,4295,4307,4308,4309,4132,4326,
-				4341,4335,4337,4345,4344,4331,4333,4332,4089,4161,
-				4177,4178,4180,4184,4191,4206,4199,4273,4282,4268,
-				4289,4321,4316,4343,4339,4369,4377,4385,4383,4382,
-				4380,4381,4378,4379,4390,4389,4388,4391,4405,4400,
-				4401,4402,4404,4002,4003,4004,4005,4007,4017,4024,
-				4030,4035,4040,4043,4044,4049,4051,4053,4058,4060,
-				4062,4063,4064,4065,4068,4069,4070,4072,4073,4074,
-				4077,4080,4082,4083,4085,4086,4088,4091,4092,4097,
-				4098,4099,4100,4102,4103,4106,4107,4109,4111,4115,
-				4117,4118,4120,4124,4125,4126,4138,4139,4141,4151,
-				4158,4164,4165,4182,4185,4159,4160,4166,4172,4175,
-				4188,4201,4202,4204,4205,4208,4209;
-	setarray .@card3[0], 4120,4216,4217,4219,4221,4222,4230,4234,4233,4232,
-				4237,4238,4242,4243,4245,4246,4249,4252,4255,4258,
-				4262,4264,4276,4270,4271,4218,4239,4251,4253,4269,
-				4334,4105,4133,4136,4229,4272,4277,4279,4281,4284,
-				4285,4290,4296,4298,4301,4310,4314,4317,4325,4327,
-				4328,4329,4338,4340,4346,4347,4348,4349,4350,4351,
-				4353,4354,4355,4356,4358,4360,4362,4364,4366,4368,
-				4370,4371,4373,4375,4387,4406,4129,4155,4291,4392,
-				4393,4394,4409,4410,4411,4412,4413,4414,4415,4416,
-				4417,4418,4420,4421,4422,4423,4424,4427,4427,4428,
-				4429,4431,4432,4433,4434,4435,4436,4437,4438,4439,
-				4440,4442,4443,4444,4445,4447,4448,4449,4450,4452,
-				4453;
-	setarray .@size_card[1],  getarraysize(.@card1), getarraysize(.@card2), getarraysize(.@card3);
-	.@points = oversea_event9;
-	if (!.@points) {
-		mes "[Putty]";
-		mes "Hi there.";
-		mes "I don't know if I can be";
-		mes "of any assistance, but I";
-		mes "am trying to help older veterans";
-		mes "by exchaning the cards that";
-		mes "they are no longer using.";
-		next;
-		switch(select("Ask for more information!","I don't have any cards right now.")) {
-		case 1:
-			mes "[Putty]";
-			mes "I am giving 1 point for each card that you bring me.";
-			mes "The points can be used to exchange for items that I have.";
-			next;
-			mes "[Putty]";
-			mes "For ^CC0000100 points^000000: ^0000CC1 Old Card Album^000000.";
-			mes "For ^CC000050 points^000000: ^0000CC20 Yggdrasil Berry^000000.";
-			mes "For ^CC000020 points^000000: ^0000CC10 Blue Potion^000000.";
-			mes "For ^CC00001 point^000000: ^0000CC4 Honey^000000.";
-			next;
-			break;
-		case 2:
-			mes "[Putty]";
-			mes "Well, remember this offer!";
-			close;
-		}
-	} else {
-		mes "[Putty]";
-		mes "Welcome back!";
-		mes "I see you already have some";
-		mes "trading points. Actually, you currently have ^00cc00" + .@points + "^000000.";
-		next;
-		mes "[Putty]";
-		mes "Would you like to exchange these";
-		mes "points now, or you would like to exchange more cards?";
-		next;
-	}
-	switch(select("I would like to exchange cards.","Can I exchange the points?")) {
+	mes "[Card Trader]";
+	mes "Hi, "+strcharinfo(0)+"!";
+	mes "What can I do for you?";
+	next;
+	switch(select(" > Information: > Trade in cards: > Point shop (^0055FF"+getd(.Points$)+"^000000): > Leave")) {
 	case 1:
-		mes "[Putty]";
-		mes "Please tell me what card you want to exchange.";
+		mes "[Card Trader]";
+		mes "Do you find that you've got";
+		mes "useless cards lying around?";
+		mes "I'll be glad to take them off";
+		mes "your hands!";
 		next;
-		input .@i$;
-		.@input$ = "_"+.@i$;
-		freeloop(1);
-		for(.@j = 1; .@j<4; .@j++) {
-			for(.@i = 0; .@i<.@size_card[.@j]; .@i++)
-				if (compare(.@input$,"_"+getitemname(getd(".@card"+.@j+"["+.@i+"]")))) {
-					.@card = getd(".@card"+.@j+"["+.@i+"]");
-					break;
-				}
-			sleep2 10; // For good measure
-			if (.@card) break;
-		}
-		freeloop(0);
-		mes "[Putty]";
-		if (!.@card) mes "Please, come back here if you want to exchange a monster card.";
-		else {
-			.@count = countitem(.@card);
-			if (!.@count) {
-				mes "You don't have any ^0055FF"+callfunc("F_GetPlural",getitemname(.@card))+"^000000 with you!";
-				close;
-			}
-			mes "You've got ^0055FF"+callfunc("F_InsertPlural",.@count,getitemname(.@card))+"^000000.";
-			mes " ";
-			mes "Would you like to exchange 1 point for each of them?";
-			next;
-			switch(select("Yes, please!","No, thank you.")) {
-				case 1:
-					delitem .@card,.@count;
-					oversea_event9 = (.@points+.@count);
-					mes "[Putty]";
-					mes "Alright, you have received ^CC0000"+.@count+"^000000 points.";
-					break;
-				case 2:
-					mes "[Putty]";
-					mes "Okay, let me know if I can help you with something else.";
-					break;
-			}
-		}
+		mes "[Card Trader]";
+		mes "I'll give you ^0055FF"+.Points[0]+" Point"+((.Points[0] == 1)?"":"s")+"^000000 for each";
+		mes "card you give me, and";
+		mes "^0055FF"+.Points[1]+" Points^000000 for MVP cards.";
+		mes "You can trade those points";
+		mes "for items later on.";
+		mes "How does that sound?";
 		close;
 	case 2:
-		if (.@points) {
-			mes "[Putty]";
-			mes "These are the items that I have.";
-			next;
-			switch(select("1 Old Card Album - 50 Points","20 Yggdrasil Berry - 50 Points","10 Blue Potion - 20 Points","4 Honey - 1 Point","^777777Nerver mind.^000000")) {
-				case 1:
-					if (.@points < 100) break;
-					mes "[Putty]";
-					mes "Great, I wish you the best";
-					mes "of luck with this album. I have a";
-					mes "very good feeling about this one!";
-					oversea_event9 = .@points - 100;
-					getitem 616,1;
-					close;
-				case 2:
-					if (.@points < 50) break;
-					mes "[Putty]";
-					mes "Oh, you must like adventures.";
-					mes "Here you go, just what you need!";
-					oversea_event9 = .@points - 50;
-					getitem 607,20;
-					close;
-				case 3:
-					if (.@points < 20) break;
-					mes "[Putty]";
-					mes "Blue Potions? Are you sure?";
-					mes "If that's what you want, here they are!";
-					oversea_event9 = .@points - 20;
-					getitem 505,10;
-					close;
-				case 4:
-					if (.@points < 1) break;
-					mes "[Putty]";
-					mes "It took many bees";
-					mes "to make all of this.";
-					mes "Make good use of it.";
-					oversea_event9 = .@points - 1;
-					getitem 518,4;
-					close;
-				case 5:
-					mes "[Putty]";
-					mes "Alright, come back when you have more points.";
-					close;
-				}
-			mes "[Putty]";
-			mes "Sorry, but you don't have enough points.";
-			close;
-		} else {
-			mes "[Putty]";
-			mes "You have 0 points. You need at least 1 point to exchange.";
-			close;
+		mes "[Card Trader]";
+		mes "Select the cards you";
+		mes "want to trade in.";
+		if (.Level) {
+			mes " ";
+			mes "They must be dropped";
+			mes "by monsters of level";
+			mes .Level+" and above.";
 		}
+		deletearray @sold_nameid[0],getarraysize(@sold_nameid);
+		callshop "card_shop",2;
+		npcshopattach "card_shop";
+		end;
+	case 3:
+		mes "[Card Trader]";
+		mes "You have ^0055FF"+getd(.Points$)+"^000000 Point"+((getd(.Points$) == 1)?".":"s.");
+		callshop "card_shop",1;
+		npcshopattach "card_shop";
+		end;
+	case 4:
+		mes "[Card Trader]";
+		mes "*yawn*";
+		mes "See you later!";
+		close;		
 	}
+ 
+OnSellItem:
+	mes "Cards to sell:";
+	mes "-----------------------------------";
+	for(set .@i,0; .@i < getarraysize(@sold_nameid); set .@i,.@i+1)
+		if (@sold_nameid[.@i] > 4000 && @sold_nameid[.@i] < 490236) {
+			if (.Level) {
+				query_sql("SELECT `LV` FROM `mob_db_re` WHERE `DropCardid` = "+@sold_nameid[.@i],.@lv);
+				if (.@lv < .Level) {
+					dispbottom getitemname(@sold_nameid[.@i])+" is under the minimum level.";
+					continue;
+				}
+			}
+			set .@card_id[getarraysize(.@card_id)], @sold_nameid[.@i];
+			set .@card_amt[getarraysize(.@card_amt)], @sold_quantity[.@i];
+			set .@mvp, compare(.MVP$,""+@sold_nameid[.@i]);
+			mes ((.@mvp)?"  ^FF0000":"  ^777777")+@sold_quantity[.@i]+"x "+getitemname(@sold_nameid[.@i])+"^000000";
+			set .@card_total, .@card_total+(@sold_quantity[.@i]*((.@mvp)?.Points[1]:.Points[0]));
+		}
+	deletearray @sold_nameid[0], getarraysize(@sold_nameid);
+	deletearray @sold_quantity[0], getarraysize(@sold_quantity);
+	if (!.@card_id) {
+		mes "  ^777777(none)^000000";
+		close;
+	}
+	mes " ";
+	mes "---------- Total: ^0055FF"+.@card_total+" pt.^000000 -------";
+	next;
+	if(select(" > ^0055FFComplete trade...^000000: > ^777777Cancel^000000") == 2) {
+		mes "[Card Trader]";
+		mes "Oh, okay...";
+		close;
+	}
+	for(set .@i,0; .@i < getarraysize(.@card_id); set .@i,.@i+1)
+		delitem .@card_id[.@i],.@card_amt[.@i];
+	setd .Points$, getd(.Points$)+.@card_total;
+	mes "[Card Trader]";
+	mes "All done!";
+	close;
+ 
+OnBuyItem:
+	for(set .@i,0; .@i < getarraysize(@bought_nameid); set .@i,.@i+1)
+		for(set .@j,0; .@j <getarraysize(.Shop); set .@j,.@j+2)
+			if (@bought_nameid[.@i] == .Shop[.@j]) {
+				set .@cost, .@cost+(.Shop[.@j+1]*@bought_quantity[.@i]);
+				break;
+			}
+	if (.@cost > getd(.Points$)) {
+		mes "[Card Trader]";
+		mes "You don't have enough Points.";
+	}
+	else {
+		mes "Items purchased:";
+		mes "-----------------------------------";
+		for(set .@i,0; .@i < getarraysize(@bought_nameid); set .@i,.@i+1) {
+			getitem @bought_nameid[.@i], @bought_quantity[.@i];
+			mes "  ^777777"+@bought_quantity[.@i]+"x "+getitemname(@bought_nameid[.@i])+"^000000";
+		}
+		mes " ";
+		mes "---------- Total: ^0055FF"+.@cost+" pt.^000000 -------";
+		setd .Points$, getd(.Points$)-.@cost;
+	}
+	deletearray @bought_nameid[0], getarraysize(@bought_nameid);
+	deletearray @bought_quantity[0], getarraysize(@bought_quantity);
+	close;
+ 
+OnInit:
+	set .Level,0;		   // Minimum monster level to trade corresponding cards.
+	set .Points$,"#Card_Points";	// Variable to store points.
+	setarray .Shop[0],		// Card Shop items: <ID>,<point cost>
+	  23926,20,	//Shadow_9_Refine_Hammer
+	  23436,5,	//Shadow_Refine_Hammer
+	  23720,3,	//Shadow_Random_Mix
+	  100206,3,	//Class_Sha_R_M_Magic
+	  100205,3,	//Class_Sha_R_M_Melee
+	  100208,3,	//Skill_Sha_R_M_Magic
+	  100207,3,	//Skill_Sha_R_M_Melee
+	  14629,1, //Enchant_Stone_Box
+	  14681,1, //Enchant_Stone_Box2
+	  14695,1, //Enchant_Stone_Box3
+	  22826,1, //Enchant_Stone_Box4
+	  22868,1, //Enchant_Stone_Box5
+	  22905,1, //Enchant_Stone_Box6
+	  22953,1, //Enchant_Stone_Box7
+	  23001,1, //Enchant_Stone_Box8
+	  23058,1, //Enchant_Stone_Box9
+	  23086,1, //Enchant_Stone_Box10
+	  23174,1, //Enchant_Stone_Box11
+	  23299,1, //Enchant_Stone_Box12
+	  23524,5, //Enchant_Stone_Box13
+	  23629,5, //Enchant_Stone_Box14
+	  23682,5, //Enchant_Stone_Box15
+	  23770,5, //Enchant_Stone_Box16
+	  9510,5, //Enchant_Stone_Box17
+	  100019,5, //Enchant_Stone_Box18
+	  100052,5, //Enchant_Stone_Box19
+	  100202,5, //Enchant_Stone_Box20
+	  100314,5, //Enchant_Stone_Box21
+	  100502,5, //Enchant_Stone_Box22
+	  100721,5, //Enchant_Stone_Box23
+	  100920,5, //Enchant_Stone_Box24
+	  101103,5, //Enchant_Stone_Box25
+	  101271,5, //Enchant_Stone_Box26
+	  101416,5,	//Costume Enchant Stone Box 27
+	  101675,5,	//Costume Enchant Stone Box 28
+	  101876,5,	//Costume Enchant Stone Box 29
+	  100910,3,	//Special Dual Enchant Stone Box
+	  23913,1,  //Job_Enchant_Stone_Box
+	  100870,1; //S_Enchant_Stone_Box
+	setarray .Points[0],2,10;	// Points per <normal card>,<MVP card>
+	set .MVP$,			// List of MVP cards.
+	"4047,4054,4074,4091,4121,4123,4127,4128,4131,4132,4134,4135,4137,4142,4143,4144,4145,4146,4147,4148,4163,4168,4169,4174,4179,4183,4197,4198,4203,4207,4210,4236,4237,4238,4241,4243,4246,4250,4254,4263,4266,4276,4290,4300,4302,4305,4306,4318,4324,4330,4342,4352,4354,4357,4359,4361,4363,4365,4367,4372,4374,4376,4384,4386,4391,4392,4393,4394,4395,4396,4397,4398,4399,4403,4406,4407,4408,4410,4419,4423,4425,4426,4427,4428,4429,4430,4431,4440,4441,4451,4456,4457,4462,4463,4507,4508,4509,4520,4524,4525,4526,4527,4528,4529,4532,4533,4534,4556,4557,4559,4560,4561,4562,4563,4564,4565,4566,4574,4575,4576,4577,4578,4579,4580,4581,4590,4591,4592,4601,4603,4605,4606,4610,4625,4631,4632,4636,4647,4648,4649,4650,4651,4652,4662,4671,4672,4673,4674,4675,4676,4677,4678,4679,4680,4681,4682,4683,4684,4685,4686,4687,4688,4689,4690,4691,4692,4693,4694,4695,4696,4697,27020,27025,27081,27104,27105,27106,27109,27126,27150,27151,27152,27162,27164,27165,27180,27182,27183,27262,27263,27265,27305,27318,27319,27322,27323,27324,27325,27326,27327,31023,31024,31025,31026,300078,300079,300080,300099,300100,300103,300107,4480,4481,4482,4483,4484,4485,4486,4487,4488,4489,4490,4491,4492,4493,4494,4495,4496,4497,4498,4499,4500,4501,4502,4503,4504,4535,4536,4537,4538,4539,4540,4541,4542,4543,4544,22875,27209,27211,27212,27213,27214,27215,27216,27217,27218,27219,27220,27221,27222,27224,27225,300139,300207,300209,300318,300319,300320,300321,300322,300323,300324,300325,300326,300327,300328,300330,300331,300332,300334,300335,300337,300338,300339,300340,300341,300343,300344,300345,300348,300349,300350,300351,300352,300353,300354,300355,300392,300393,300394,300395,300396,300397,300398,300399,300400,300401,300402,300403,300404,300405,300406,300407,300408,300409,311071,311440";
+	
+	npcshopdelitem "card_shop",909;
+	for(set .@i,0; .@i < getarraysize(.Shop); set .@i,.@i+2)
+		npcshopadditem "card_shop",.Shop[.@i],.Shop[.@i+1];
+	end;
 }
+-	shop	card_shop	-1,909:-1

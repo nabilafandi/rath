@@ -383,21 +383,21 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			set .@crystal,6623; //Rough_Energy_Crystal
 			setarray .@materials[0], 5027, 5045, 5069, 5003, 2214, 5167, 5168, 5043;
 			setarray .@showslot[0],    -1,   -1,   -1,   -1,   -1,    1,    1,   -1;
-			setarray .@costs[0],      100,  100,  100,  100,  100,  100,  100,  100;
+			setarray .@costs[0],      5,  5,  5,  5,  5,  5,  5,  5;
 			setarray .@rewards[0],  18760,18761,18762,18763,18764,18769,18770,18771;
 			break;
 		case 3:
 			set .@crystal,6624; //Purified_Energy_Crystal
 			setarray .@materials[0], 2296, 5014, 5096, 2292,2615, 2355,2116, 2420, 2521, 5125;
 			setarray .@showslot[0],    -1,   -1,   -1,   -1,  -1,    1,   1,    1,    1,    1;
-			setarray .@costs[0],      200,  200,  200,  200, 200,  100, 100,  100,  100,  100;
+			setarray .@costs[0],      5,  5,  5,  5, 5,  5, 5,  5,  5,  5;
 			setarray .@rewards[0],  18772,18773,18774,18775,2956,15068,2183,22015,20710,18776;
 			break;
 		case 4:
 			set .@crystal,6625; //High_Purity_Energy_Xtal
 			setarray .@materials[0], 5019, 5162, 5025, 5022, 5353, 2423,2678,2679, 2355,2116, 2420, 2521, 5125;
 			setarray .@showslot[0],    -1,    1,   -1,    0,    1,   -1,  -1,  -1,    1,   1,    1,    1,    1;
-			setarray .@costs[0],      300,  300,  300, 1000,  100,  300, 300, 300,   20,  20,   20,   20,   20;
+			setarray .@costs[0],      5,  5,  5, 5,  5,  5, 5, 5,   1,  1,   1,   1,   1;
 			setarray .@rewards[0],  18765,18768,18766,18767,18767,22014,2957,2958,15068,2183,22015,20710,18776;
 			break;
 		}
@@ -493,7 +493,7 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			mes "For the donation, I'll give you a random new headgear.";
 			next;
 			mes "[Reno]";
-			mes "300 Rough Energy Crystals";
+			mes "5 Rough Energy Crystals";
 			mes "- New Mage Hat";
 			mes "- New Magician Hat";
 			mes "- New Kitsune Mask";
@@ -504,7 +504,7 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			mes "- New Phantom Opera Mask";
 			next;
 			mes "[Reno]";
-			mes "600 Purified Energy Crystals";
+			mes "10 Purified Energy Crystals";
 			mes "- Good Binoculars";
 			mes "- Good Fin Helm";
 			mes "- Good Assassin Mask";
@@ -516,7 +516,7 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			mes "- Good Angel's Reincarnation";
 			next;
 			mes "[Reno]";
-			mes "900 High Energy Crystals";
+			mes "15 High Energy Crystals";
 			mes "- Enhanced Corsair";
 			mes "- Enhanced Bone Helm";
 			mes "- Enhanced Helm of Angel";
@@ -525,12 +525,12 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			mes "- Enhanced Ring of Resonance";
 			close;
 		case 2:
-			if (countitem(6623) < 300) {
+			if (countitem(6623) < 5) {
 				mes "[Reno]";
 				mes "Thank for your support, but we need 300 Rough Energy Crystals.";
 				close;
 			}
-			delitem 6623,300; //Rough_Energy_Crystal
+			delitem 6623,5; //Rough_Energy_Crystal
 			set .@r, rand(1,17);
 			     if (.@r <= 2)  getitem 18760,1; //Remodel_Wizardry_Hat
 			else if (.@r <= 4)  getitem 18761,1; //Remodel_Magician_Hat
@@ -542,12 +542,12 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			else                getitem 18771,1; //Remodel_Opera_Mask
 			break;
 		case 3:
-			if (countitem(6624) < 600) {
+			if (countitem(6624) < 10) {
 				mes "[Reno]";
 				mes "Thank for your support, but we need 600 Purified Energy Crystals.";
 				close;
 			}
-			delitem 6624,600; //Purified_Energy_Crystal
+			delitem 6624,10; //Purified_Energy_Crystal
 			set .@r, rand(1,18);
 			     if (.@r <= 3)  getitem 18772,1; //Improved_Binoculars
 			else if (.@r <= 6)  getitem 18773,1; //Improved_Fin_Helm
@@ -561,12 +561,12 @@ moc_para01,41,169,3	script	Reno#2012hat	64,{
 			else                getitem 18776,1; //Improved_Kiss_Of_Angel
 			break;
 		case 4:
-			if (countitem(6625) < 900) {
+			if (countitem(6625) < 15) {
 				mes "[Reno]";
 				mes "Thank for your support, but we need 900 High Energy Crystals.";
 				close;
 			}
-			delitem 6625,900; //High_Purity_Energy_Xtal
+			delitem 6625,15; //High_Purity_Energy_Xtal
 			set .@r, rand(1,33);
 			     if (.@r <= 10) getitem 18765,1; //Enhanced_Corsair
 			else if (.@r <= 20) getitem 18768,1; //Enhanced_Bone_Helm

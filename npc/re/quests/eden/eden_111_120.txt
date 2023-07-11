@@ -195,7 +195,7 @@ moc_para01,17,95,5	script	Mingmin#1	4_F_GENETIC,{
 		switch( select( "Request to research monsters", "Make small-talk" ) ) {
 			mes "[Mingmin]";
 		case 1:
-			if (BaseLevel < 111) {
+			if (BaseLevel < 1) {
 				cutin "min02",0;
 				mes "I think I already told you that I am looking for an adventurer with more experience for my monster research. ";
 				next;
@@ -208,7 +208,7 @@ moc_para01,17,95,5	script	Mingmin#1	4_F_GENETIC,{
 				mes "[Mingmin]";
 				mes "I will reconsider if you turn to base level 111.";
 			}
-			else if (BaseLevel < 121) {
+			else if (BaseLevel < 1) {
 				if (para_110lv01 == 4) {
 					cutin "min02",0;
 					mes "Oh, you want to help me with my research?";

@@ -10071,11 +10071,11 @@ man_fild01,315,95,3	script	Expedition Scout#1	707,{
 			mes "[Expedition Scout]";
 			mes "Oh, you must be"+strcharinfo(0)+". I heard that you'll be delivering the report.";
 			next;
-			if (.@playtime == 0 || .@playtime == 1) {
-				mes "[Expedition Scout]";
-				mes "Searching for lost pages was tougher then I expected. Please come back later when I'm finished making one round.";
-				close;
-			} else {
+//			if (.@playtime == 0 || .@playtime == 1) {
+//				mes "[Expedition Scout]";
+//				mes "Searching for lost pages was tougher then I expected. Please come back later when I'm finished making one round.";
+//				close;
+//			} else {
 				switch(rand(1,6)) {
 				case 1:
 				case 6:
@@ -10111,7 +10111,7 @@ man_fild01,315,95,3	script	Expedition Scout#1	707,{
 				mes "Well then, keep up the good work!";
 				close;
 			}
-		}
+//		}
 		mes "[Expedition Scout]";
 		mes "Who are you? Why do you want to know about our search results? Are you from the army?";
 		next;

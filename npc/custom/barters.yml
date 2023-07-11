@@ -44,3 +44,3609 @@
 Header:
   Type: BARTER_DB
   Version: 1
+Body:
+#shadowgears
+  - Name: Entry ShadowGears
+    Map: izlude
+    X: 67
+    Y: 215
+    Direction: South
+    Sprite: 1_m_04
+    Items:
+      - Index: 0
+        Item: S_Hasty_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 1
+        Item: S_Hasty_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 2
+        Item: S_Solid_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 3
+        Item: S_Solid_Earring
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 4
+        Item: S_Immortal_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 5
+        Item: S_Immortal_Pendant
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 6
+        Item: S_Healing_Weapon
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 7
+        Item: S_Healing_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 8
+        Item: S_Healing_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 9
+        Item: S_Spell_Flow_Armor
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 10
+        Item: S_Spell_Flow_Shoes
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 11
+        Item: S_Spell_Flow_Shield
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+  - Name: Convert Kafra Tickets
+    Map: izlude
+    X: 101
+    Y: 141
+    Direction: South
+    Sprite: 4_M_SIT_NOVICE
+    Items:
+      - Index: 0
+        Item: Warp_Free_Ticket
+        RequiredItems:
+          - Index: 0
+            Item: Cargo_Free_Ticket
+            Amount: 1
+      - Index: 1
+        Item: Cargo_Free_Ticket
+        RequiredItems:
+          - Index: 0
+            Item: Warp_Free_Ticket
+            Amount: 1
+  - Name: Stats ShadowGears
+    Map: iz_ac01
+    X: 123
+    Y: 54
+    Direction: South
+    Sprite: 4_M_NOV_HUNT
+    Items:
+      - Index: 0
+        Item: S_Athletic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Apple_Carrot_Salad
+              Amount: 1
+      - Index: 1
+        Item: S_Athletic_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Apple_Carrot_Salad
+              Amount: 1
+      - Index: 2
+        Item: S_Dexterous_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Golden_Roasted_Apple
+              Amount: 1
+      - Index: 3
+        Item: S_Dexterous_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Golden_Roasted_Apple
+              Amount: 1
+      - Index: 4
+        Item: S_Int_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Savory_Herb_Salad
+              Amount: 1
+      - Index: 5
+        Item: S_Int_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Savory_Herb_Salad
+              Amount: 1
+      - Index: 6
+        Item: S_Lucky_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Apple_Carrot_Salad
+              Amount: 1
+      - Index: 7
+        Item: S_Lucky_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Apple_Carrot_Salad
+              Amount: 1
+      - Index: 8
+        Item: S_Power_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Savory_Herb_Salad
+              Amount: 1
+      - Index: 9
+        Item: S_Power_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Savory_Herb_Salad
+              Amount: 1
+      - Index: 10
+        Item: S_Vital_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Casual_Stew
+              Amount: 1
+      - Index: 11
+        Item: S_Vital_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Casual_Stew
+              Amount: 1
+  - Name: First ShadowGear A
+    Map: prt_sewb2
+    X: 176
+    Y: 182
+    Direction: South
+    Sprite: 8w_soldier
+    Items:
+      - Index: 0
+        Item: S_Blitz_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 1
+        Item: S_Blitz_Pendent
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 2
+        Item: S_Blitz_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 3
+        Item: S_Blitz_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 4
+        Item: S_Blitz_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 5
+        Item: S_Blitz_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 6
+        Item: S_Boned_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 7
+        Item: S_Boned_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 8
+        Item: S_Caster_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 9
+        Item: S_Caster_earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 10
+        Item: S_Caster_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 11
+        Item: S_Caster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 12
+        Item: S_Caster_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 20
+      - Index: 13
+        Item: S_Caster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 14
+        Item: S_ColdBolt_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 15
+        Item: S_FireBolt_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 16
+        Item: S_LightingBolt_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 17
+        Item: S_EarthSpike_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 18
+        Item: S_Force_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 19
+        Item: S_Force_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 20
+        Item: S_Force_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 21
+        Item: S_Gigantic_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 22
+        Item: S_Gigantic_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 23
+        Item: S_Reload_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 24
+        Item: S_Reload_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 25
+        Item: S_Reload_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 26
+        Item: S_S_Reload_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 27
+        Item: S_Spirit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 28
+        Item: S_Spirit_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 29
+        Item: S_Spirit_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 30
+        Item: S_Hasty_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 31
+        Item: S_Hasty_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 32
+        Item: S_Hasty_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 33
+        Item: S_Hasty_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+  - Name: First ShadowGear B
+    Map: prt_sewb2
+    X: 183
+    Y: 182
+    Direction: South
+    Sprite: 8w_soldier
+    Items:
+      - Index: 0
+        Item: S_Bearers_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 1
+        Item: S_Bearers_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 2
+        Item: S_Bearers_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 3
+        Item: S_Bearers_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 4
+        Item: S_Bearers_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 5
+        Item: S_Bearers_Pendent
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 6
+        Item: S_R_Bearers_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 7
+        Item: S_R_Bearers_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 8
+        Item: S_R_Bearers_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 9
+        Item: S_R_Bearers_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 10
+        Item: S_Gemstone_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 11
+        Item: S_Gemstone_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 12
+        Item: S_Gemstone_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 13
+        Item: S_Gemstone_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 14
+        Item: S_Gemstone_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 15
+        Item: S_Gemstone_Pendent
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 16
+        Item: S_Spell_Flow_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 17
+        Item: S_Spell_Flow_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 18
+        Item: S_Spell_Flow_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 19
+        Item: S_Spiritual_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 20
+        Item: S_Spiritual_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 21
+        Item: S_Spiritual_Pendent
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 22
+        Item: S_Malicious_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 23
+        Item: S_Malicious_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 24
+        Item: S_Malicious_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 25
+        Item: S_CriticalHit_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 26
+        Item: S_Critical_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 27
+        Item: S_Cri_Hit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 28
+        Item: S_Critical_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 29
+        Item: S_Critical_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 30
+        Item: S_CriticalHit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 31
+        Item: S_AllRace_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+      - Index: 32
+        Item: S_AllRace_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Oridecon_Stone
+              Amount: 10
+  - Name: Second ShadowGear
+    Map: in_orcs01
+    X: 37
+    Y: 187
+    Direction: South
+    Sprite: 4_m_gef_soldier
+    Items:
+      - Index: 0
+        Item: S_Mega_Blitz_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 1
+        Item: S_Mega_Blitz_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 2
+        Item: S2_Caster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 3
+        Item: S_Enhance_Force_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 4
+        Item: S2_Reload_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 5
+        Item: S_Enhance_Spirit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 6
+        Item: S2_Hasty_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 7
+        Item: S2_Bearers_Pendent
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 8
+        Item: S2_Bearers_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 9
+        Item: S2_Bearers_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 10
+        Item: S2_Gemstone_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 11
+        Item: S2_Gemstone_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 12
+        Item: S2_Gemstone_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 13
+        Item: S2_Spell_Flow_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 14
+        Item: S2_Spiritual_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 15
+        Item: S2_Malicious_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 16
+        Item: S_Sigrun_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 17
+        Item: S_Sigrun_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 18
+        Item: S_MagicCompose_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 19
+        Item: S_AllMighty_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+      - Index: 20
+        Item: S_AllMighty_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Elunium_Stone
+              Amount: 15
+  - Name: Mystic ShadowGear
+    Map: prt_fild06
+    X: 27
+    Y: 190
+    Direction: East
+    Sprite: 4_f_fairykid6
+    Items:
+      - Index: 0
+        Item: S_Durable_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 1
+        Item: S_Durable_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 2
+        Item: S_Clever_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 3
+        Item: S_Clever_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 4
+        Item: S_CriticalHit_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 5
+        Item: S_Critical_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 6
+        Item: S_Cri_Hit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 7
+        Item: S_Critical_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 8
+        Item: S_Critical_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 9
+        Item: S_CriticalHit_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 10
+        Item: S_Kingbird_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 11
+        Item: S_KingbirdAncient_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 12
+        Item: S_KingbirdAnc_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 13
+        Item: S_SpellCaster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 14
+        Item: S_SpellCaster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 15
+        Item: S_SpellCaster_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 16
+        Item: S_SpellCaster_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 17
+        Item: S_P_Power_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 18
+        Item: S_P_Power_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 19
+        Item: S_M_Spell_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 20
+        Item: S_M_Spell_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 21
+        Item: S_Concentration_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 22
+        Item: S_Concentration_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 23
+        Item: S_Wisdom_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 24
+        Item: S_Wisdom_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 25
+        Item: S_Stamina_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 26
+        Item: S_Stamina_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 27
+        Item: S_Creative_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 28
+        Item: S_Creative_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 29
+        Item: S_FullPene_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 30
+        Item: S_FullPene_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 31
+        Item: S_FullPene_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 32
+        Item: S_FullPene_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 33
+        Item: S_FullTemp_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 34
+        Item: S_FullTemp_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 35
+        Item: S_FullTemp_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 36
+        Item: S_FullTemp_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 37
+        Item: S_Timeoverload_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 38
+        Item: S_Timeoverload_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 39
+        Item: S_Timeoverload_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 40
+        Item: S_Timeoverload_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 41
+        Item: S_Timeoverload_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 42
+        Item: S_Timeoverload_Pandent
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 43
+        Item: S_Tempest_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 44
+        Item: S_Tempest_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 45
+        Item: S_PerfectSize_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 46
+        Item: S_PerfectSize_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 47
+        Item: S_TrueGem_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 48
+        Item: S_TrueGem_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 49
+        Item: S_TrueGem_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 50
+        Item: S_TrueGem_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 51
+        Item: S_M_Mammoth_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 52
+        Item: S_M_Mammoth_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 53
+        Item: S_M_Mammoth_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+      - Index: 54
+        Item: S_M_Mammoth_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Runstone_Mystic
+              Amount: 25
+  - Name: Class ShadowGear
+    Map: prt_monk
+    X: 184
+    Y: 246
+    Direction: South
+    Sprite: 4_m_monk
+    Items:
+      - Index: 0
+        Item: S_Acolyte_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 1
+        Item: S_Acolyte_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 2
+        Item: S_Archer_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 3
+        Item: S_Archer_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 4
+        Item: S_Magician_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 5
+        Item: S_Magician_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 6
+        Item: S_Merchant_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 7
+        Item: S_Merchant_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 8
+        Item: S_Swordman_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 9
+        Item: S_Swordman_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 10
+        Item: S_Thief_earring
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 11
+        Item: S_Thief_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: four_leaf_clover
+              Amount: 1
+      - Index: 12
+        Item: S_Greed_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 13
+        Item: S_Greed_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 14
+        Item: S_Greed_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 15
+        Item: S_Greed_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 16
+        Item: S_Greed_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 17
+        Item: S_Greed_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 18
+        Item: S_Heal_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 19
+        Item: S_Heal_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 20
+        Item: S_Heal_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 21
+        Item: S_Heal_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 22
+        Item: S_Heal_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 23
+        Item: S_Heal_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 24
+        Item: S_Hiding_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 25
+        Item: S_Hiding_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 26
+        Item: S_Hiding_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 27
+        Item: S_Hiding_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 28
+        Item: S_Hiding_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 29
+        Item: S_Hiding_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 30
+        Item: S_Cloaking_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 31
+        Item: S_Cloaking_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 32
+        Item: S_Cloaking_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 33
+        Item: S_Cloaking_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 34
+        Item: S_Cloaking_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 35
+        Item: S_Cloaking_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 36
+        Item: S_Teleport_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 37
+        Item: S_Teleport_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 38
+        Item: S_Teleport_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 39
+        Item: S_Teleport_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 40
+        Item: S_Teleport_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 41
+        Item: S_Teleport_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 42
+        Item: S_Steal_Armor
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 43
+        Item: S_Steal_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 44
+        Item: S_Steal_Shield
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 45
+        Item: S_Steal_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 46
+        Item: S_Steal_Earring
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+      - Index: 47
+        Item: S_Steal_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: rainbow_carrot
+              Amount: 1
+  - Name: Eden ShadowGear
+    Map: moc_para01
+    X: 12
+    Y: 27
+    Direction: North
+    Sprite: 4_m_casman1
+    Items:
+      - Index: 0
+        Item: S_Absorb_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 1
+        Item: S_Absorb_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 2
+        Item: S_AutoSpell_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 3
+        Item: S_AutoSpell_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 4
+        Item: S_AutoSpell_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 5
+        Item: S_AutoSpell_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 6
+        Item: S_AutoSpell_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 7
+        Item: S_AutoSpell_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 8
+        Item: S_M_AutoSpell_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 9
+        Item: S_M_AutoSpell_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 10
+        Item: S_M_AutoSpell_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 11
+        Item: S_M_AutoSpell_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 12
+        Item: S_2Para_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 13
+        Item: S_2Para_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 14
+        Item: S_2Para_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 15
+        Item: S_2Para_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 16
+        Item: S_2Para_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 17
+        Item: S_2Para_RK_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 18
+        Item: S_2Para_LG_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 19
+        Item: S_2Para_NC_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 20
+        Item: S_2Para_GN_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 21
+        Item: S_2Para_GC_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 22
+        Item: S_2Para_SC_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 23
+        Item: S_2Para_WL_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 24
+        Item: S_2Para_SO_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 25
+        Item: S_2Para_AB_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 26
+        Item: S_2Para_SR_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 27
+        Item: S_2Para_RA_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 28
+        Item: S_2Para_WM_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 29
+        Item: S_2Para_KO_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 30
+        Item: S_2Para_RL_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 31
+        Item: S_2Para_SJ_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 32
+        Item: S_2Para_SP_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 33
+        Item: S_2Para_SU_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 34
+        Item: S_2Para_NV_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 35
+        Item: S_SU_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 36
+        Item: S_SJ_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 37
+        Item: S_KO_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 38
+        Item: S_RL_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 39
+        Item: S_SP_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+      - Index: 40
+        Item: S_NV_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Eden_Merit_Badge
+              Amount: 1
+  - Name: Pirate J Roger
+    Map: comodo
+    X: 212
+    Y: 92
+    Direction: North
+    Sprite: 1_m_signrogue
+    Items:
+      - Index: 0
+        Item: S_Runeknight_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 1
+        Item: S_Royalguard_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 2
+        Item: S_Mechanic_weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 3
+        Item: S_Genetic_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 4
+        Item: S_Archbishop_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 5
+        Item: S_Sura_weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 6
+        Item: S_Guillotine_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 7
+        Item: S_Shadowchaser_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 8
+        Item: S_Warlock_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 9
+        Item: S_Sorcerer_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 10
+        Item: S_Ranger_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 11
+        Item: S_Minstrel_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 12
+        Item: S_Wanderer_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 13
+        Item: S_Runeknight_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 14
+        Item: S_Royalguard_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 15
+        Item: S_Mechanic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 16
+        Item: S_Genetic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 17
+        Item: S_Archbishop_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 18
+        Item: S_Sura_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 19
+        Item: S_Guillotine_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 20
+        Item: S_Shadowchaser_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 21
+        Item: S_Warlock_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 22
+        Item: S_Sorcerer_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 23
+        Item: S_Ranger_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 24
+        Item: S_Minstrel_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 25
+        Item: S_Wanderer_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 26
+        Item: S_Rebellion_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 27
+        Item: S_Kagerou_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 28
+        Item: S_Oboro_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 29
+        Item: S_Rebellion_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 30
+        Item: S_Kagerou_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 31
+        Item: S_Oboro_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 32
+        Item: S_DoramPhysical_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 33
+        Item: S_DoramPhysical_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 34
+        Item: S_DoramMagical_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 35
+        Item: S_DoramMagical_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 36
+        Item: S_Star_Emperor_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 37
+        Item: S_Star_Emperor_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 38
+        Item: S_Soul_Reaper_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+      - Index: 39
+        Item: S_Soul_Reaper_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 10
+  - Name: Pirate J Roger Crew
+    Map: comodo
+    X: 219
+    Y: 92
+    Direction: North
+    Sprite: 4_m_reidin_kurs
+    Items:
+      - Index: 0
+        Item: S_Sonic_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 1
+        Item: S_Sonic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 2
+        Item: S_Sonic_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 3
+        Item: S_Ignition_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 4
+        Item: S_Ignition_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 5
+        Item: S_Ignition_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 6
+        Item: S_W_Breath_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 7
+        Item: S_W_Breath_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 8
+        Item: S_W_Breath_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 9
+        Item: S_F_Breath_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 10
+        Item: S_F_Breath_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 11
+        Item: S_F_Breath_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 12
+        Item: S_Cluster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 13
+        Item: S_Cluster_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 14
+        Item: S_Cluster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 15
+        Item: S_Aimed_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 16
+        Item: S_Aimed_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 17
+        Item: S_Aimed_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 18
+        Item: S_Arrow_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 19
+        Item: S_Arrow_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 20
+        Item: S_Arrow_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 21
+        Item: S_Shooting_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 22
+        Item: S_Shooting_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 23
+        Item: S_Shooting_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 24
+        Item: S_Tornado_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 25
+        Item: S_Tornado_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 26
+        Item: S_Tornado_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 27
+        Item: S_Boomerang_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 28
+        Item: S_Boomerang_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 29
+        Item: S_Boomerang_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 30
+        Item: S_Vulcan_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 31
+        Item: S_Vulcan_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 32
+        Item: S_Vulcan_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 33
+        Item: S_Arms_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 34
+        Item: S_Arms_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 35
+        Item: S_Arms_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 36
+        Item: S_Rampage_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 37
+        Item: S_Rampage_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 38
+        Item: S_Rampage_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 39
+        Item: S_Skynetblow_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 40
+        Item: S_Skynetblow_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 41
+        Item: S_Skynetblow_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 42
+        Item: S_Knucklearrow_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 43
+        Item: S_Knucklearrow_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 44
+        Item: S_Knucklearrow_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 45
+        Item: S_TigerCannon_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 46
+        Item: S_Tigercannon_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 47
+        Item: S_Tigercannon_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 48
+        Item: S_Duplelight_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 49
+        Item: S_Duplelight_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 50
+        Item: S_Duplelight_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 51
+        Item: S_Adoramus_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 52
+        Item: S_Adoramus_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 53
+        Item: S_Adoramus_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 54
+        Item: S_Judex_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 55
+        Item: S_Judex_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 56
+        Item: S_Judex_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 57
+        Item: S_Magnus_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 58
+        Item: S_Magnus_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 59
+        Item: S_Magnus_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 60
+        Item: S_Rainstorm_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 61
+        Item: S_Rainstorm_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 62
+        Item: S_Rainstorm_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 63
+        Item: S_Arrowvulcan_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 64
+        Item: S_Arrowvulcan_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 65
+        Item: S_Arrowvulcan_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 66
+        Item: S_Metalic_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 67
+        Item: S_Metalic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 68
+        Item: S_Metalic_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 69
+        Item: S_Reverberation_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 70
+        Item: S_Reverberation_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 71
+        Item: S_Reverberation_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 72
+        Item: S_Jack_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 73
+        Item: S_Jack_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 74
+        Item: S_Jack_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 75
+        Item: S_Strain_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 76
+        Item: S_Strain_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 77
+        Item: S_Strain_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 78
+        Item: S_Crimson_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 79
+        Item: S_Crimson_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 80
+        Item: S_Crimson_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 81
+        Item: S_Chain_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 82
+        Item: S_Chain_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 83
+        Item: S_Chain_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 84
+        Item: S_Triangle_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 85
+        Item: S_Triangle_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 86
+        Item: S_Triangle_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 87
+        Item: S_Shadowspell_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 88
+        Item: S_Shadowspell_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 89
+        Item: S_Shadowspell_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 90
+        Item: S_Menace_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 91
+        Item: S_Menace_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 92
+        Item: S_Menace_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 93
+        Item: S_Paint_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 94
+        Item: S_Paint_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 95
+        Item: S_Paint_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 96
+        Item: S_Rolling_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 97
+        Item: S_Rolling_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 98
+        Item: S_Rolling_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 99
+        Item: S_Katar_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 100
+        Item: S_Katar_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 101
+        Item: S_Katar_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 102
+        Item: S_Slash_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 103
+        Item: S_Slash_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 104
+        Item: S_Slash_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 105
+        Item: S_Ripper_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 106
+        Item: S_Ripper_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 107
+        Item: S_Ripper_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 108
+        Item: S_Dust_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 109
+        Item: S_Dust_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 110
+        Item: S_Dust_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 111
+        Item: S_Grave_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 112
+        Item: S_Grave_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 113
+        Item: S_Grave_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 114
+        Item: S_Psychic_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 115
+        Item: S_Psychic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 116
+        Item: S_Psychic_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 117
+        Item: S_Varetyr_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 118
+        Item: S_Varetyr_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 119
+        Item: S_Varetyr_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 120
+        Item: S_Cart_Tornado_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 121
+        Item: S_Cart_Tornado_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 122
+        Item: S_Cart_Tornado_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 123
+        Item: S_Cannon_Cart_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 124
+        Item: S_Cannon_Cart_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 125
+        Item: S_Cannon_Cart_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 126
+        Item: S_Spore_Bomb_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 127
+        Item: S_Spore_Bomb_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 128
+        Item: S_Spore_Bomb_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 129
+        Item: S_Crazy_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 130
+        Item: S_Crazy_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 131
+        Item: S_Crazy_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 132
+        Item: S_Brand_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 133
+        Item: S_Brand_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 134
+        Item: S_Brand_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 135
+        Item: S_Chain_Press_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 136
+        Item: S_Chain_Press_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 137
+        Item: S_Chain_Press_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 138
+        Item: S_Banish_Cannon_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 139
+        Item: S_Banish_Cannon_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 140
+        Item: S_Banish_Cannon_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 141
+        Item: S_Genesis_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 142
+        Item: S_Genesis_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 143
+        Item: S_Genesis_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 144
+        Item: S_Booster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 145
+        Item: S_Booster_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 146
+        Item: S_Booster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 147
+        Item: S_Booster_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 148
+        Item: S_Booster_Pandent
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 149
+        Item: S_RK_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 150
+        Item: S_LG_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 151
+        Item: S_NC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 152
+        Item: S_GN_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 153
+        Item: S_GC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 154
+        Item: S_SC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 155
+        Item: S_WL_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 156
+        Item: S_SO_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 157
+        Item: S_AB_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 158
+        Item: S_SR_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 159
+        Item: S_RA_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 160
+        Item: S_WM_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 161
+        Item: S_Tail_Dragon_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 162
+        Item: S_Tail_Dragon_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 163
+        Item: S_Tail_Dragon_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 164
+        Item: S_Flare_Dance_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 165
+        Item: S_Flare_Dance_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 166
+        Item: S_Flare_Dance_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 167
+        Item: S_God_Hammer_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 168
+        Item: S_God_Hammer_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 169
+        Item: S_God_Hammer_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 170
+        Item: S_Shatter_Buster_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 171
+        Item: S_Shatter_B_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 172
+        Item: S_Shatter_Buster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 173
+        Item: S_Trip_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 174
+        Item: S_Trip_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 175
+        Item: S_Trip_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 176
+        Item: S_Super_Magic_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 177
+        Item: S_Super_Magic_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 178
+        Item: S_Super_Magic_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 179
+        Item: S_Super_Power_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 180
+        Item: S_Super_Power_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 181
+        Item: S_Super_Power_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 182
+        Item: S_Kunai_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 183
+        Item: S_Kunai_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 184
+        Item: S_Kunai_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 185
+        Item: S_Syuriken_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 186
+        Item: S_Syuriken_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 187
+        Item: S_Syuriken_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 188
+        Item: S_Kamaenraku_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 189
+        Item: S_Kamaenraku_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 190
+        Item: S_Kamaenraku_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 191
+        Item: S_Huusouka_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 192
+        Item: S_Huusouka_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 193
+        Item: S_Huusouka_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 194
+        Item: S_Pickyrush_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 195
+        Item: S_Pickyrush_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 196
+        Item: S_Pickyrush_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 197
+        Item: S_SavageRabbit_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 198
+        Item: S_SavageRabbit_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 199
+        Item: S_SavageRabbit_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 200
+        Item: S_Catnip_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 201
+        Item: S_Catnip_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 202
+        Item: S_Catnip_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 203
+        Item: S_Silvervine_Earing
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 204
+        Item: S_Silvervine_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 205
+        Item: S_Silvervine_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 206
+        Item: S_Sunshine_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 207
+        Item: S_Sunshine_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 208
+        Item: S_Sunshine_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 209
+        Item: S_Moonlight_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 210
+        Item: S_Moonlight_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 211
+        Item: S_Moonlight_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 212
+        Item: S_Stardust_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 213
+        Item: S_Stardust_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 214
+        Item: S_Stardust_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 215
+        Item: S_S_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 216
+        Item: S_S_Shield
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 217
+        Item: S_S_Armor
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 218
+        Item: S_Evilcurse_Earring
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 219
+        Item: S_Evilcurse_Pendant
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+      - Index: 220
+        Item: S_Evilcurse_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: Black_Treasure_Box
+              Amount: 5
+  - Name: 2nd Class ShadowGears
+    Map: morocc
+    X: 160
+    Y: 163
+    Direction: South
+    Sprite: 4_f_racing
+    Items:
+      - Index: 0
+        Item: S_Alchemist_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 1
+        Item: S_Alchemist_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 2
+        Item: S_Assassin_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 3
+        Item: S_Assassin_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 4
+        Item: S_Bard_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 5
+        Item: S_Bard_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 6
+        Item: S_Blacksmith_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 7
+        Item: S_Blacksmith_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 8
+        Item: S_Crusader_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 9
+        Item: S_Crusader_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 10
+        Item: S_Dancer_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 11
+        Item: S_Dancer_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 12
+        Item: S_DoramMagical_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 13
+        Item: S_DoramMagical_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 14
+        Item: S_DoramPhysical_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 15
+        Item: S_DoramPhysical_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 16
+        Item: S_Gunslinger_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 17
+        Item: S_Gunslinger_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 18
+        Item: S_Hunter_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 19
+        Item: S_Hunter_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 20
+        Item: S_Knight_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 21
+        Item: S_Knight_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 22
+        Item: S_Monk_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 23
+        Item: S_Monk_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 24
+        Item: S_Ninja_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 25
+        Item: S_Ninja_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 26
+        Item: S_Priest_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 27
+        Item: S_Priest_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 28
+        Item: S_Rogue_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 29
+        Item: S_Rogue_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 30
+        Item: S_Sage_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 31
+        Item: S_Sage_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 32
+        Item: S_SuperNovice_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 33
+        Item: S_SuperNovice_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 34
+        Item: S_Taekwon_Shield
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 35
+        Item: S_Taekwon_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 36
+        Item: S_Wizard_Armor
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+      - Index: 37
+        Item: S_Wizard_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: silver_coin_
+              Amount: 10
+  - Name: Booster ShadowGears
+    Map: moc_para01
+    X: 18
+    Y: 18
+    Direction: west
+    Sprite: 4_m_grandmonk
+    Items:
+      - Index: 0
+        Item: S_Booster_Armor
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 1
+        Item: S_Booster_Earing
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 2
+        Item: S_Booster_Pandent
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 3
+        Item: S_Booster_Shield
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 4
+        Item: S_Booster_Shoes
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 5
+        Item: 2nd_Job_Weapon8
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 6
+        Item: S_2Para_AB_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 7
+        Item: S_Absorb_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 8
+        Item: S_AB_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 9
+        Item: S_GC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 10
+        Item: S_GN_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 11
+        Item: S_LG_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 12
+        Item: S_NC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 13
+        Item: S_RA_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 14
+        Item: S_RK_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 15
+        Item: S_SC_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 16
+        Item: S_SO_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 17
+        Item: S_SR_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 18
+        Item: S_WL_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+      - Index: 19
+        Item: S_WM_B_Weapon
+        RequiredItems:
+            - Index: 0
+              Item: copper_coin_
+              Amount: 20
+#refiner
+  - Name: Blessed Refiner
+    Map: izlude
+    X: 141
+    Y: 129
+    Direction: South
+    Sprite: 4_GEFFEN_13
+    Items:
+      - Index: 0
+        Item: Summer_Night_box
+        RequiredItems:
+          - Index: 0
+            Item: Sword
+            Amount: 1
+            Refine: 9
+      - Index: 1
+        Item: Summer_Night_box
+        RequiredItems:
+          - Index: 0
+            Item: Sword_
+            Amount: 1
+            Refine: 9
+      - Index: 2
+        Item: Enriched_Elunium_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Two_Hand_Sword
+            Amount: 1
+            Refine: 6
+      - Index: 3
+        Item: Enriched_Elunium_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Two_Hand_Sword_
+            Amount: 1
+            Refine: 6
+      - Index: 4
+        Item: Enriched_Oridecon_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Two_Hand_Sword
+            Amount: 1
+            Refine: 6
+      - Index: 5
+        Item: Enriched_Oridecon_Box5
+        RequiredItems:
+          - Index: 0
+            Item: Two_Hand_Sword_
+            Amount: 1
+            Refine: 6
+#costume and shadowgear refine

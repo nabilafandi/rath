@@ -6338,12 +6338,12 @@ int pc_useitem(map_session_data *sd,int n)
 		return 0;
 
 	/* Items with delayed consume are not meant to work while in mounts except reins of mount(12622) */
-	if( id->flag.delay_consume > 0 ) {
-		if( nameid != ITEMID_REINS_OF_MOUNT && sd->sc.getSCE(SC_ALL_RIDING) )
-			return 0;
-		else if( pc_issit(sd) )
-			return 0;
-	}
+	// if( id->flag.delay_consume > 0 ) {
+	// 	if( nameid != ITEMID_REINS_OF_MOUNT && sd->sc.getSCE(SC_ALL_RIDING) )
+	// 		return 0;
+	// 	else if( pc_issit(sd) )
+	// 		return 0;
+	// }
 	//Since most delay-consume items involve using a "skill-type" target cursor,
 	//perform a skill-use check before going through. [Skotlex]
 	//resurrection was picked as testing skill, as a non-offensive, generic skill, it will do.

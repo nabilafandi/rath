@@ -44,18 +44,18 @@ moc_para01,36,38,3	script	Mission [11 - 25]#Tuto	4_BOARD3,{
 			close;
 		}
 	}
-	if (BaseLevel < 11) {
-		mes " - There are no tasks - ";
-		mes " - open for you right now. - ";
-		close;
-	}
-	if (BaseLevel > 25) {
-		mes " - These missions are too - ";
-		mes " - easy for your caliber - ";
-		mes " - search for a more level - ";
-		mes " - appropriate mission. - ";
-		close;
-	}
+//	if (BaseLevel  11) {
+//		mes " - There are no tasks - ";
+//		mes " - open for you right now. - ";
+//		close;
+//	}
+//	if (BaseLevel > 25) {
+//		mes " - These missions are too - ";
+//		mes " - easy for your caliber - ";
+//		mes " - search for a more level - ";
+//		mes " - appropriate mission. - ";
+//		close;
+//	}
 	mes " - Mission bulletin board -";
 	mes " - for beginners. -";
 	mes " ";

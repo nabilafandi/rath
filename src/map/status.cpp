@@ -8015,6 +8015,8 @@ static unsigned short status_calc_speed(struct block_list *bl, status_change *sc
 			val = max( val, 25 );
 		if( sc->getSCE(SC_RUN) )
 			val = max( val, 55 );
+		if (sc->getSCE(SC_PROVOKE))
+			val = max(val, 55);
 		if( sc->getSCE(SC_AVOID) )
 			val = max( val, 10 * sc->getSCE(SC_AVOID)->val1 );
 		if( sc->getSCE(SC_INVINCIBLE) && !sc->getSCE(SC_INVINCIBLEOFF) )
@@ -9964,12 +9966,12 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 		return 0;
 
 	// Check for Boss resistances
-	if(status->mode&MD_STATUSIMMUNE && !(flag&SCSTART_NOAVOID) && scdb->flag[SCF_BOSSRESIST])
-		return 0;
+	// if(status->mode&MD_STATUSIMMUNE && !(flag&SCSTART_NOAVOID) && scdb->flag[SCF_BOSSRESIST])
+	// 	return 0;
 
 	// Check for MVP resistance
-	if(status->mode&MD_MVP && !(flag&SCSTART_NOAVOID) && scdb->flag[SCF_MVPRESIST])
-		return 0;
+	// if(status->mode&MD_MVP && !(flag&SCSTART_NOAVOID) && scdb->flag[SCF_MVPRESIST])
+	// 	return 0;
 
 	// End the SCs from the list and immediately return
 	// If anything in this list is removed, the rest is ignored.

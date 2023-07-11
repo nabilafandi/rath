@@ -65,7 +65,7 @@ moc_para01,48,177,3	script	91-99 Mission Board	857,{
 			close;
 		}
 	}
-	if (BaseLevel < 91 || BaseLevel > 99) {
+	if (BaseLevel < 1  || BaseLevel > 175) {
 		// Quest IDs: 4181-4196
 		// Quest cooldown IDs: 4212-4227
 		setarray .@names$[0],
@@ -165,11 +165,11 @@ L_Quest:
 	set .@quest2, .@quest1+31;
 	.@cutin$ = getarg(3);
 	set .@playtime, checkquest(.@quest2,PLAYTIME);
-	if (.@playtime == 0 || .@playtime == 1) {
-		mes "[91-99 Mission Board]";
-		mes "You need to wait 3 hours before you can take this mission again.";
-		close;
-	}
+//	if (.@playtime == 0 || .@playtime == 1) {
+//		mes "[91-99 Mission Board]";
+//		mes "You need to wait 3 hours before you can take this mission again.";
+//		close;
+//	}
 	set .@hunting, checkquest(.@quest1,HUNTING);
 	if (.@hunting == 0 || .@hunting == 1) {
 		mes "[91-99 Mission Board]";

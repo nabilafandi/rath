@@ -435,8 +435,14 @@ izlude,1,1,0	script	Shorty#fgtg01	4_GALAPAGO,{
 			next;
 			mes "[Shorty]";
 			mes "Go! Master!!";
-			npcskill "AL_INCAGI",10,99,60;
-			npcskill "AL_BLESSING",10,99,60;
+			//npcskill "AL_INCAGI",10,99,60;
+			//npcskill "AL_BLESSING",10,99,60;
+			specialeffect2 EF_HEAL2;
+			heal 9999,0;
+			skilleffect 34,0;
+			sc_start SC_BLESSING,480000,10;
+			skilleffect 29,0;
+			sc_start SC_INCREASEAGI,480000,10;
 			setquest 14695;
 			close;
 		case 0:
@@ -447,8 +453,14 @@ izlude,1,1,0	script	Shorty#fgtg01	4_GALAPAGO,{
 		case 2:
 			mes "[Shorty]";
 			mes "Go! Master!!";
-			npcskill "AL_INCAGI",10,99,60;
-			npcskill "AL_BLESSING",10,99,60;
+			//npcskill "AL_INCAGI",10,99,60;
+			//npcskill "AL_BLESSING",10,99,60;
+			specialeffect2 EF_HEAL2;
+			heal 9999,0;
+			skilleffect 34,0;
+			sc_start SC_BLESSING,480000,10;
+			skilleffect 29,0;
+			sc_start SC_INCREASEAGI,480000,10;
 			erasequest 14695;
 			setquest 14695;
 			close;
