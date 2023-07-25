@@ -17,7 +17,7 @@
 //= 1.4a Misc. [Capuche]
 //============================================================ 
 
-prontera,115,90,0	script	Putty	4_F_01,{
+izlude,117,126,0	script	Putty	4_F_01,{
 	mes "[Card Trader]";
 	mes "Hi, "+strcharinfo(0)+"!";
 	mes "What can I do for you?";

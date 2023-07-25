@@ -6217,10 +6217,10 @@ bool pc_isUseitem(map_session_data *sd,int n)
 			ARR_FIND( 0, MAX_PARTY, i, pd->data[i].sd && pd->data[i].sd != sd && pd->data[i].sd->bl.m == sd->bl.m && !pc_isdead( pd->data[i].sd ) );
 
 			// No party members found on same map
-			if( i == MAX_PARTY ){
-				clif_msg( sd, ITEM_PARTY_NO_MEMBER_IN_MAP );
-				return false;
-			}
+			// if( i == MAX_PARTY ){
+			// 	clif_msg( sd, ITEM_PARTY_NO_MEMBER_IN_MAP );
+			// 	return false;
+			// }
 		}else{
 			clif_msg( sd, ITEM_PARTY_MEMBER_NOT_SUMMONED );
 			return false;

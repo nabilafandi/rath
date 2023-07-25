@@ -68,7 +68,7 @@ geffen_in,78,169,3	shop	Advanced Potion Merchant#gef	1_F_03,11621:-1,11622:-1,11
 //=======================================================
 // Izlude
 //=======================================================
-izlude,124,165,4	shop	Fruit Gardener#iz	53,512:-1,513:-1,515:-1,516:-1
+izlude,124,165,4	shop	Fruit Gardener#iz	53,512:-1,513:-1,515:-1,516:-1,12212:100,25464:60000
 izlude_a,124,165,4	duplicate(Fruit Gardener#iz)	Fruit Gardener#iz_a	53
 izlude_b,124,165,4	duplicate(Fruit Gardener#iz)	Fruit Gardener#iz_b	53
 izlude_c,124,165,4	duplicate(Fruit Gardener#iz)	Fruit Gardener#iz_c	53

@@ -29,7 +29,7 @@ function	script	F_GM_NPC	{
 	if (!getargcount()) return;
 
 	// To disable password inputs, uncomment the line below.
-	//return 1;
+	return 1;
 
 	// Password return values:
 	//  1: correct input

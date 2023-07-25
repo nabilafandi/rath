@@ -166,10 +166,10 @@ moc_para01,26,15,3	script	Primo d'Buffer	790,{
 // Clearchus, VIP mercenary rentals
 //============================================================
 moc_para01,53,30,3	script	Clearchus	470,{
-	if (checkquest(62238,PLAYTIME) > -1 && checkquest(62238,PLAYTIME) < 2) {
-		mes "You must wait for the timer to finish before you can hire a new mercenary.";
-		close;	
-	}
+//	if (checkquest(62238,PLAYTIME) > -1 && checkquest(62238,PLAYTIME) < 2) {
+//		mes "You must wait for the timer to finish before you can hire a new mercenary.";
+//		close;	
+//	}
 	mes "[Clearchus]";
 	mes "Greetings young adventurer! I represent the Midgardian Mercenary Mission.";
 	next;

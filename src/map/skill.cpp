@@ -7632,7 +7632,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			break;
 		}
 		clif_skill_nodamage(src,bl,skill_id,skill_lv,
-			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv)));
+			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv)* (1.0 + (float)sstatus->int_ / 10.0)));
 		break;
 
 	case ITEM_ENCHANTARMS:
@@ -7700,7 +7700,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case SU_GROOMING:
 	case SU_CHATTERING:
 		clif_skill_nodamage(bl,bl,skill_id,skill_lv,
-			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv)));
+			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv) * (1.0 + (float)sstatus->int_ / 10.0)));
 		break;
 	//Passive Magnum, should had been casted on yourself.
 	case SM_MAGNUM:
@@ -7731,7 +7731,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 
 	case PR_BENEDICTIO:
 		if (!battle_check_undead(tstatus->race, tstatus->def_ele) && tstatus->race != RC_DEMON)
-			clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
+			clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)* (1.0 + (float)sstatus->int_ / 10.0)));
 		break;
 	case AL_INCAGI:
 	case AL_BLESSING:
@@ -7882,7 +7882,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case NPC_RELIEVE_ON:
 	case NPC_RELIEVE_OFF:
 		clif_skill_nodamage(src,bl,skill_id,skill_lv,
-			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv)));
+			sc_start(src,bl,type,100,skill_lv,skill_get_time(skill_id,skill_lv)* (1.0 + (float)sstatus->int_ / 10.0)));
 		break;
 
 	case NPC_GRADUAL_GRAVITY:
@@ -8187,10 +8187,10 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case SM_SELFPROVOKE:
 	case MER_PROVOKE:
 	if (skill_id != SM_PROVOKE || flag & 1) {
-	//		if (status_has_mode(tstatus, MD_STATUSIMMUNE) || battle_check_undead(tstatus->race, tstatus->def_ele)) {
-	//			map_freeblock_unlock();
-	//			return 1;
-	//		}
+			if (status_has_mode(tstatus, MD_STATUSIMMUNE) || battle_check_undead(tstatus->race, tstatus->def_ele)) {
+				map_freeblock_unlock();
+				return 1;
+			}
 			// Official chance is 70% + 3%*skill_lv + srcBaseLevel% - tarBaseLevel%
 			if (!(i = sc_start(src, bl, type, skill_id == SM_SELFPROVOKE ? 100 : (90 + 3 * skill_lv + status_get_lv(src) - status_get_lv(bl)), skill_lv, skill_get_time(skill_id, skill_lv))))
 			{
@@ -8218,7 +8218,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		}
 		else {
 			skill_area_temp[2] = 0; //For SD_PREAMBLE
-			//clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
+			clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
 			map_foreachinallrange(skill_area_sub, bl,
 				skill_get_splash(skill_id, skill_lv), BL_CHAR,
 				src, SM_PROVOKE, (sd) ? pc_checkskill(sd, SM_PROVOKE) : skill_lv, tick, flag | BCT_ENEMY | SD_PREAMBLE | 1,
@@ -8767,7 +8767,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			int weapontype = skill_get_weapontype(skill_id);
 			if (!weapontype || !dstsd || pc_check_weapontype(dstsd, weapontype)) {
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv,
-					sc_start2(src, bl, type, 100, skill_lv, (src == bl) ? 1 : 0, skill_get_time(skill_id, skill_lv)));
+					sc_start2(src, bl, type, 100, skill_lv, (src == bl) ? 1 : 0, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->luk / 10.0)));
 			}
 		} else if (sd) {
 			party_foreachsamemap(skill_area_sub,
@@ -10298,7 +10298,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 				status_calc_pc( dstsd, SCO_NONE );
 			}
 
-			sc_start( src, src, SC_SMA, 100, skill_lv, skill_get_time( SL_SMA, skill_lv ) );
+			sc_start( src, src, SC_SMA, 100, skill_lv, skill_get_time( SL_SMA, skill_lv ) * (1.0 + (float)sstatus->int_ / 10.0) );
 		}else{
 			if( sd ){
 				clif_skill_fail( sd, skill_id, USESKILL_FAIL_LEVEL, 0 );
@@ -10853,7 +10853,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			int agi_lv = ((sd) ? pc_checkskill(sd,AL_INCAGI) : skill_get_max(AL_INCAGI)) + (((sd) ? sd->status.job_level : 50) / 10);
 			if( sd == NULL || sd->status.party_id == 0 || flag&1 )
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv, sc_start(src,bl,type,100,
-					(skill_id == AB_CLEMENTIA)? bless_lv : (skill_id == AB_CANTO)? agi_lv : skill_lv, skill_get_time(skill_id,skill_lv)));
+					(skill_id == AB_CLEMENTIA)? bless_lv : (skill_id == AB_CANTO)? agi_lv : skill_lv, skill_get_time(skill_id,skill_lv)  * (1.0 + (float)sstatus->int_ / 8.0) ));
 			else if( sd )
 				party_foreachsamemap(skill_area_sub, sd, skill_get_splash(skill_id, skill_lv), src, skill_id, skill_lv, tick, flag|BCT_PARTY|1, skill_castend_nodamage_id);
 		}
@@ -10912,7 +10912,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 
 	case AB_ORATIO:
 		if( flag&1 )
-			sc_start(src,bl, type, 40 + 5 * skill_lv, skill_lv, skill_get_time(skill_id, skill_lv));
+			sc_start(src,bl, type, 40 + 5 * skill_lv, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 8.0));
 		else {
 			map_foreachinallrange(skill_area_sub, src, skill_get_splash(skill_id, skill_lv), BL_CHAR,
 				src, skill_id, skill_lv, tick, flag|BCT_ENEMY|1, skill_castend_nodamage_id);
@@ -10934,7 +10934,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 				status_change_end(bl, SC_CRYSTALIZE);
 			} else //Success rate only applies to the curing effect and not stat bonus. Bonus status only applies to non infected targets
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv,
-					sc_start(src,bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
+					sc_start(src,bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 8.0)));
 		} else if( sd )
 			party_foreachsamemap(skill_area_sub, sd, skill_get_splash(skill_id, skill_lv),
 				src, skill_id, skill_lv, tick, flag|BCT_PARTY|1, skill_castend_nodamage_id);
@@ -10952,7 +10952,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 				status_change_end(bl, SC_DEEPSLEEP);
 			} else // Success rate only applies to the curing effect and not stat bonus. Bonus status only applies to non infected targets
 				clif_skill_nodamage(bl, bl, skill_id, skill_lv,
-					sc_start(src,bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
+					sc_start(src,bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv) * (1.0 + (float)sstatus->int_ / 8.0)));
 		} else if( sd )
 			party_foreachsamemap(skill_area_sub, sd, skill_get_splash(skill_id, skill_lv),
 				src, skill_id, skill_lv, tick, flag|BCT_PARTY|1, skill_castend_nodamage_id);
@@ -19348,13 +19348,13 @@ void skill_weaponrefine(map_session_data *sd, int idx)
 				clif_skill_fail( sd, sd->menuskill_id, USESKILL_FAIL_LEVEL, 0 );
 				return;
 			}
-
 			int per = ( cost->chance / 100 );
 			if( sd->class_&JOBL_THIRD )
 				per += 10;
+				// per += (((signed int)sd->status.job_level + status->luk*2)-50)/2;
 			else
-				per += (((signed int)sd->status.job_level)-50)/2; //Updated per the new kro descriptions. [Skotlex]
-
+				per += (((signed int)sd->status.job_level )-50)/2; //Updated per the new kro descriptions. [Skotlex]
+				// per += (((signed int)sd->status.job_level + status->luk*2)-50)/2;
 			pc_delitem(sd, i, 1, 0, 0, LOG_TYPE_OTHER);
 			if (per > rnd() % 100) {
 				int ep=0;
@@ -19392,13 +19392,13 @@ void skill_weaponrefine(map_session_data *sd, int idx)
 					}
 				}
 			} else {
-				item->refine = 0;
+				// item->refine = 0;
 				if(item->equip)
 					pc_unequipitem(sd,idx,3);
 				clif_upgrademessage(sd, 1, item->nameid);
 				clif_refine(sd->fd,1,idx,item->refine);
 				achievement_update_objective(sd, AG_ENCHANT_FAIL, 1, 1);
-				pc_delitem(sd,idx,1,0,2, LOG_TYPE_OTHER);
+				// pc_delitem(sd,idx,1,0,2, LOG_TYPE_OTHER);
 				clif_misceffect(&sd->bl,2);
 				clif_emotion(&sd->bl, ET_HUK);
 			}

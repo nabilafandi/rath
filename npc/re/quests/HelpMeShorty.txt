@@ -260,7 +260,7 @@ prt_fild10,318,191,3	script	Salty#fgtg01	4_F_ALCHE_A,{
 		if (isbegin_quest(14695) > 0)
 			erasequest 14695;
 		delitem 23278,1;	// HelpmeShorty
-		getitem 20267,1;	// C_Penguin_Cap
+		getitem 5867,1;	// C_Penguin_Cap
 		getexp 4000,1000;
 		close;
 	}

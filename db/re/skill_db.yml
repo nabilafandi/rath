@@ -4227,7 +4227,7 @@ Body:
       AllowOnMado: true
     Hit: Single
     HitCount: 1
-    SplashArea: -1
+    SplashArea: 15
     Duration1:
       - Level: 1
         Time: 10000
@@ -4322,9 +4322,11 @@ Body:
     TargetType: Self
     DamageFlags:
       NoDamage: true
+      Splash: true
     Flags:
       AllowOnMado: true
       Toggleable: true
+    SplashArea: -1
     Hit: Single
     HitCount: 1
     Duration1:
@@ -4885,7 +4887,7 @@ Body:
         Count: 4
       - Level: 5
         Count: 5
-    SplashArea: 1
+    SplashArea: 4
     CastCancel: true
     CastTime: 800
     AfterCastActDelay: 1000

@@ -10389,7 +10389,7 @@ Body:
     Title: To Prontera Field
   - Id: 14695
     Title: Cheer up, Sunsammi!
-    TimeLimit: +30mn
+    TimeLimit: +1mn
   - Id: 14699
     Title: Event once a day
     TimeLimit: 4h

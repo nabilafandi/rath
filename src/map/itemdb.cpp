@@ -941,7 +941,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoDrop", active))
 				return 0;
 
-			item->flag.trade_restriction.drop = active;
+			item->flag.trade_restriction.drop = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.drop = false;
@@ -953,7 +953,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoTrade", active))
 				return 0;
 
-			item->flag.trade_restriction.trade = active;
+			item->flag.trade_restriction.trade = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.trade = false;
@@ -965,7 +965,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "TradePartner", active))
 				return 0;
 
-			item->flag.trade_restriction.trade_partner = active;
+			item->flag.trade_restriction.trade_partner = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.trade_partner = false;
@@ -977,7 +977,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoSell", active))
 				return 0;
 
-			item->flag.trade_restriction.sell = active;
+			item->flag.trade_restriction.sell = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.sell = false;
@@ -989,7 +989,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoCart", active))
 				return 0;
 
-			item->flag.trade_restriction.cart = active;
+			item->flag.trade_restriction.cart = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.cart = false;
@@ -1001,7 +1001,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoStorage", active))
 				return 0;
 
-			item->flag.trade_restriction.storage = active;
+			item->flag.trade_restriction.storage = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.storage = false;
@@ -1013,7 +1013,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoGuildStorage", active))
 				return 0;
 
-			item->flag.trade_restriction.guild_storage = active;
+			item->flag.trade_restriction.guild_storage = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.guild_storage = false;
@@ -1025,7 +1025,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoMail", active))
 				return 0;
 
-			item->flag.trade_restriction.mail = active;
+			item->flag.trade_restriction.mail = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.mail = false;
@@ -1037,7 +1037,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 			if (!this->asBool(tradeNode, "NoAuction", active))
 				return 0;
 
-			item->flag.trade_restriction.auction = active;
+			item->flag.trade_restriction.auction = false;
 		} else {
 			if (!exists)
 				item->flag.trade_restriction.auction = false;

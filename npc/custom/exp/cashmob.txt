@@ -5,7 +5,7 @@ end;
 OnNPCKillEvent:
 	if( compare( "|"+.listmonster$+"|","|"+killedrid+"|" ) ){
 		if(rand(100)>0){
-			set #CASHPOINTS,#CASHPOINTS + 500;
+			set #CASHPOINTS,#CASHPOINTS + 100;
 			dispbottom "Gained 500 Cash Point. Total = "+#CASHPOINTS+" Cash Points.";
 			end;
 		}
@@ -33,7 +33,7 @@ end;
 OnNPCKillEvent:
 	if( compare( "|"+.listmonster$+"|","|"+killedrid+"|" ) ){
 		if(rand(100)>0){
-			set #CASHPOINTS,#CASHPOINTS + 20;
+			set #CASHPOINTS,#CASHPOINTS + 10;
 			dispbottom "Gained 20 Cash Point. Total = "+#CASHPOINTS+" Cash Points.";
 			end;
 		}

@@ -4190,7 +4190,7 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 				skillratio += 10 * skill_lv; //Outer 5x5 circle takes 100%+10%*level damage [Playtester]
 			break;
 		case MC_MAMMONITE:
-			skillratio += 50 * skill_lv;
+			skillratio += 50 * skill_lv * (1.0 + (float)sstatus->luk / 65.0);
 			break;
 		case HT_POWER:
 			skillratio += -50 + 8 * sstatus->str;
@@ -4216,7 +4216,50 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 		case MA_FREEZINGTRAP:
 			skillratio += -50 + 10 * skill_lv;
 			break;
+		case HT_LANDMINE:
+		case MA_LANDMINE:
+		case HT_BLASTMINE:
+		case HT_CLAYMORETRAP:
+			skillratio = (int64)(skill_lv * sstatus->dex * (3.0 + (float)status_get_lv(src) / 100.0) * (1.0 + (float)sstatus->luk / 35.0));
+			skillratio += skillratio * (rnd()%20 - 10) / 100;
+			skillratio += (sd ? pc_checkskill(sd,RA_RESEARCHTRAP) * 40 : 0);
+			break;
+#else
+		case HT_LANDMINE:
+		case MA_LANDMINE:
+			skillratio = skill_lv * (sstatus->dex + 75) * (100 + sstatus->luk) / 100;
+			break;
+		case HT_BLASTMINE:
+			skillratio = skill_lv * (sstatus->dex / 2 + 50) * (100 + sstatus->luk) / 100;
+			break;
+		case HT_CLAYMORETRAP:
+			skillratio = skill_lv * (sstatus->dex / 2 + 75) * (100 + sstatus->luk) / 100;
+			break;
 #endif
+		case HT_BLITZBEAT:
+		case SN_FALCONASSAULT:
+			{
+				uint16 skill;
+
+				//Blitz-beat Damage
+				if(!sd || !(skill = pc_checkskill(sd,HT_STEELCROW)))
+					skill = 0;
+#ifdef RENEWAL
+				skillratio = sstatus->agi / 10 + sstatus->luk / 2 + skill_lv * 3 + 40;
+				RE_LVL_DMOD(100);
+#else
+				skillratio = sstatus->agi / 10 + sstatus->luk / 2 + skill_lv * 3 + 40;
+				if(mflag > 1) //Autocasted Blitz
+					nk.set(NK_SPLASHSPLIT);
+#endif
+				if (skill_id == SN_FALCONASSAULT) {
+					//Div fix of Blitzbeat
+					DAMAGE_DIV_FIX2(skillratio, skill_get_num(HT_BLITZBEAT, 5));
+					//Falcon Assault Modifier
+					skillratio = skillratio * (150 + 70 * skill_lv) / 100;
+				}
+			}
+			break;
 		case KN_PIERCE:
 			skillratio += 10 * skill_lv;
 			if (sc && sc->getSCE(SC_CHARGINGPIERCE_COUNT) && sc->getSCE(SC_CHARGINGPIERCE_COUNT)->val1 >= 10)
@@ -4283,7 +4326,7 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 			skillratio += 30;
 			break;
 		case MC_CARTREVOLUTION:
-			skillratio += 50;
+			skillratio += 50 * (1.0 + (float)sstatus->luk / 65.0);
 			if(sd && sd->cart_weight)
 				skillratio += 100 * sd->cart_weight / sd->cart_weight_max; // +1% every 1% weight
 			else if (!sd)
@@ -8281,51 +8324,51 @@ struct Damage battle_calc_misc_attack(struct block_list *src,struct block_list *
 		case NPC_KILLING_AURA:
 			md.damage = 10000;
 			break;
-#ifdef RENEWAL
-		case HT_LANDMINE:
-		case MA_LANDMINE:
-		case HT_BLASTMINE:
-		case HT_CLAYMORETRAP:
-			md.damage = (int64)(skill_lv * sstatus->dex * (3.0 + (float)status_get_lv(src) / 100.0) * (1.0 + (float)sstatus->int_ / 35.0));
-			md.damage += md.damage * (rnd()%20 - 10) / 100;
-			md.damage += (sd ? pc_checkskill(sd,RA_RESEARCHTRAP) * 40 : 0);
-			break;
-#else
-		case HT_LANDMINE:
-		case MA_LANDMINE:
-			md.damage = skill_lv * (sstatus->dex + 75) * (100 + sstatus->int_) / 100;
-			break;
-		case HT_BLASTMINE:
-			md.damage = skill_lv * (sstatus->dex / 2 + 50) * (100 + sstatus->int_) / 100;
-			break;
-		case HT_CLAYMORETRAP:
-			md.damage = skill_lv * (sstatus->dex / 2 + 75) * (100 + sstatus->int_) / 100;
-			break;
-#endif
-		case HT_BLITZBEAT:
-		case SN_FALCONASSAULT:
-			{
-				uint16 skill;
+// #ifdef RENEWAL
+// 		case HT_LANDMINE:
+// 		case MA_LANDMINE:
+// 		case HT_BLASTMINE:
+// 		case HT_CLAYMORETRAP:
+// 			md.damage = (int64)(skill_lv * sstatus->dex * (3.0 + (float)status_get_lv(src) / 100.0) * (1.0 + (float)sstatus->int_ / 35.0));
+// 			md.damage += md.damage * (rnd()%20 - 10) / 100;
+// 			md.damage += (sd ? pc_checkskill(sd,RA_RESEARCHTRAP) * 40 : 0);
+// 			break;
+// #else
+// 		case HT_LANDMINE:
+// 		case MA_LANDMINE:
+// 			md.damage = skill_lv * (sstatus->dex + 75) * (100 + sstatus->luk) / 100;
+// 			break;
+// 		case HT_BLASTMINE:
+// 			md.damage = skill_lv * (sstatus->dex / 2 + 50) * (100 + sstatus->luk) / 100;
+// 			break;
+// 		case HT_CLAYMORETRAP:
+// 			md.damage = skill_lv * (sstatus->dex / 2 + 75) * (100 + sstatus->luk) / 100;
+// 			break;
+// #endif
+// 		case HT_BLITZBEAT:
+// 		case SN_FALCONASSAULT:
+// 			{
+// 				uint16 skill;
 
-				//Blitz-beat Damage
-				if(!sd || !(skill = pc_checkskill(sd,HT_STEELCROW)))
-					skill = 0;
-#ifdef RENEWAL
-				md.damage = (sstatus->dex / 10 + sstatus->agi / 2 + skill * 3 + 40) * 2;
-				RE_LVL_MDMOD(100);
-#else
-				md.damage = (sstatus->dex / 10 + sstatus->int_ / 2 + skill * 3 + 40) * 2;
-				if(mflag > 1) //Autocasted Blitz
-					nk.set(NK_SPLASHSPLIT);
-#endif
-				if (skill_id == SN_FALCONASSAULT) {
-					//Div fix of Blitzbeat
-					DAMAGE_DIV_FIX2(md.damage, skill_get_num(HT_BLITZBEAT, 5));
-					//Falcon Assault Modifier
-					md.damage = md.damage * (150 + 70 * skill_lv) / 100;
-				}
-			}
-			break;
+// 				//Blitz-beat Damage
+// 				if(!sd || !(skill = pc_checkskill(sd,HT_STEELCROW)))
+// 					skill = 0;
+// #ifdef RENEWAL
+// 				md.damage = (sstatus->agi / 10 + sstatus->luk / 2 + skill * 3 + 40) * 2;
+// 				RE_LVL_MDMOD(100);
+// #else
+// 				md.damage = (sstatus->dex / 10 + sstatus->luk / 2 + skill * 3 + 40) * 2;
+// 				if(mflag > 1) //Autocasted Blitz
+// 					nk.set(NK_SPLASHSPLIT);
+// #endif
+// 				if (skill_id == SN_FALCONASSAULT) {
+// 					//Div fix of Blitzbeat
+// 					DAMAGE_DIV_FIX2(md.damage, skill_get_num(HT_BLITZBEAT, 5));
+// 					//Falcon Assault Modifier
+// 					md.damage = md.damage * (150 + 70 * skill_lv) / 100;
+// 				}
+// 			}
+// 			break;
 #ifndef RENEWAL
 		case BA_DISSONANCE:
 			md.damage = 30 + skill_lv * 10;

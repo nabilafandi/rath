@@ -3248,229 +3248,229 @@ Body:
         Item: S_Alchemist_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 1
         Item: S_Alchemist_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 2
         Item: S_Assassin_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 3
         Item: S_Assassin_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 4
         Item: S_Bard_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 5
         Item: S_Bard_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 6
         Item: S_Blacksmith_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 7
         Item: S_Blacksmith_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 8
         Item: S_Crusader_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 9
         Item: S_Crusader_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 10
         Item: S_Dancer_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 11
         Item: S_Dancer_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 12
         Item: S_DoramMagical_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 13
         Item: S_DoramMagical_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 14
         Item: S_DoramPhysical_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 15
         Item: S_DoramPhysical_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 16
         Item: S_Gunslinger_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 17
         Item: S_Gunslinger_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 18
         Item: S_Hunter_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 19
         Item: S_Hunter_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 20
         Item: S_Knight_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 21
         Item: S_Knight_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 22
         Item: S_Monk_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 23
         Item: S_Monk_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 24
         Item: S_Ninja_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 25
         Item: S_Ninja_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 26
         Item: S_Priest_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 27
         Item: S_Priest_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 28
         Item: S_Rogue_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 29
         Item: S_Rogue_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 30
         Item: S_Sage_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 31
         Item: S_Sage_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 32
         Item: S_SuperNovice_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 33
         Item: S_SuperNovice_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 34
         Item: S_Taekwon_Shield
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 35
         Item: S_Taekwon_Weapon
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 36
         Item: S_Wizard_Armor
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
       - Index: 37
         Item: S_Wizard_Shoes
         RequiredItems:
             - Index: 0
-              Item: silver_coin_
+              Item: Shadow_Cube
               Amount: 10
   - Name: Booster ShadowGears
     Map: moc_para01

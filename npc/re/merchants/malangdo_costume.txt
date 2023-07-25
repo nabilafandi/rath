@@ -534,6 +534,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 	case EQI_COSTUME_HEAD_TOP:
 		switch(.@equip_id) {
 			// top
+		case 31185:	// C_engineer
 		case 18740:	// C_Hair_Of_The_Strong
 		case 18741:	// C_Will_O_Wisp
 		case 19294:	// C_CatEars_Cyber_HeadP_R
@@ -1294,7 +1295,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 		close;
 
 	delequip .@part;
-	if (rand(1,100) < 51) {
+	if (rand(1,100) < 99) {
 		mes "[Aver De Dosh]";
 		mes "Wow... Elegance!!";
 		mes "This is perfect... Wow!";
@@ -1362,7 +1363,8 @@ mal_in01,20,107,3	script	Lace La Zard#cos_ect	4_FROG,{
 	case 20762:	// C_GreatDevilWing
 	case 20763:	// C_Amistr_Bag
 	case 20764:	// C_Fallen_Angel_Wing
-	case 20765:	// C_Archangel_Wing
+	case 20765:	// C_Archangel_Wing 
+	case 20572:	// C_WingOfHeart 
 		break;
 	default:
 		mes "[Lace La Zard]";
@@ -1453,7 +1455,7 @@ mal_in01,20,107,3	script	Lace La Zard#cos_ect	4_FROG,{
 
 	delitem .@id, 1;
 	delequip .@part;
-	if (rand(100) < 50) {
+	if (rand(100) < 99) {
 		mes "[Lace La Zard]";
 		mes "Beautiful!!";
 		mes "Did I really made this myself?!!!";

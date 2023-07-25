@@ -7300,7 +7300,7 @@ Body:
           - FlyingGalapago
           - Falconer_Claw
     Script: |
-      bonus2 bSubSkill,"HT_BLITZBEAT",200;
+      bonus2 bSkillAtk,"HT_BLITZBEAT",10;
   - Combos:
       - Combo:
           - Gambler_Seal

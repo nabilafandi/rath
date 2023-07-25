@@ -17,7 +17,7 @@
 //============================================================
 
 yuno,164,200,4	script	Noyee#G	101,{
-	if (BaseLevel < 70) {
+	if (BaseLevel < 2) {
 		mes "[Noyee]";
 		mes "Did you know that there's a difference between the armor you can buy from NPC shops and the kinds you obtain from hunting monsters?";
 		next;
@@ -66,7 +66,7 @@ que_god01,98,98,4	script	Manager#G	69,{
 		mes "^3355FFWait a second! Right now, you're carrying too many items with you. Please come back after putting some of your things into Kafra Storage.^000000";
 		close;
 	}
-	if (BaseLevel < 70) {
+	if (BaseLevel < 2) {
 		mes "[Cukure]";
 		mes "I can't believe how busy I am at work nowadays. I don't even have time to see any of my friends or go shopping.";
 		next;
@@ -1011,7 +1011,7 @@ que_god01,55,47,3	script	Researcher#G3	803,{
 					set .@count_sl_1,.@count_sl_1 + 1;
 				}
 				next;
-				if (.@count_sl_1 > 14) {
+				if (.@count_sl_1 > 1) {
 					mes "[Kurdt]";
 					mes "Ah....!";
 					mes "The materials you have should be enough for me to conduct my experiment. Thank you so much.";
