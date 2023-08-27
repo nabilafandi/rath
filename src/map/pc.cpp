@@ -7074,10 +7074,10 @@ bool pc_memo(map_session_data* sd, int pos)
 		clif_skill_memomessage(sd,2); // "You haven't learned Warp."
 		return false;
 	}
-	if( skill < 2 || skill - 2 < pos ) {
-		clif_skill_memomessage(sd,1); // "Skill Level is not high enough."
-		return false;
-	}
+	// if( skill < 2 || skill - 2 < pos ) {
+	// 	clif_skill_memomessage(sd,1); // "Skill Level is not high enough."
+	// 	return false;
+	// }
 
 	if( pos == -1 )
 	{

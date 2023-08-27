@@ -1,0 +1,166 @@
+--- src/common/mmo.hpp	Mon Aug 30 15:27:39 2021
++++ src/common/mmo.hpp	Mon Aug 30 17:48:57 2021
+@@ -125,7 +125,13 @@
+ #define PINCODE_LENGTH 4
+ 
+ #define MAX_FRIENDS 40
+-#define MAX_MEMOPOINTS 3
++
++#if PACKETVER_MAIN_NUM >= 20170502 || PACKETVER_RE_NUM >= 20170419 || defined(PACKETVER_ZERO)
++	#define MAX_MEMOPOINTS 9
++#else
++	#define MAX_MEMOPOINTS 3
++#endif
++
+ #define MAX_SKILLCOOLDOWN 20
+ 
+ //Size of the fame list arrays.
+--- src/map/clif.cpp	Mon Aug 30 15:27:39 2021
++++ src/map/clif.cpp	Mon Aug 30 19:08:40 2021
+@@ -5899,23 +5899,44 @@
+ 
+ /// Presents a list of available warp destinations (ZC_WARPLIST).
+ /// 011c <skill id>.W { <map name>.16B }*4
+-void clif_skill_warppoint(struct map_session_data* sd, uint16 skill_id, uint16 skill_lv, unsigned short map1, unsigned short map2, unsigned short map3, unsigned short map4)
++void clif_skill_warppoint(struct map_session_data* sd, uint16 skill_id, uint16 skill_lv, unsigned short map1, unsigned short map2, unsigned short map3, unsigned short map4, unsigned short map5, unsigned short map6, unsigned short map7, unsigned short map8, unsigned short map9, unsigned short map10)
+ {
+-	int fd;
++	int fd, len, mapsCount = 0;
++	struct PACKET_ZC_WARPLIST *p = (PACKET_ZC_WARPLIST *)packet_buffer;
++
+ 	nullpo_retv(sd);
+ 	fd = sd->fd;
+ 
+-	WFIFOHEAD(fd,packet_len(0x11c));
+-	WFIFOW(fd,0) = 0x11c;
+-	WFIFOW(fd,2) = skill_id;
+-	memset(WFIFOP(fd,4), 0x00, 4*MAP_NAME_LENGTH_EXT);
+-	if (map1 == (unsigned short)-1) strcpy(WFIFOCP(fd,4), "Random");
+-	else // normal map name
+-	if (map1 > 0) mapindex_getmapname_ext(mapindex_id2name(map1), WFIFOCP(fd,4));
+-	if (map2 > 0) mapindex_getmapname_ext(mapindex_id2name(map2), WFIFOCP(fd,20));
+-	if (map3 > 0) mapindex_getmapname_ext(mapindex_id2name(map3), WFIFOCP(fd,36));
+-	if (map4 > 0) mapindex_getmapname_ext(mapindex_id2name(map4), WFIFOCP(fd,52));
+-	WFIFOSET(fd,packet_len(0x11c));
++	memset(p, 0, sizeof(struct PACKET_ZC_WARPLIST) + sizeof(struct PACKET_ZC_WARPLIST_sub) * (MAX_MEMOPOINTS + 1));
++
++	p->packetType = skilWarpPointType;
++	p->skillId = skill_id;
++
++	if (map1 == (unsigned short)-1) {
++		strcpy(p->maps[mapsCount++].map, "Random");
++	} else { // normal map name
++		if (map1 > 0) mapindex_getmapname_ext(mapindex_id2name(map1), p->maps[mapsCount++].map);
++	}
++	if (map2 > 0) mapindex_getmapname_ext(mapindex_id2name(map2), p->maps[mapsCount++].map);
++	if (map3 > 0) mapindex_getmapname_ext(mapindex_id2name(map3), p->maps[mapsCount++].map);
++	if (map4 > 0) mapindex_getmapname_ext(mapindex_id2name(map4), p->maps[mapsCount++].map);
++
++#if PACKETVER_MAIN_NUM >= 20170502 || PACKETVER_RE_NUM >= 20170419 || defined(PACKETVER_ZERO)
++
++	if (map5 > 0) mapindex_getmapname_ext(mapindex_id2name(map5), p->maps[mapsCount++].map);
++	if (map6 > 0) mapindex_getmapname_ext(mapindex_id2name(map6), p->maps[mapsCount++].map);
++	if (map7 > 0) mapindex_getmapname_ext(mapindex_id2name(map7), p->maps[mapsCount++].map);
++	if (map8 > 0) mapindex_getmapname_ext(mapindex_id2name(map8), p->maps[mapsCount++].map);
++	if (map9 > 0) mapindex_getmapname_ext(mapindex_id2name(map9), p->maps[mapsCount++].map);
++	if (map10 > 0) mapindex_getmapname_ext(mapindex_id2name(map10), p->maps[mapsCount++].map);
++
++	len = sizeof(struct PACKET_ZC_WARPLIST) + sizeof(struct PACKET_ZC_WARPLIST_sub) * mapsCount;
++	p->packetLength = len;
++#else
++	len = sizeof(struct PACKET_ZC_WARPLIST);
++#endif
++
++	clif_send(p, len, &sd->bl, SELF);
+ 
+ 	sd->menuskill_id = skill_id;
+ 	if (skill_id == AL_WARP) {
+--- src/map/clif.hpp	Mon Aug 30 15:27:39 2021
++++ src/map/clif.hpp	Mon Aug 30 18:41:14 2021
+@@ -707,7 +707,7 @@
+ bool clif_skill_nodamage(struct block_list *src,struct block_list *dst,uint16 skill_id,int heal,t_tick tick);
+ void clif_skill_poseffect(struct block_list *src,uint16 skill_id,int val,int x,int y,t_tick tick);
+ void clif_skill_estimation(struct map_session_data *sd,struct block_list *dst);
+-void clif_skill_warppoint(struct map_session_data* sd, uint16 skill_id, uint16 skill_lv, unsigned short map1, unsigned short map2, unsigned short map3, unsigned short map4);
++void clif_skill_warppoint(struct map_session_data* sd, uint16 skill_id, uint16 skill_lv, unsigned short map1, unsigned short map2 = 0, unsigned short map3 = 0, unsigned short map4 = 0, unsigned short map5 = 0, unsigned short map6 = 0, unsigned short map7 = 0, unsigned short map8 = 0, unsigned short map9 = 0, unsigned short map10 = 0);
+ void clif_skill_memomessage(struct map_session_data* sd, int type);
+ void clif_skill_teleportmessage(struct map_session_data *sd, int type);
+ void clif_skill_produce_mix_list(struct map_session_data *sd, int skill_id, int trigger);
+--- src/map/skill.cpp	Mon Aug 30 15:27:40 2021
++++ src/map/skill.cpp	Mon Aug 30 19:10:33 2021
+@@ -8100,9 +8100,9 @@
+ 
+ 			clif_skill_nodamage(src,bl,skill_id,skill_lv,1);
+ 			if( skill_lv == 1 && skill_id != ALL_ODINS_RECALL )
+-				clif_skill_warppoint(sd,skill_id,skill_lv, (unsigned short)-1,0,0,0);
++				clif_skill_warppoint(sd,skill_id,skill_lv, (unsigned short)-1);
+ 			else
+-				clif_skill_warppoint(sd,skill_id,skill_lv, (unsigned short)-1,sd->status.save_point.map,0,0);
++				clif_skill_warppoint(sd,skill_id,skill_lv, (unsigned short)-1,sd->status.save_point.map);
+ 		} else
+ 			unit_warp(bl,-1,-1,-1,CLR_TELEPORT);
+ 		break;
+@@ -12411,11 +12411,25 @@
+ 	case AL_WARP:
+ 		if(sd)
+ 		{
++#if PACKETVER_MAIN_NUM >= 20170502 || PACKETVER_RE_NUM >= 20170419 || defined(PACKETVER_ZERO)
++			clif_skill_warppoint(sd, skill_id, skill_lv, sd->status.save_point.map,
++				(skill_lv >= 2) ? sd->status.memo_point[0].map : 0,
++				(skill_lv >= 3) ? sd->status.memo_point[1].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[2].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[3].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[4].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[5].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[6].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[7].map : 0,
++				(skill_lv >= 4) ? sd->status.memo_point[8].map : 0
++				);
++#else
+ 			clif_skill_warppoint(sd, skill_id, skill_lv, sd->status.save_point.map,
+ 				(skill_lv >= 2) ? sd->status.memo_point[0].map : 0,
+ 				(skill_lv >= 3) ? sd->status.memo_point[1].map : 0,
+ 				(skill_lv >= 4) ? sd->status.memo_point[2].map : 0
+ 			);
++#endif
+ 		}
+ 		if( sc && sc->data[SC_CURSEDCIRCLE_ATKER] ) //Should only remove after the skill has been casted.
+ 			status_change_end(src,SC_CURSEDCIRCLE_ATKER,INVALID_TIMER);
+@@ -12987,7 +13001,7 @@
+ 
+ 	case AL_WARP:
+ 		{
+-			const struct point *p[4];
++			const struct point *p[10];
+ 			std::shared_ptr<s_skill_unit_group> group;
+ 			int i, lv, wx, wy;
+ 			int maxcount=0;
+@@ -13005,6 +13019,15 @@
+ 			p[2] = &sd->status.memo_point[1];
+ 			p[3] = &sd->status.memo_point[2];
+ 
++#if PACKETVER_MAIN_NUM >= 20170502 || PACKETVER_RE_NUM >= 20170419 || defined(PACKETVER_ZERO)
++			p[4] = &sd->status.memo_point[3];
++			p[5] = &sd->status.memo_point[4];
++			p[6] = &sd->status.memo_point[5];
++			p[7] = &sd->status.memo_point[6];
++			p[8] = &sd->status.memo_point[7];
++			p[9] = &sd->status.memo_point[8];
++#endif
++
+ 			if((maxcount = skill_get_maxcount(skill_id, sd->menuskill_val)) > 0) {
+ 				unit_skillunit_maxcount(sd->ud, skill_id, maxcount);
+ 
+@@ -13020,7 +13043,12 @@
+ 			wy = sd->menuskill_val&0xffff;
+ 
+ 			if( lv <= 0 ) return 0;
++
++#if PACKETVER_MAIN_NUM >= 20170502 || PACKETVER_RE_NUM >= 20170419 || defined(PACKETVER_ZERO)
++			if( lv >= 4 ) lv = 10; // crash prevention
++#else
+ 			if( lv > 4 ) lv = 4; // crash prevention
++#endif
+ 
+ 			// check if the chosen map exists in the memo list
+ 			ARR_FIND( 0, lv, i, mapindex == p[i]->map );

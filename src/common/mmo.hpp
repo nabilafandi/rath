@@ -162,7 +162,7 @@ const t_itemid WEDDING_RING_F = 2635;
 #define PINCODE_LENGTH 4
 
 #define MAX_FRIENDS 40
-#define MAX_MEMOPOINTS 3
+#define MAX_MEMOPOINTS 9
 #define MAX_SKILLCOOLDOWN 20
 
 //Size of the fame list arrays.

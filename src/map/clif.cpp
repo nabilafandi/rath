@@ -6261,7 +6261,7 @@ void clif_skill_poseffect(struct block_list *src,uint16 skill_id,int val,int x,i
 
 /// Presents a list of available warp destinations (ZC_WARPLIST).
 /// 011c <skill id>.W { <map name>.16B }*4
-void clif_skill_warppoint( map_session_data* sd, uint16 skill_id, uint16 skill_lv, const char* map1, const char* map2, const char* map3, const char* map4 ){
+void clif_skill_warppoint( map_session_data* sd, uint16 skill_id, uint16 skill_lv, const char* map1, const char* map2, const char* map3, const char* map4, const char* map5, const char* map6, const char* map7, const char* map8, const char* map9 ){
 	int fd;
 	nullpo_retv(sd);
 	fd = sd->fd;
@@ -6282,6 +6282,21 @@ void clif_skill_warppoint( map_session_data* sd, uint16 skill_id, uint16 skill_l
 	if( strcmp( "", map4 ) != 0 ){
 		mapindex_getmapname_ext( map4, WFIFOCP( fd, 52 ) );
 	}
+	if( strcmp( "", map5 ) != 0 ){
+		mapindex_getmapname_ext( map5, WFIFOCP( fd, 68 ) );
+	}
+	if( strcmp( "", map6 ) != 0 ){
+		mapindex_getmapname_ext( map6, WFIFOCP( fd, 84 ) );
+	}
+	if( strcmp( "", map7 ) != 0 ){
+		mapindex_getmapname_ext( map7, WFIFOCP( fd, 100 ) );
+	}
+	if( strcmp( "", map8 ) != 0 ){
+		mapindex_getmapname_ext( map8, WFIFOCP( fd, 116 ) );
+	}
+	if( strcmp( "", map9 ) != 0 ){
+		mapindex_getmapname_ext( map9, WFIFOCP( fd, 132 ) );
+	}
 	WFIFOSET(fd,packet_len(0x11c));
 
 	sd->menuskill_id = skill_id;
@@ -6289,7 +6304,7 @@ void clif_skill_warppoint( map_session_data* sd, uint16 skill_id, uint16 skill_l
 		sd->menuskill_val = (sd->ud.skillx<<16)|sd->ud.skilly; //Store warp position here.
 		sd->state.workinprogress = WIP_DISABLE_ALL;
 	} else
-		sd->menuskill_val = skill_lv;
+		sd->menuskill_val = 10;
 }
 
 

@@ -13822,8 +13822,14 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 			clif_skill_warppoint(sd, skill_id, skill_lv, sd->status.save_point.map,
 				(skill_lv >= 2) ? sd->status.memo_point[0].map : "",
 				(skill_lv >= 3) ? sd->status.memo_point[1].map : "",
-				(skill_lv >= 4) ? sd->status.memo_point[2].map : ""
+				(skill_lv >= 4) ? sd->status.memo_point[2].map : "",
+				(skill_lv >= 4) ? sd->status.memo_point[3].map : "",
+				(skill_lv >= 4) ? sd->status.memo_point[4].map : "",
+				(skill_lv >= 4) ? sd->status.memo_point[5].map : "",
+				(skill_lv >= 4) ? sd->status.memo_point[6].map : "",
+				(skill_lv >= 4) ? sd->status.memo_point[7].map : ""
 			);
+
 		}
 		if( sc && sc->getSCE(SC_CURSEDCIRCLE_ATKER) ) //Should only remove after the skill has been casted.
 			status_change_end(src,SC_CURSEDCIRCLE_ATKER);
@@ -14491,7 +14497,7 @@ int skill_castend_map (map_session_data *sd, uint16 skill_id, const char *mapnam
 
 	case AL_WARP:
 		{
-			const struct s_point_str *p[4];
+			const struct s_point_str *p[10];
 			std::shared_ptr<s_skill_unit_group> group;
 			int i, lv, wx, wy;
 			int maxcount=0;
@@ -14508,6 +14514,12 @@ int skill_castend_map (map_session_data *sd, uint16 skill_id, const char *mapnam
 			p[1] = &sd->status.memo_point[0];
 			p[2] = &sd->status.memo_point[1];
 			p[3] = &sd->status.memo_point[2];
+			p[4] = &sd->status.memo_point[3];
+			p[5] = &sd->status.memo_point[4];
+			p[6] = &sd->status.memo_point[5];
+			p[7] = &sd->status.memo_point[6];
+			p[8] = &sd->status.memo_point[7];
+			p[9] = &sd->status.memo_point[8];
 
 			if((maxcount = skill_get_maxcount(skill_id, sd->menuskill_val)) > 0) {
 				unit_skillunit_maxcount(sd->ud, skill_id, maxcount);
@@ -14524,7 +14536,7 @@ int skill_castend_map (map_session_data *sd, uint16 skill_id, const char *mapnam
 			wy = sd->menuskill_val&0xffff;
 
 			if( lv <= 0 ) return 0;
-			if( lv > 4 ) lv = 4; // crash prevention
+			if( lv > 4 ) lv = 10; // crash prevention
 
 			// check if the chosen map exists in the memo list
 			ARR_FIND( 0, lv, i, strncmp( p[i]->map, mapname, sizeof( p[i]->map ) ) == 0 );

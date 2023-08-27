@@ -250,12 +250,12 @@ OnCalculate:
 		set .@funds[.@i], getd("$fund_"+.@cas$[.@i]+"01")+getd("$fund_"+.@cas$[.@i]+"02")+getd("$fund_"+.@cas$[.@i]+"03")+getd("$fund_"+.@cas$[.@i]+"04")+getd("$fund_"+.@cas$[.@i]+"05")+getd("$fund_"+.@cas$[.@i]+"_extra");
 
 		// 70,000,000z opens Hall of Abyss and F2.
-		if (.@funds[.@i] >= 700) {
+		if (.@funds[.@i] >= 2) {
 			setd "$"+.@cas$[.@i]+"_invest_result",3;
 			set .@total_700,1;
 		}
 		// 20,000,000z opens F2 and a chance for Hall of Abyss.
-		else if (.@funds[.@i] >= 200) {
+		else if (.@funds[.@i] >= 1) {
 			setd "$"+.@cas$[.@i]+"_invest_result",2;
 			set .@total_200,1;
 		}
