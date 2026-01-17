@@ -37,11 +37,11 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 		next;
 		if (select( "Request to collect stories", "Conversation" ) == 1) {
 			mes "[Ragi]";
-			if (BaseLevel < 131) {
+			if (BaseLevel < 1) {
 				cutin "ragi02",0;
 				mes "This is the request of Aigu but it is dangerous. You should grow up more.";
 			}
-			else if (BaseLevel < 141) {
+			else if (BaseLevel < 1) {
 				mes "This song and story is about monsters. ^FF0000Tell me the story about how you felt while you were fighting with them.^000000";
 				next;
 				switch( select( "The story of the lost", "Story of devil", "Story from far away distance" ) ) {

@@ -27,10 +27,10 @@ moc_para01,40,38,3	script	Mission [41 - 55]	857,{
 		close;
 	}
 	if (checkquest(12088) == -1) {
-		if (BaseLevel < 41 || BaseLevel > 55) {
-			mes "Mission bulletin board for Lv41~55 adventurers.";
-			close;
-		}
+//		if (BaseLevel < 41 || BaseLevel > 55) {
+//			mes "Mission bulletin board for Lv41~55 adventurers.";
+//			close;
+//		}
 		mes "[Mission Board]";
 		mes "Mission bulletin board.";
 		next;

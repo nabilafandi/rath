@@ -22,7 +22,7 @@
 // Broken Sword :: broken_sword
 //============================================================ 
 gon_in,17,93,5	script	Chief#gon	775,{
-	if (BaseLevel > 50) {
+	if (BaseLevel > 1) {
 		if (b_sword == 0) {
 			set b_sword,1;
 			mes "[Shi Yan Wen]";
@@ -3711,7 +3711,7 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		mes "I can't believe I dropped";
 		mes "my irreplaceable knife! Ahhhhhh!";
 		next;
-		if (BaseLevel >= 20) {
+		if (BaseLevel >= 1) {
 			set nakha,1;
 			setquest 10034;
 			mes "[Han Ran Jiao]";

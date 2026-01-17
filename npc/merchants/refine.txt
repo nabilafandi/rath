@@ -1081,7 +1081,7 @@ function	script	phramain	{
 
 // Ori/Elu Refiners
 //============================================================
-prt_in,63,69,3	script	Dietrich	84,{
+prt_in,57,71,3	script	Dietrich	84,{
 	callfunc "orimain","Dietrich";
 	end;
 }
@@ -1192,7 +1192,7 @@ moc_ruins,107,94,4	script	Repairman#moc	99,{
 	end;
 }
 
-payon,143,165,4	script	Repairman#pay	88,{
+payon,152,96,4	script	Repairman#pay	88,{
 	callfunc "repairmain","Repairman";
 	end;
 }
@@ -1257,15 +1257,15 @@ sch_gld,340,80,7	script	Repairman#sch_gld	86,{
 function	script	repairmain	{
 	.@repairprice = 5000;
 	.@npc_name$ = getarg(0);
-	mes "["+ .@npc_name$ +"]";
-	mes "Hey there!";
-	mes "Do you want me";
-	mes "to repair any items?";
-	mes "You can count on me";
-	mes "for item repairs!";
-	next;
-	switch(select("Actually, I do have some items...:None at the moment.")) {
-	case 1:
+//	mes "["+ .@npc_name$ +"]";
+//	mes "Hey there!";
+//	mes "Do you want me";
+//	mes "to repair any items?";
+//	mes "You can count on me";
+//	mes "for item repairs!";
+//	next;
+//	switch(select("Actually, I do have some items...:None at the moment.")) {
+//	case 1:
 		.@checkitem = 1;
 		while (1) {
 			if (getbrokenid(.@checkitem) == 0) {
@@ -1283,19 +1283,19 @@ function	script	repairmain	{
 			mes "If everyone is like you, I'm going to be unemployed!! Haha~!";
 			close;
 		}
-		mes "["+ .@npc_name$ +"]";
-		mes "Hmm...";
-		mes "Let's see...";
-		mes "Out of all your items,";
-		mes "" + .@checkitem + " are damaged.";
-		mes "Would you like to repair?";
-		next;
+//		mes "["+ .@npc_name$ +"]";
+//		mes "Hmm...";
+//		mes "Let's see...";
+//		mes "Out of all your items,";
+//		mes "" + .@checkitem + " are damaged.";
+//		mes "Would you like to repair?";
+//		next;
 		.@totalcost = .@repairprice*.@checkitem;
-		mes "["+ .@npc_name$ +"]";
-		mes "Each repair costs " + .@repairprice + " Zeny. So to repair all your damaged items would cost " + .@totalcost + " Zeny! Would you like to repair the items?";
-		next;
-		switch(select("Yes:No")) {
-		case 1:
+//		mes "["+ .@npc_name$ +"]";
+//		mes "Each repair costs " + .@repairprice + " Zeny. So to repair all your damaged items would cost " + .@totalcost + " Zeny! Would you like to repair the items?";
+//		next;
+//		switch(select("Yes:No")) {
+//		case 1:
 			if (Zeny < .@totalcost) {
 				mes "["+ .@npc_name$ +"]";
 				mes "Whoa whoa...";
@@ -1325,20 +1325,20 @@ function	script	repairmain	{
 				mes "Mmm? Something's wrong. Wait... Equip the items you need to repair and then come back to me.";
 				close;
 			}
-		case 2:
-			mes "["+ .@npc_name$ +"]";
-			mes "Well, it's no skin off my nose, but it's not good to leave items damaged. You should get them repaired as soon as possible!";
-			close;
-		}
-	case 2:
-		mes "["+ .@npc_name$ +"]";
-		mes "Hohoho...";
-		mes "You don't have";
-		mes "any business with me";
-		mes "if you don't have any";
-		mes "items to repair.";
-		close;
-	}
+//		case 2:
+//			mes "["+ .@npc_name$ +"]";
+//			mes "Well, it's no skin off my nose, but it's not good to leave items damaged. You should get them repaired as soon as possible!";
+//			close;
+//		}
+//	case 2:
+//		mes "["+ .@npc_name$ +"]";
+//		mes "Hohoho...";
+//		mes "You don't have";
+//		mes "any business with me";
+//		mes "if you don't have any";
+//		mes "items to repair.";
+//		close;
+//	}
 }
 
 //============================================================ 

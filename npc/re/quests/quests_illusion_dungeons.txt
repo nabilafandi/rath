@@ -1383,7 +1383,7 @@ gef_dun01,132,223,5	script	Grimm#ilgf	4_M_MINISTER,{
 		mes "Are you sure you can carry all that stuff? Why don't you lighten your bag?";
 		close;
 	}
-	if (BaseLevel < 130) {
+	if (BaseLevel < 20) {
 		mes "[Grimm]";
 		mes "This place is too dangerous for you. Pleae come back when you're stronger.";
 		close;
@@ -3796,7 +3796,7 @@ gef_d01_i,81,135,5	script	Wizard#ilgf01	4_F_BOMI,5,5,{
 		mes "Adventurer, did you forget what I asked? I need ^0000cd10 Sticky Bloods from Matte Drainliars and 10 Mushroom Saps from Neon Mushrooms^000000. Thank you.";
 		close;
 	case 2:
-		if (countitem(25268) < 10 || countitem(25269) < 10) {
+		if (countitem(25268) < 1 || countitem(25269) < 1) {
 			if (mobcount("gef_d01_i", "ill_vampire_spawn_dracula::OnMobDead") > 0) {
 				mes "[" + .@player_name$ + "]";
 				mes "Bomi is away. I'll just leave these here.";
@@ -3812,25 +3812,25 @@ gef_d01_i,81,135,5	script	Wizard#ilgf01	4_F_BOMI,5,5,{
 		if (mobcount("gef_d01_i", "ill_vampire_spawn_dracula::OnMobDead") > 0) {
 			mes "[" + .@player_name$ + "]";
 			mes "Bomi is away. I'll just leave these here.";
-			delitem 25268,10;// Sticky_Blood
-			delitem 25269,10;// Mushroom_Sap
+			delitem 25268,1;// Sticky_Blood
+			delitem 25269,1;// Mushroom_Sap
 			erasequest 14671;// Unreliable Fake Blood
-			setquest 14674;// Time to Digest
+			//setquest 14674;// Time to Digest
 			getexp 500000,500000;
 			getitem 25271,1;// Illusion Stone
 			close;
 		}
 		mes "[Bomi]";
 		mes "Adventurer, thank you for bringing these to me.";
-		delitem 25268,10;// Sticky_Blood
-		delitem 25269,10;// Mushroom_Sap
+		delitem 25268,1;// Sticky_Blood
+		delitem 25269,1;// Mushroom_Sap
 		erasequest 14671;// Unreliable Fake Blood
-		setquest 14674;// Time to Digest
+		//setquest 14674;// Time to Digest
 		getexp 500000,500000;
 		getitem 25271,1;// Illusion Stone
 		if (mobcount("gef_d01_i", "ill_vampire_spawn_bomi::OnMobDead") < 1 && mobcount("gef_d01_i", "ill_vampire_spawn_dracula::OnMobDead") < 1) {
 			if (.bomi_count < 30)
-				.bomi_count++;
+				.bomi_count += 30;
 		}
 		next;
 		if (.bomi_count == 29) {
@@ -3851,7 +3851,7 @@ gef_d01_i,81,135,5	script	Wizard#ilgf01	4_F_BOMI,5,5,{
 			mes "Then please come back after dawn.";
 			close;
 		}
-		if (.bomi_count == 30) {
+		if (.bomi_count > 29) {
 			mes "[Bomi]";
 			mes "I ran out of the ingredients I had.";
 			next;

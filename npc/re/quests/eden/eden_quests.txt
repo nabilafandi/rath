@@ -3836,9 +3836,9 @@ moc_para01,111,83,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{
 				.@string$ = "I asked you to get 20 Iron Ore, and 10 Iron.";
 			}
 			else {
-				.@item[0] = 7319;
-				.@amount[0] = 20;
-				.@countitem[0] = countitem(7319);
+				.@item[0] = 999;
+				.@amount[0] = 5;
+				.@countitem[0] = countitem(999);
 				.@add = 1;
 				.@string$ = "I asked you to get 20 Used Iron Plate.";
 			}
@@ -3875,17 +3875,17 @@ moc_para01,111,83,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{
 			mes "Eden Group Manteau II, Eden Group Armor IV, Eden Group Boots IV.";
 		}
 		else if (para_2nd04 == 4) {
-			if (checkquest(7241,PLAYTIME) == 0) {
-				mes "Come back later.";
-				mes "You have to wait for some time first.";
-			}
-			else {
+	//		if (checkquest(7241,PLAYTIME) == 0) {
+	//			mes "Come back later.";
+	//			mes "You have to wait for some time first.";
+	//		}
+	//		else {
 				mes "Uh-huh...";
 				mes "What are we going to... oh don't worry.";
 				mes "Come to me later.";
 				erasequest 7241;// Errands for Thorn timer
 				para_2nd04 = 0;
-			}
+	//		}
 		}
 		close;
 	case 3:

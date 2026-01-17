@@ -234,7 +234,7 @@ OnTouch_:
 	mes "[Suspicious Guy]";
 	mes "So just tell me what you want, and I'll cut you a deal from amongst my valuable, yet affordable, wares.";
 	next;
-	switch(select("Gimme some potion so I can recover HP.:Um, you got a Knife?:Don't you have a good Manteau?:Don't you have something besides this?")) {
+	switch(select("Gimme some potion so I can recover HP.:Um, you got a Sword?:Don't you have a good Manteau?:Don't you have something besides this?")) {
 	case 1:
 		mes "[Suspicious Guy]";
 		mes "Ah, you into Potions, eh?";
@@ -354,7 +354,8 @@ OnTouch_:
 			close;
 		}
 		set Zeny, Zeny-.@Main_gauche_hap;
-		getitem 1207,.@input; //Main_Gauche
+		getitem 1101,.@input; //Sword
+//		getitem 1207,.@input; //Main_Gauche
 		break;
 	case 3:
 		mes "[Suspicious Guy]";

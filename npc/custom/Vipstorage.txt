@@ -1,0 +1,12 @@
+izlude,123,149,4	script	VIPStorage	113,{
+		openstorage2 1,STOR_MODE_GET|STOR_MODE_PUT;
+	}
+
+
+alberta,32,245,4	duplicate(VIPStorage)	VIPStorage#alb	113
+aldebaran,148,115,4	duplicate(VIPStorage)	VIPStorage#alde	113
+geffen,112,64,4	duplicate(VIPStorage)	VIPStorage#gef	113
+morocc,159,97,4	duplicate(VIPStorage)	VIPStorage#mor	113
+payon,191,105,4	duplicate(VIPStorage)	VIPStorage#pay	113
+prontera,142,83,4	duplicate(VIPStorage)	VIPStorage#prt	113
+yuno,162,50,4	duplicate(VIPStorage)	VIPStorage#yuno	113

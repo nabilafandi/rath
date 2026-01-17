@@ -132,25 +132,25 @@ prontera,124,297,3	script	Tialfi	706,{
 					delitem 757,50; //Elunium_Stone
 					set god_mjo_0,11;
 					if (.@gift == 1) {
-						getitem 1471,1; // Hell_Fire
+						getitem 1497,1; // Hell_Fire
 					}
 					else if (.@gift == 2) {
-						getitem 1526,1; // Slash
+						getitem 1565,1; // Slash
 					}
 					else if (.@gift == 3) {
-						getitem 1231,1; // Bazerald
+						getitem 13033,1; // Bazerald
 					}
 					else if (.@gift == 4) {
-						getitem 1367,1; // Slaughter
+						getitem 1371,1; // Slaughter
 					}
 					else if (.@gift == 5) {
-						getitem 1722,1; // Balistar
+						getitem 1727,1; // Balistar
 					}
 					else if (.@gift == 6) {
-						getitem 1230,1; // House_Auger
+						getitem 13017,1; // House_Auger
 					}
 					else if (.@gift == 7) {
-						getitem 1141,1; // Immaterial_Sword
+						getitem 13413,1; // Immaterial_Sword
 					}
 					else if (.@gift == 8) {
 						getitem 1813,1; // Kaiser_Knuckle

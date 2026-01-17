@@ -84,9 +84,9 @@ moc_para01,44,81,3	script	Melody-Jack#1	4_M_MELODY,8,8,{
 			}
 		}
 		mes "[Melody-Jack]";
-		if (BaseLevel < 121)
+		if (BaseLevel < 1)
 			mes "Oh, I made a mistake. You are not the level of adventurer I am looking for. I'm looking for base level 121 to 130 adventurers.";
-		else if (BaseLevel < 131) {
+		else if (BaseLevel < 1) {
 			mes "I do not like it but a deal is a deal. Please come back after clearing monsters in the places where Aigu asked to search.";
 			next;
 			switch( select( "Thanatos Tower related ", "Rachel Shrine related ", "Nameless Island related ", "Abyss Lake related " ) ) {
@@ -603,12 +603,12 @@ moc_para01,17,77,5	script	Aigu#1	4_F_IU,{
 			mes "[Aigu]";
 			mes "Actually our songs have no magic but I am sure it helps people because I am singing.";
 		}
-		else if (BaseLevel < 121) {
+		else if (BaseLevel < 1) {
 			cutin "igu04",2;
 			mes "[Aigu]";
 			mes "I think it is difficult for you to get my request? For now, I think it will make more people lost. How about widening your sight by travelling?";
 		}
-		else if (BaseLevel < 131) {
+		else if (BaseLevel < 1) {
 			mes "[Aigu]";
 			mes "I made a shelter for someone I am looking for and lost adventurers. I want to know which adventurer has been there.";
 			next;
@@ -784,7 +784,7 @@ tha_t06,126,128,3	script	Suspicious Monster#1	4_DEVIRUCHI,{
 	switch( select( "Yes","No" ) ) {
 		mes "[Disguised Adventurer]";
 	case 1:
-		if (BaseLevel < 121 || BaseLevel > 130) {
+		if (BaseLevel < 1 || BaseLevel > 130) {
 			mes "I could see that is not you at first glance!";
 			close;
 		}
