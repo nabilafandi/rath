@@ -4,3 +4,17 @@ char_server_port: 3307
 map_server_port: 3307
 web_server_port: 3307
 log_db_port: 3307
+
+login_server_ip: 127.0.0.1
+
+login_server_id: rathena
+login_server_pw: root
+login_server_db: rathena
+
+char_server_id: rathena
+char_server_pw: root
+char_server_db: rathena
+
+map_server_id: rathena
+map_server_pw: root
+map_server_db: rathena
