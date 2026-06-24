@@ -1,0 +1,6 @@
+login_server_port: 3307
+ipban_db_port: 3307
+char_server_port: 3307
+map_server_port: 3307
+web_server_port: 3307
+log_db_port: 3307
