@@ -1675,6 +1675,10 @@ int64 battle_calc_damage(block_list *src,block_list *bl,struct Damage *d,int64 d
 
 	if( !damage )
 		return 0;
+	// --- CUSTOM DAMAGE RATE MODIFIER START ---
+    if( battle_config.global_damage_rate != 100 )
+        damage = damage * battle_config.global_damage_rate / 100;
+    // --- CUSTOM DAMAGE RATE MODIFIER END ---
 	if( battle_config.ksprotection && mob_ksprotected(src, bl) )
 		return 0;
 
@@ -8254,6 +8258,7 @@ static const struct _battle_data {
 	{ "enable_critical",                    &battle_config.enable_critical,                 BL_PC,  BL_NUL, BL_ALL,         },
 	{ "mob_critical_rate",                  &battle_config.mob_critical_rate,               100,    0,      INT_MAX,        },
 	{ "critical_rate",                      &battle_config.critical_rate,                   100,    0,      INT_MAX,        },
+	{ "global_damage_rate",                 &battle_config.global_damage_rate,              100,    0,      INT_MAX,        },
 	{ "enable_baseatk",                     &battle_config.enable_baseatk,                  BL_CHAR|BL_HOM, BL_NUL, BL_ALL, },
 	{ "enable_baseatk_renewal",             &battle_config.enable_baseatk_renewal,          BL_ALL, BL_NUL, BL_ALL,         },
 	{ "enable_perfect_flee",                &battle_config.enable_perfect_flee,             BL_PC|BL_PET, BL_NUL, BL_ALL,   },

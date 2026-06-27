@@ -12,3 +12,5 @@
  *	 <datatype> name;
  **/
 
+int32 global_damage_rate;
+
