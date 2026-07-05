@@ -7921,7 +7921,7 @@ Body:
           - FlyingGalapago    # 5967
           - Falconer_Claw    # 28321
     Script: |
-      bonus2 bSubSkill,"HT_BLITZBEAT",200;
+        bonus2 bSubSkill,"HT_BLITZBEAT",200;
   - Combos:
       - Combo:
           - Gambler_Seal    # 5918

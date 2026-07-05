@@ -2027,49 +2027,49 @@ Body:
     MaxJobLevel: 10
     JobExp:
       - Level: 1
-        Exp: 10
+        Exp: 1500
       - Level: 2
-        Exp: 18
+        Exp: 1500
       - Level: 3
-        Exp: 28
+        Exp: 1500
       - Level: 4
         Exp: 40
       - Level: 5
-        Exp: 91
+        Exp: 1500
       - Level: 6
-        Exp: 151
+        Exp: 1500
       - Level: 7
-        Exp: 205
+        Exp: 1500
       - Level: 8
-        Exp: 268
+        Exp: 1500
       - Level: 9
-        Exp: 340
+        Exp: 1500
       - Level: 10
-        Exp: 999
+        Exp: 2500
   - Jobs:
       Novice_High: true
     MaxJobLevel: 10
     JobExp:
       - Level: 1
-        Exp: 11
+        Exp: 1500
       - Level: 2
-        Exp: 20
+        Exp: 1500
       - Level: 3
-        Exp: 31
+        Exp: 1500
       - Level: 4
-        Exp: 44
+        Exp: 40
       - Level: 5
-        Exp: 100
+        Exp: 1500
       - Level: 6
-        Exp: 166
+        Exp: 1500
       - Level: 7
-        Exp: 226
+        Exp: 1500
       - Level: 8
-        Exp: 295
+        Exp: 1500
       - Level: 9
-        Exp: 374
+        Exp: 1500
       - Level: 10
-        Exp: 999
+        Exp: 2500
   - Jobs:
       Swordman: true
       Mage: true

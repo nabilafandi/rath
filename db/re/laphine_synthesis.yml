@@ -1854,10 +1854,10 @@ Body:
     RewardGroup: FAN_UPGRADE_KIT
     Requirements:
       - Item: SeeOtter_Fan
-  - Item: Suit_Upgrade_Kit
-    RewardGroup: SUIT_UPGRADE_KIT
-    Requirements:
-      - Item: Kafra_Suit
+  # - Item: Suit_Upgrade_Kit
+  #   RewardGroup: SUIT_UPGRADE_KIT
+  #   Requirements:
+  #     - Item: Kafra_Suit
   - Item: FallenAngelWing_Reset
     RewardGroup: SCROLL_OF_FALLEN_ANGEL_WINGS
     Requirements:

@@ -670,11 +670,11 @@ OnRecvCastle:
 			mes "^ff0000The commercial growth level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great economist like you, Master.^000000";
 			close;
 		}
-		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY) >= 2) {
-			mes " ";
-			mes "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect riches of the guild to grow at a high rate.";
-			close;
-		}
+//		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY) >= 2) {
+//			mes " ";
+//			mes "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect riches of the guild to grow at a high rate.";
+//			close;
+//		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_ECONOMY) == 0) {
 			mes " ";
 			mes "The current investment amount required is ^ff0000"+.@eco_invest+"^000000 zeny. Will you invest?";
@@ -736,11 +736,11 @@ OnRecvCastle:
 			mes "^ff0000But the Castle Defense level of our Castle is at it's highest, 100%. No more investments are needed. Just as I have expected from a great strategist like you, Master.^000000";
 			close;
 		}
-		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE) >= 2) {
-			mes " ";
-			mes "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the Defenses of the guild to grow at a high rate.";
-			close;
-		}
+//		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE) >= 2) {
+//			mes " ";
+//			mes "^ff0000You have already invested twice today. You cannot invest any more.^000000 I expect the Defenses of the guild to grow at a high rate.";
+//			close;
+//		}
 		if (GetCastleData(strnpcinfo(2),CD_INVESTED_DEFENSE) == 0) {
 			mes " ";
 			mes "The current investment amount required is ^ff0000"+.@def_invest+"^000000 zeny. Will you invest?";

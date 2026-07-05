@@ -316,4 +316,4 @@ arug_dun01	mapflag	nosave	SavePoint
 // Events
 //============================================================
 evt_bomb	mapflag	nosave	SavePoint
-//evt_zombie	mapflag	nosave	SavePoint
+evt_zombie	mapflag	nosave	SavePoint

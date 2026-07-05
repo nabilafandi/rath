@@ -3645,7 +3645,7 @@ mid_camp,197,237,3	script	Schwarzwald Mechanic#1	869,{
 		}
 		else if (ep13_2_rhea == 12) {
 			set .@trs_time01,checkquest(8253,PLAYTIME);
-			if (.@trs_time01 == 2) {
+//			if (.@trs_time01 == 2) {
 				mes "[Mechanic Engineer Dorance]";
 				mes "Sigh, What should I do now?!";
 				next;
@@ -3716,16 +3716,16 @@ mid_camp,197,237,3	script	Schwarzwald Mechanic#1	869,{
 					getexp 1000000,300000;
 				getitem 2782,1; //Ring_Of_Wise_King
 				close;
-			}
-			else {
-				mes "- He has scattered mechanical parts -";
-				mes "- all over the room and so wrapped up -";
-				mes "- in his work -";
-				next;
-				mes "- I might get bitten if I bother him -";
-				mes "- Let's leave him alone -";
-				close;
-			}
+//			}
+//			else {
+//				mes "- He has scattered mechanical parts -";
+//				mes "- all over the room and so wrapped up -";
+//				mes "- in his work -";
+//				next;
+//				mes "- I might get bitten if I bother him -";
+//				mes "- Let's leave him alone -";
+//				close;
+//			}
 		}
 		else {
 			mes "[Mechanic Engineer Dorance]";

@@ -307,4 +307,4 @@ bra_fild01	mapflag	nightenabled
 //============================================================
 // Events
 //============================================================
-//evt_zombie	mapflag	nightenabled
+evt_zombie	mapflag	nightenabled

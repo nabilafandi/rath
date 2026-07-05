@@ -20,7 +20,7 @@
 
 yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 	if (BaseJob == Job_Alchemist) {
-		if (JobLevel < 40) {
+		if (JobLevel < 0) {
 			mes "[Pisruik]";
 			mes "^333333*Cough cough*^000000";
 			mes "Damn, if only I had";

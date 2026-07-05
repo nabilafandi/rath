@@ -21,7 +21,7 @@
 // Lost Puppies :: dogdog.sc
 //============================================================
 brasilis,297,307,5	script	Angelo#br	1_M_04,{
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Angelo]";
 		mes "Pets went out the village~!!";
 		mes "Gosh... what can I do... ?";
@@ -54,12 +54,10 @@ brasilis,297,307,5	script	Angelo#br	1_M_04,{
 		erasequest 9031;
 		setquest 9032;
 		specialeffect2 EF_ASSUMPTIO;
-		if (checkre(0)) {
-			consumeitem 607; //Yggdrasilberry
-			.@rand = rand(1,10);
-			if (.@rand > 4 && .@rand < 9) getitem 504,2; //White_Potion
-			else if (.@rand > 8) getitem 608,1; //Seed_Of_Yggdrasil
-		}
+		consumeitem 607; //Yggdrasilberry
+		.@rand = rand(1,10);
+		if (.@rand > 4 && .@rand < 9) getitem 504,2; //White_Potion
+		else if (.@rand > 8) getitem 608,1; //Seed_Of_Yggdrasil
 		close;
 	}
 	mes "[Angelo]";
@@ -155,7 +153,7 @@ brasilis,192,133,6	script	Lucia#brasilis	4_F_BRZ_WOMAN,{
 		getitem 6221,1; //Mystic_Leaf_Cat_Ball
 	}
 	--------------------------------------------------- */
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Lucia]";
 		mes "Hello.";
 		mes "I'm worried about ^FF0000Strange Hydra^000000's on";
@@ -226,15 +224,11 @@ brasilis,192,133,6	script	Lucia#brasilis	4_F_BRZ_WOMAN,{
 				//recall_completequest 9029;
 				if (.@nQState2 > -1) erasequest 9029;
 				setquest 9029;
-				if (checkre(0))
-					consumeitem 607; //Yggdrasilberry
+				consumeitem 607; //Yggdrasilberry
 				consumeitem 12070; //Luk_Dish05
 				consumeitem 12055; //Vit_Dish05
 				consumeitem 12065; //Dex_Dish05
-				if (checkre(0))
-					getitem 11502,3; //Light_Blue_Pot
-				else
-					getitem 505,5; //Blue_Potion
+				getitem 11502,3; //Light_Blue_Pot
 				close;
 			}
 			else {
@@ -411,12 +405,10 @@ brasilis,187,162,5	script	Candy Maker	4_M_BRZ_MAN1,{
 		brazil_gua = 11;
 		completequest 2200;
 		getitem 12414,1; //Guarana_Candy
-		if (checkre(0)) {
-			if (VIP_SCRIPT && vip_status(VIP_STATUS_ACTIVE))
-				getexp 105000,15000;
-			else
-				getexp 70000,10000;
-		}
+		if (VIP_SCRIPT && vip_status(VIP_STATUS_ACTIVE))
+			getexp 105000,15000;
+		else
+			getexp 70000,10000;
 		close;
 	}
 	else if (brazil_gua == 11) {
@@ -570,7 +562,7 @@ bra_in01,95,179,3	script	Cherto	4_M_BRZ_MAN2,{
 		mes "- I tell Cherto about the kid making animal-like sounds. -";
 		next;
 		mes "[Cherto]";
-		mes "Hoooh. That's unbelievable.";
+		mes "Hoooh. That's unbelivable.";
 		mes "That kid might be a guarana kid. Sure...";
 		mes "According to the story the kid can have conversations with animals.";
 		next;
@@ -1033,9 +1025,9 @@ brasilis,203,286,3	script	Botanist Karmen#bra	4_F_HUWOMAN,{
 		brazil_regia = 10;
 		completequest 2207;
 		if (VIP_SCRIPT && vip_status(VIP_STATUS_ACTIVE))
-			getexp 75000, checkre(0)?15000:0;
+			getexp 75000,15000;
 		else
-			getexp 50000, checkre(0)?10000:0;
+			getexp 50000,10000;
 		close;
 	}
 	else {
@@ -2458,7 +2450,7 @@ OnInit:
 }
 
 bra_in01,7,181,5	script	Curator#bra	4_M_BRZ_MAN2,{
-	if (BaseLevel < 40) {
+	if (BaseLevel < 1) {
 		mes "[Curator]";
 		mes "I'm sorry but this area is under construction right now.";
 		close;
@@ -2693,7 +2685,7 @@ brasilis,315,334,5	script	Shaman#nk	4_F_BRZ_INDOLD,{
 			}
 		}
 		else {
-			if (BaseLevel < 40) {
+			if (BaseLevel < 1) {
 				mes "[Anori]";
 				mes "Ah... we need a strong adventurer.";
 				mes "The tribe is facing a major threat.";
@@ -2858,13 +2850,9 @@ bra_dun02,157,74,5	script	Iara#nk	4_F_BRZ_WOMAN,2,2,{
 			mes "But... I think that the curse has been with me too long.";
 			mes "Get away from me quickly.";
 			delitem 11517,1; //Puri_Potion
-			if (checkre(0)) {
-				percentheal 100,100;
-				sc_start SC_INCFLEE,3600000,20;
-				sc_start SC_INCCRI,3600000,10;
-			}
-			else
-				sc_start SC_INCCRI,3600000,7;
+			percentheal 100,100;
+			sc_start SC_INCFLEE,3600000,20;
+			sc_start SC_INCCRI,3600000,10;
 			consumeitem 12043; //Str_Dish03
 			consumeitem 12063; //Dex_Dish03
 			consumeitem 12058; //Agi_Dish03

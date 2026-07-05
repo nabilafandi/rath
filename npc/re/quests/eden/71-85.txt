@@ -38,14 +38,15 @@ moc_para01,44,38,3	script	Mission [71 - 85]	857,{
 		next;
 	}
 
-	if (BaseLevel < 71) {
-		mes "- Only members of the -";
-		mes "- right level can read -";
-		mes "- this bulletin board. -";
-		mes "- Try to find a board -";
-		mes "- that suits your level. -";
-		close;
-	} else if (BaseLevel > 85) {
+	// if (BaseLevel < 71) {
+	// 	mes "- Only members of the -";
+	// 	mes "- right level can read -";
+	// 	mes "- this bulletin board. -";
+	// 	mes "- Try to find a board -";
+	// 	mes "- that suits your level. -";
+	// 	close;
+	// } 
+	else if (BaseLevel > 85) {
 		// Quest IDs: 10107-10123, 5055-5057
 		setarray .@quests[0],
 			10107,10108,10109,

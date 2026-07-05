@@ -1,0 +1,3041 @@
+Header:
+  Type: ITEM_DB
+  Version: 3
+Body:
+- Id: 1681
+  AegisName: Short_Foxtail_Staff
+  Attack: -5
+  Script: |
+    // TODO: Level scaling atk/matk max 90
+- Id: 2113
+  AegisName: Novice_Shield
+  Defense: 25
+  Script: |
+    // TODO: Neutral resist +20%
+- Id: 2117
+  AegisName: Arm_Guard
+  Defense: 30
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+- Id: 2118
+  AegisName: Arm_Guard_
+  Defense: 30
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+- Id: 2119
+  AegisName: Improved_Arm_Guard
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+- Id: 2120
+  AegisName: Improved_Arm_Guard
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+- Id: 2171
+  AegisName: Fox_Armguard
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+    bonus2 bMagicAtkEle,Ele_Neutral,12;
+    bonus2 bMagicAtkEle,Ele_Water,12;
+    bonus2 bMagicAtkEle,Ele_Earth,12;
+    bonus2 bMagicAtkEle,Ele_Fire,12;
+    bonus2 bMagicAtkEle,Ele_Wind,12;
+    bonus2 bMagicAtkEle,Ele_Poison,12;
+    bonus2 bMagicAtkEle,Ele_Holy,12;
+    bonus2 bMagicAtkEle,Ele_Dark,12;
+    bonus2 bMagicAtkEle,Ele_Dark,12;
+    bonus2 bMagicAtkEle,Ele_Ghost,12;
+    bonus2 bMagicAtkEle,Ele_Undead,12;
+    bonus2 bMagicAtkEle,['Ele_Ghost', 'Ele_Undead'],12;
+    bonus2 bMagicAtkEle,['Ele_Holy', 'Ele_Water'],12;
+    bonus2 bMagicAtkEle,['Ele_Dark', 'Ele_Undead'],12;
+- Id: 2172
+  AegisName: Wolf_Armguard
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+    bonus bPhysicalRate,12;
+- Id: 2173
+  AegisName: Crescent_Armguard
+  Script: |
+    // TODO: NINJA ONLY | ASPD +3
+    bonus bDelayrate,-12;
+- Id: 2512
+  AegisName: Novice_Manteau
+  Defense: 15
+  Script: |
+    // TODO: Neutral resist +15%
+- Id: 13010
+  AegisName: Asura
+  Attack: -5
+  Script: |
+    // TODO: NINJA ONLY
+- Id: 13011
+  AegisName: Asura_
+  Attack: -5
+  Script: |
+    // TODO: NINJA ONLY
+- Id: 13075
+  AegisName: Kurenai
+  Script: |
+    // TODO: NINJA ONLY
+- Id: 13076
+  AegisName: Raksasa_Dagger
+  Attack: 30
+  Script: |
+    // TODO: NINJA ONLY | INT +6 | COMBO 13076 + 13078: magic damage +4%
+- Id: 13078
+  AegisName: Mikatsuki
+  Attack: 30
+  Script: |
+    // TODO: NINJA ONLY | SP cost -30% | COMBO 13076 + 13078: magic damage +4%
+- Id: 13193
+  AegisName: R_THUNDER
+  Script: |
+    bonus bDex,12;
+    bonus bAoe,14;
+    // TODO: 25% chance to autocast Lv.10 thunderstorm when using spreadshot
+    
+- Id: 4047
+  AegisName: Ghosting_Card
+  Script: |
+    bonus bDefEle,Ele_Ghost;
+    bonus bDef,15;
+    bonus bMdef,10;
+- Id: 4053
+  AegisName: Vitata_Card
+  Script: |
+    skill "AL_HEAL",10;
+    // TODO: SP Consumption +25%
+- Id: 4054
+  AegisName: Angeling_Card
+  Script: |
+    bonus bDefEle,Ele_Holy;
+    bonus bDef,15;
+    bonus bMdef,10;
+- Id: 4061
+  AegisName: Cornutus_Card
+  Script: |
+    // TODO: Armor becomes indestructible in battle
+    bonus bDef,15;
+- Id: 4070
+  AegisName: Eggyra_Card
+  Script: |
+    bonus bSPrecovRate,15;
+- Id: 4072
+  AegisName: Golem_Card
+  Script: |
+    bonus bUnbreakableWeapon;
+    bonus bBaseAtk,15;
+- Id: 4075
+  AegisName: Argos_Card
+  Script: |
+    // TODO: Stone Curse resistance +25%
+- Id: 4077
+  AegisName: Phen_Card
+  Script: |
+    bonus bInt,6;
+    bonus bCastrate,5;
+    bonus bNoCastCancel;
+    bonus bVariableCastrate,25;
+- Id: 4089
+  AegisName: Sword_Fish_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Water element.
+- Id: 4090
+  AegisName: Munak_Card
+  Script: |
+    bonus bDef,10;
+    // TODO: Stone Curse resistance +20%
+    // TODO: Earth element resistance 5%
+- Id: 4093
+  AegisName: Obeaune_Card
+  Script: |
+    skill "CURE",1;
+    // TODO: Natural SP recovery +20%
+- Id: 4098
+  AegisName: Dokebi_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Wind element.
+- Id: 4099
+  AegisName: Pasana_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Fire element.
+- Id: 4100
+  AegisName: Sohee_Card
+  Script: |
+    bonus bMaxSPrate,9;
+    // TODO: Natural SP Recovery +5%
+- Id: 4101
+  AegisName: Sand_Man_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Earth element.
+- Id: 4105
+  AegisName: Marc_Card
+  Script: |
+    // TODO: Freeze resistance +50%.
+- Id: 4110
+  AegisName: Ghoul_Card
+  Script: |
+    // TODO: Poison status resistance +25%
+- Id: 4114
+  AegisName: Argiope_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Poison element.
+- Id: 4115
+  AegisName: Hunter_Fly_Card
+  Script: |
+    // TODO: Life steal +0.1%
+- Id: 4119
+  AegisName: Bathory_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with Shadow element.
+- Id: 4121
+  AegisName: Phreeoni_Card
+  Script: |
+    // TODO: For every 2 base Levels: HIT + 1
+- Id: 4123
+  AegisName: Eddga_Card
+  Script: |
+    skill "SM_ENDURE",10;
+    // TODO: For every 10 Base Levels above 100: MaxHP + 1%
+- Id: 4124
+  AegisName: Medusa_Card
+  Script: |
+    // TODO: Stone Curse resistance +30%
+    bonus2 bSubRace,RC_Demon,15;
+- Id: 4125
+  AegisName: Deviace_Card
+  Script: |
+    bonus2 bAddRace,RC_DemiHuman,+12;
+    // TODO: Brute
+    // TODO: Plant and Insect
+- Id: 4128
+  AegisName: Golden_Bug_Card
+  Script: |
+    // TODO: Nullifies all status changes applied from magic.
+    // TODO: Nullifies all support effects applied from magic.
+    bonus bMagicAtkDef,1*(BaseLevel/10);
+- Id: 4131
+  AegisName: Moonlight_Flower_Card
+  Script: |
+    bonus bSpeedAddRate,50;
+    // TODO: For every 20 Base Levels above 100: Perfect Dodge + 1
+- Id: 4132
+  AegisName: Mistress_Card
+  Script: |
+    // TODO: Reduces Gemstone requirement of certain skills by 1
+    // TODO: For each 20 Base Levels: All element magic +1%
+    // TODO: If this is compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4134
+  AegisName: Dracula_Card
+  Script: |
+    // TODO: For each Base Level: SP Steal + 1
+- Id: 4135
+  AegisName: Orc_Load_Card
+  Script: |
+    // TODO: For each 10 Base Levels: Melee reflect + 1%
+- Id: 4137
+  AegisName: Drake_Card
+  Script: |
+    // TODO: Nullifies reduction in damage due to enemies' size.
+    bonus bPhysicalRate,1*((BaseLevel-40)/10);
+- Id: 4141
+  AegisName: Evil_Druid_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,10;
+    // TODO: Enchants compounded Armor with the Undead element.
+- Id: 4143
+  AegisName: Orc_Hero_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Stun resistance +1%
+    // TODO: For every 8 Base Levels: Freeze resistance +1%
+    // TODO: If this is compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4144
+  AegisName: Osiris_Card
+  Script: |
+    // TODO: Restores HP and SP by 100% when resurrected.
+    // TODO: For every 8 Base Levels: Natural HP and SP regeneration + 1%
+- Id: 4145
+  AegisName: Berzebub_Card
+  Script: |
+    // TODO: For every 20 Base Levels: Cast time - 1%
+- Id: 4146
+  AegisName: Maya_Card
+  Script: |
+    // TODO: For every 10 Base Levels: Magic reflect + 1%
+- Id: 4147
+  AegisName: Baphomet_Card
+  Script: |
+    // TODO: Auto-attacks will deal splash damage.
+    bonus bAspd,-2;
+    // TODO: For every 10 Base Levels: Physical damage + 1%
+- Id: 4148
+  AegisName: Pharaoh_Card
+  Script: |
+    bonus bMaxSPrate,1*(BaseLevel/4);
+    // TODO: For every 8 Base Levels: SP Cost -1%
+    // TODO: If this is compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4151
+  AegisName: Gajomart_Card
+  Script: |
+    bonus2 bSubRace,RC_Plant,-10;
+    // TODO: Experience gained from defeating Plant enemies +100%
+- Id: 4152
+  AegisName: Galapago_Card
+  Script: |
+    bonus3 bAddMonsterDropItem,534,RC_Insect,100;
+    // TODO: Banana Juice or Apple Juice.
+    // TODO: Increases recovery amount gained from Carrot Juice
+    // TODO: Banana Juice and Apple Juice by 1000%
+- Id: 4153
+  AegisName: Crab_Card
+  Script: |
+    bonus bBaseAtk,25;
+    // TODO: Physical Damage against Aster +100%
+- Id: 4154
+  AegisName: Rice_Cake_Boy_Card
+  Script: |
+    // TODO: Random chance a defeated Demi-Human race monster will drop Candy or Candy Cane.
+    // TODO: Increases recovery amount gained from Candy and Candy Cane by 1000%
+- Id: 4155
+  AegisName: Goblin_Leader_Card
+  Script: |
+    bonus2 bAddRace2,RC2_Goblin,100;
+    // TODO: 1% chance to transform into a Goblin Leader when dealing melee damage.
+    // TODO: While transformed
+    bonus bBaseAtk,150;
+- Id: 4156
+  AegisName: Steam_Goblin_Card
+  Script: |
+    bonus bCritAtkRate,8;
+    // TODO: Critical +20 when attacking Formless enemies.
+- Id: 4157
+  AegisName: Goblin_Archer_Card
+  Script: |
+    bonus bCritAtkRate,8;
+    // TODO: Critical +20 when attacking Undead enemies.
+- Id: 4158
+  AegisName: Flying_Deleter_Card
+  Script: |
+    // TODO: Disables Natural HP Recovery.
+    // TODO: Heals 4000 HP each time an enemy is killed.
+- Id: 4161
+  AegisName: Grand_Peco_Card
+  Script: |
+    bonus bLuk,3;
+    bonus3 bAutoSpellWhenHit,"PR_GLORIA",1,10;
+- Id: 4163
+  AegisName: Gryphon_Card
+  Script: |
+    bonus bFlee,2;
+    bonus bCritical,7;
+    // TODO: When equipped by Swordman classes: 10% chance to auto-cast Lv.5 Bowling Bash when auto-attacking.
+- Id: 4164
+  AegisName: Gullinbursti_Card
+  Script: |
+    bonus2 bSubRace,RC_Fish,-10;
+    // TODO: Experience gained from defeating Fish enemies +100%
+- Id: 4165
+  AegisName: Gig_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Insect enemies.
+- Id: 4167
+  AegisName: Neraid_Card
+  Script: |
+    // TODO: Heal 100 SP when killing CBrute enemies.
+- Id: 4168
+  AegisName: Dark_Lord_Card
+  Script: |
+    bonus3 bAutoSpellWhenHit,"WZ_METEOR",10,10;
+    // TODO: For every 10 Base Levels above 100: MaxHP + 1%
+- Id: 4171
+  AegisName: Dark_Priest_Card
+  Script: |
+    // TODO: Adds 20% chance of decreasing target's SP by 10% when dealing physical damage.
+- Id: 4172
+  AegisName: The_Paper_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Heal 25 HP when dealing damage to an enemy.
+    // TODO: Drains 1 SP when auto-attacking.
+- Id: 4174
+  AegisName: Deviling_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,50;
+    // TODO: When taking damage
+    // TODO: there is a 10% chance that the user will lose 5000 HP.
+- Id: 4176
+  AegisName: Dullahan_Card
+  Script: |
+    bonus bCritAtkRate,8;
+    // TODO: Critical +20 when attacking Dragon enemies.
+- Id: 4179
+  AegisName: Dragon_Fly_Card
+  Script: |
+    bonus bAgi,readparam(bAgi)/9;
+- Id: 4180
+  AegisName: Driller_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Dragon monsters.
+- Id: 4181
+  AegisName: Disguise_Card
+  Script: |
+    bonus bDef,15;
+    bonus bMdef,15;
+    bonus3 bAddEffWhenHit,Eff_Silence,5,ATF_TARGET;
+    // TODO: If base VIT is at least 77: Increases the rate of inflicting Silence status by 10%.
+- Id: 4182
+  AegisName: Diabolic_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Demon monsters.
+- Id: 4183
+  AegisName: Vagabond_Wolf_Card
+  Script: |
+    bonus bStr,readparam(bStr)/9;
+- Id: 4185
+  AegisName: Rideword_Card
+  Script: |
+    bonus bInt,3;
+    // TODO: When equipped by Acolyte classes: MDEF +5
+    // TODO: When equipped by Any other class: DEF +5
+- Id: 4192
+  AegisName: Rotar_Zairo_Card
+  Script: |
+    bonus bCritAtkRate,8;
+    // TODO: Critical +20 when attacking Fish monster.
+- Id: 4193
+  AegisName: Lude_Card
+  Script: |
+    // TODO: When equipped by Novice classes: 10% chance to auto-cast Level 3 Endure when receiving physical damage.
+    bonus bMaxHPrate,375;
+- Id: 4194
+  AegisName: Rybio_Card
+  Script: |
+    bonus bDef,10;
+    bonus bMdef,5;
+    bonus3 bAddEffWhenHit,Eff_Stun,5,ATF_TARGET;
+    // TODO: If base DEX is at least 77: Increases the rate of inflicting Stun status by 10%.
+- Id: 4195
+  AegisName: Leaf_Cat_Card
+  Script: |
+    bonus2 bSubEle,Ele_Water,10;
+    // TODO: Random chance a defeated Fish monster will drop Crystal Blue.
+- Id: 4197
+  AegisName: Mastering_Card
+  Script: |
+    bonus bLuk,readparam(bLuk)/9;
+- Id: 4198
+  AegisName: Maya_Puple_Card
+  Script: |
+    // TODO: Enables its user to detect hidden enemies.
+- Id: 4199
+  AegisName: Merman_Card
+  Script: |
+    bonus bHPrecovRate,25;
+    // TODO: Natural SP recovery +25%
+- Id: 4200
+  AegisName: Megalith_Card
+  Script: |
+    // TODO: If refine rate is 5 or lower: DEF +15
+    bonus bMdef,30;
+- Id: 4204
+  AegisName: Mini_Demon_Card
+  Script: |
+    bonus2 bSubRace,RC_Brute,-10;
+    // TODO: Increases experience gained from defeating Brute race monsters by 100%
+- Id: 4208
+  AegisName: Miyabi_Ningyo_Card
+  Script: |
+    bonus bMaxSPrate,5;
+    // TODO: Water Magic +5%
+- Id: 4209
+  AegisName: Violy_Card
+  Script: |
+    bonus bAspd,1;
+    bonus4 bAutoSpell,"BA_FROSTJOKER",1,10,BF_MELEE,1;
+    // TODO: If the user has mastered the skill at Level 5
+    // TODO: it will cast Level 5 Frost Joke.
+- Id: 4210
+  AegisName: Wander_Man_Card
+  Script: |
+    bonus4 bAutoSpell,"RG_INTIMIDATE",5,5,BF_MELEE,1;
+    // TODO: When equipped by Thief classes: FLEE +25
+    // TODO: When equipped by any other class: HIT +25
+- Id: 4211
+  AegisName: Vocal_Card
+  Script: |
+    bonus bDex,readparam(bDex)/9;
+- Id: 4212
+  AegisName: Bon_Gun_Card
+  Script: |
+    bonus4 bAutoSpell,"SM_BASH",5,10,BF_MELEE,1;
+    // TODO: Increases damage taken from Munak monsters by 100%
+- Id: 4214
+  AegisName: Bloody_Murderer_Card
+  Script: |
+    bonus bCritAtkRate,8;
+    // TODO: Critical +20 when attacking Insect monster.
+- Id: 4215
+  AegisName: Blazzer_Card
+  Script: |
+    // TODO: Item heal power +25%
+    bonus2 bAddMonsterDropItem,12058,200;
+    bonus2 bAddMonsterDropItem,14559,200;
+    bonus2 bAddMonsterDropItem,12043,200;
+    bonus2 bAddMonsterDropItem,12063,200;
+    bonus2 bAddMonsterDropItem,14556,200;
+    bonus2 bAddMonsterDropItem,14568,200;
+- Id: 4217
+  AegisName: Live_Peach_Tree_Card
+  Script: |
+    bonus4 bAutoSpellWhenHit,"AL_HEAL",1,25,0;
+    // TODO: If the user has mastered the skill at Lv.10
+    // TODO: it will cast Lv.10 Heal.
+- Id: 4218
+  AegisName: Succubus_Card
+  Script: |
+    bonus bMaxHPrate,2625;
+    bonus bVit,-5;
+    // TODO: Natural HP recovery -20%
+- Id: 4221
+  AegisName: Skeleton_General_Card
+  Script: |
+    bonus2 bSubRace,RC_Insect,-10;
+    // TODO: Increases experience gained from defeating Insect race monsters by 100%
+- Id: 4224
+  AegisName: Stem_Worm_Card
+  Script: |
+    bonus2 bAddEle,Ele_Fire,10;
+    // TODO: Random chance a defeated Brute monster will drop Box of Storms.
+- Id: 4227
+  AegisName: Spring_Rabbit_Card
+  Script: |
+    bonus3 bAddMonsterDropItem,528,RC_Brute,200;
+    // TODO: Increases recovery amount gained from Meat and Monster's Feed by 500%
+- Id: 4229
+  AegisName: C_Tower_Manager_Card
+  Script: |
+    // TODO: Variable Cast Time -5%
+- Id: 4232
+  AegisName: Wild_Ginseng_Card
+  Script: |
+    // TODO: Random chance a defeated Plant monster will drop Red Herb
+    // TODO: Yellow Herb or White Herb.
+    // TODO: Increases recovery amount gained from Red Herb
+    // TODO: Yellow Herb and White Herb by 500%
+- Id: 4233
+  AegisName: Baby_Leopard_Card
+  Script: |
+    bonus bLuk,1;
+    // TODO: When equipped by Merchant classes: Armor becomes indestructible.
+    // TODO: When equipped by any other class: LUK +4
+- Id: 4234
+  AegisName: Anolian_Card
+  Script: |
+    bonus bAgi,2;
+    bonus bDex,3;
+    bonus4 bAutoSpellWhenHit,"AC_CONCENTRATION",1,10,0;
+- Id: 4235
+  AegisName: Cookie_XMAS_Card
+  Script: |
+    bonus2 bSubRace,RC_Angel,-10;
+    // TODO: Increases experience gained from defeating Angel race monsters by 100%
+- Id: 4236
+  AegisName: Amon_Ra_Card
+  Script: |
+    bonus3 bAutoSpellWhenHit,"KYRIE ELEISON",10,3;
+    // TODO: If the user has 99 or more INT: Chance is increased to 10%
+    // TODO: For every 2 Base Levels above 100: MDEF + 1
+- Id: 4239
+  AegisName: Iron_Fist_Card
+  Script: |
+    bonus2 bSubRace,RC_Formless,-10;
+    // TODO: Increases experience gained from defeating Formless race monsters by 100%
+- Id: 4241
+  AegisName: Archangeling_Card
+  Script: |
+    bonus bDef,-45;
+    bonus bMdef,-30;
+    // TODO: If base LUK is at least 77: Natural HP Recovery +100%
+    // TODO: Natural SP Recovery +100%
+- Id: 4243
+  AegisName: Antonio_Card
+  Script: |
+    // TODO: Changes pending.
+    bonus3 bAutoSpellWhenHit,"AL_TELEPORT",1,50;
+- Id: 4245
+  AegisName: Am_Mut_Card
+  Script: |
+    bonus2 bSubRace,RC_DemiHuman,-10;
+    // TODO: Increases experience gained from defeating Demi-Human race monsters by 10%
+- Id: 4246
+  AegisName: Assulter_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Critical +25 when attacking Demi-Human race.
+- Id: 4247
+  AegisName: Aster_Card
+  Script: |
+    bonus bBaseAtk,25;
+    // TODO: Inflict 100% more damage on Shell Fish.
+- Id: 4249
+  AegisName: Ancient_Worm_Card
+  Script: |
+    bonus2 bSubRace,RC_Demon,-10;
+    // TODO: Experience gained from defeating Demon race enemies +100%
+- Id: 4255
+  AegisName: Orc_Lady_Card
+  Script: |
+    // TODO: Inflict 100% more damage on every Orc except Orc Lord and Orc Hero.
+    bonus bAutoattack,5;
+    bonus bAgi,3;
+    bonus bBaseAtk,5;
+- Id: 4257
+  AegisName: Wild_Rose_Card
+  Script: |
+    bonus bAgi,2;
+    // TODO: When equipped by Thief classes: Perfect Dodge +4
+    // TODO: When equipped by any other class: AGI +2
+    bonus bFlee,20;
+- Id: 4260
+  AegisName: Wootan_Shooter_Card
+  Script: |
+    // TODO: Confusion resistance +25%.
+- Id: 4261
+  AegisName: Wootan_Fighter_Card
+  Script: |
+    // TODO: Bleeding resistance +25%.
+- Id: 4263
+  AegisName: Incant_Samurai_Card
+  Script: |
+    // TODO: For every 10 Base Levels: Auto-attack damage + 1%
+- Id: 4264
+  AegisName: Wind_Ghost_Card
+  Script: |
+    bonus bMatk,10;
+    bonus4 bAutoSpell,"WZ_JUPITEL",1,5,BF_MELEE,1;
+
+- Id: 4266
+  AegisName: Eclipse_Card
+  Script: |
+    bonus bInt,readparam(bInt)/9;
+- Id: 4267
+  AegisName: Explosion_Card
+  Script: |
+    bonus2 bSubRace,RC_Dragon,-10;
+    // TODO: Experience gained from defeating Dragon race enemies +100%
+- Id: 4268
+  AegisName: Injustice_Card
+  Script: |
+    bonus bCritical,15;
+    bonus3 bAutoSpell,"AS_SONICBLOW",1,50;
+    // TODO: If the user has mastered the skill at Lv.10
+    // TODO: it will cast Lv.10 Sonic Blow.
+- Id: 4269
+  AegisName: Incubus_Card
+  Script: |
+    bonus bMaxSPrate,150;
+    bonus bInt,-5;
+    // TODO: Natural SP Recovery -20%
+- Id: 4273
+  AegisName: Shellfish_Card
+  Script: |
+    bonus bBaseAtk,25;
+    // TODO: Inflict 100% more damage on Crab.
+- Id: 4274
+  AegisName: Zombie_Master_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Undead enemies.
+- Id: 4275
+  AegisName: Zombie_Prisoner_Card
+  Script: |
+    // TODO: Undead race resistance -10%
+    // TODO: Experience gained from defeating Undead race enemies +100%
+- Id: 4276
+  AegisName: Lord_Of_Death_Card
+  Script: |
+    bonus3 bAddEff,Eff_Coma,0.1,ATF_TARGET;
+    // TODO: For every 10 Base Levels: 1% chance to inflict the all of the following status ailments when dealing damage to an enemy: Stun
+    // TODO: Curse
+    // TODO: Silence
+    // TODO: Poison
+    // TODO: Bleeding
+- Id: 4277
+  AegisName: Zherlthsh_Card
+  Script: |
+    bonus bLuk,5;
+    bonus bLuk,2;
+    bonus2 bSkillAtk,"BA_MUSICALSTRIKE",10;
+    bonus2 bSkillAtk,"DC_THROWARROW",10;
+- Id: 4278
+  AegisName: Gibbet_Card
+  Script: |
+    bonus bMdef,17;
+    // TODO: If compound to an upper headgear
+    // TODO: and Refine Level is 0: MDEF +18
+- Id: 4279
+  AegisName: Deleter_Card
+  Script: |
+    // TODO: Disables SP Recovery Rate.
+    // TODO: Heal 800 SP when killing a monster.
+- Id: 4281
+  AegisName: Zipper_Bear_Card
+  Script: |
+    bonus bBaseAtk,15;
+    // TODO: When equipped by Merchant classes: Make weapon indestructible.
+    // TODO: When equipped by any other class: ATK +10
+- Id: 4282
+  AegisName: Tengu_Card
+  Script: |
+    // TODO: Item Heal Power +20%
+    bonus3 bAddMonsterDropItem,23042,100;
+- Id: 4286
+  AegisName: Karakasa_Card
+  Script: |
+    bonus bDef,10;
+    bonus bDef,15;
+    bonus3 bAddEffWhenHit,Eff_Conf,5,ATF_TARGET;
+    // TODO: if Base STR is at least 77: The chance is increased by 10%.
+- Id: 4287
+  AegisName: Kapha_Card
+  Script: |
+    // TODO: Refine Level is 5 or lower: MDEF +25
+- Id: 4289
+  AegisName: Caterpillar_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Plant monsters.
+- Id: 4291
+  AegisName: Kobold_Leader_Card
+  Script: |
+    bonus2 bAddRace2,RC2_Kobold,100;
+    // TODO: When dealing melee damage
+    // TODO: has a chance to transform into a Kobold Leader.
+    // TODO: While transformed: ASPD +6
+- Id: 4292
+  AegisName: Kobold_Archer_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Critical +25 when attacking Plant monster.
+- Id: 4294
+  AegisName: Quve_Card
+  Script: |
+    // TODO: When equipped by Novice classes: 10% chance to auto-cast Lv.1 Increase AGI when receiving physical damage.
+    // TODO: Auto cast Lv.10 Increase AGI instead
+    // TODO: if Increase AGI is mastered.
+- Id: 4297
+  AegisName: Cruiser_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Critical +25 when attacking Brute monster.
+- Id: 4300
+  AegisName: Chimera_Card
+  Script: |
+    // TODO: When equipped by Assassin classes: Poison both the user and the attacker when receiving physical damage.
+    // TODO: Poison magic +25%
+    // TODO: When equipped by any other class: 50% chance to inflict the Poison status on the enemy when receiving physical damage.
+- Id: 4305
+  AegisName: Turtle_General_Card
+  Script: |
+    bonus4 bAutoSpell,"MAGNUM BREAK",10,5,BF_MELEE;
+    // TODO: For every 10 Base Levels above 100: Damage against all classes +1%
+- Id: 4306
+  AegisName: Toad_Card
+  Script: |
+    // TODO: For every 9 Base VIT: VIT + 1 (maximum 10)
+- Id: 4307
+  AegisName: Kind_Of_Beetle_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Fish monsters.
+- Id: 4308
+  AegisName: Tri_Joint_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Formless monsters.
+- Id: 4309
+  AegisName: Parasite_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,5;
+    bonus bDef,10;
+    // TODO: Heal 250 HP when dealing damage.
+- Id: 4310
+  AegisName: Panzer_Goblin_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Critical +25 when attacking Demon monster.
+- Id: 4312
+  AegisName: Fur_Seal_Card
+  Script: |
+    bonus bFlee,10;
+    // TODO: When equipped by Acolyte classes: Critical +40 when attacking Demon and Undead race.
+    // TODO: When equipped by any other class: Critical +20
+- Id: 4313
+  AegisName: Punk_Card
+  Script: |
+    bonus bSpeedAddRate,25;
+    bonus4 bAutoSpellWhenHit,"WZ_QUAGMIRE",1,10,0;
+    // TODO: If the user has mastered the skill
+    // TODO: it will cast Lv.5 Quagmire.
+- Id: 4315
+  AegisName: Pest_Card
+  Script: |
+    bonus bDef,10;
+    bonus bMdef,5;
+    bonus3 bAddEffWhenHit,Eff_Stone,5,ATF_TARGET;
+    // TODO: If the user has 77 or more base INT
+    // TODO: +10% chance.
+- Id: 4316
+  AegisName: Fake_Angel_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Angel monsters.
+- Id: 4317
+  AegisName: Mobster_Card
+  Script: |
+    bonus bCritAtkRate,6;
+    // TODO: When equipped by Thief classes: Critical damage +4%
+    // TODO: When equipped by any other class: Critical +10
+- Id: 4318
+  AegisName: Knight_Windstorm_Card
+  Script: |
+    bonus4 bAutoSpell,"WZ_THUNDERSTORM",10,10,BF_MELEE;
+    bonus4 bAutoSpell,"STORM GUST",10,10,BF_MAGIC;
+    // TODO: If base level is higher than 200: Storm Gust gains a chance to freeze enemies depending on your base level.
+- Id: 4321
+  AegisName: Hylozoist_Card
+  Script: |
+    bonus bHomunculusAtk,6;
+    // TODO: Add the chance of transforming a monster while fighting.
+- Id: 4322
+  AegisName: High_Orc_Card
+  Script: |
+    bonus bVit,1;
+    bonus bDef,10;
+    // TODO: Reflects 5% physical damage.
+- Id: 4324
+  AegisName: Garm_Card
+  Script: |
+    // TODO: Immune to Freeze.
+    // TODO: If base level is higher than 200: Add a chance to inflict Freeze on enemies when receiving damage depending on your base level.
+- Id: 4326
+  AegisName: See_Otter_Card
+  Script: |
+    bonus3 bAddMonsterDropItem,551,RC_Fish,100;
+    bonus3 bAddMonsterDropItem,544,RC_Fish,100;
+    // TODO: Increases recovery amount gained from Sushi and Raw Fish by 500%
+- Id: 4327
+  AegisName: Blood_Butterfly_Card
+  Script: |
+    bonus bInt,1;
+    bonus bMatk,25;
+    bonus bCastrate,20;
+    bonus2 bMagicAtkEle,Ele_Neutral,10;
+    bonus2 bMagicAtkEle,Ele_Water,10;
+    bonus2 bMagicAtkEle,Ele_Earth,10;
+    bonus2 bMagicAtkEle,Ele_Fire,10;
+    bonus2 bMagicAtkEle,Ele_Wind,10;
+    bonus2 bMagicAtkEle,Ele_Poison,10;
+    bonus2 bMagicAtkEle,Ele_Holy,10;
+    bonus2 bMagicAtkEle,Ele_Dark,10;
+    bonus2 bMagicAtkEle,Ele_Dark,10;
+    bonus2 bMagicAtkEle,Ele_Ghost,10;
+    bonus2 bMagicAtkEle,Ele_Undead,10;
+    bonus2 bMagicAtkEle,['Ele_Ghost', 'Ele_Undead'],10;
+    bonus2 bMagicAtkEle,['Ele_Holy', 'Ele_Water'],10;
+    bonus2 bMagicAtkEle,['Ele_Dark', 'Ele_Undead'],10;
+    // TODO: Protects from skill cast interruption.
+- Id: 4329
+  AegisName: Phendark_Card
+  Script: |
+    // TODO: Heal 100 SP when killing Demi-Human monsters.
+- Id: 4330
+  AegisName: Dark_Snake_Lord_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Blind resistance +1%
+    // TODO: For every 8 Base Levels: Curse resistance +1%
+    // TODO: If this is compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4331
+  AegisName: Heater_Card
+  Script: |
+    bonus bCritical,10;
+    // TODO: When equipped by SSwordman classes: STR +1
+    // TODO: When equipped by Sany other class: LUK +1
+- Id: 4335
+  AegisName: Pitman_Card
+  Script: |
+    bonus bInt,5;
+    bonus bMatk,10;
+    // TODO: Earth Magic +10%
+    bonus bCastrate,3;
+- Id: 4342
+  AegisName: Rsx_0806_Card
+  Script: |
+    // TODO: Prevents knock-back effects.
+    // TODO: For every 10 Base Levels above 50: VIT + 1
+- Id: 4345
+  AegisName: Hill_Wind_Card
+  Script: |
+    // TODO: Wind magic +10%
+    bonus bInt,2;
+    bonus bCastrate,-4;
+- Id: 4350
+  AegisName: Rawrel_Card
+  Script: |
+    bonus bMatk,10;
+    bonus bInt,7;
+    // TODO: Water Magic +10%
+- Id: 4351
+  AegisName: Kavac_Card
+  Script: |
+    if (getrefine()<=4) {
+    bonus bFlee2,5;
+    }
+    bonus bFlee,25;
+    // TODO: Otherwise: Flee +75
+- Id: 4352
+  AegisName: B_Ygnizem_Card
+  Script: |
+    // TODO: For every 2 Base Levels: Restores 5 HP per second.
+    // TODO: For every 4 Base Levels: Restores 1 SP per second.
+- Id: 4353
+  AegisName: Removal_Card
+  Script: |
+    bonus bHPrecovRate,10;
+    bonus bMaxHPrate,3000;
+    // TODO: For each Refine Level: MaxHP -75
+- Id: 4354
+  AegisName: Gemini_Card
+  Script: |
+    // TODO: If base AGI is 90 or higher: Silence resistance +10%
+    bonus2 bResEff,Eff_Stun,10;
+    // TODO: If base VIT is 90 or higher: Stone curse resistance +10%
+    bonus2 bResEff,Eff_Sleep,10;
+- Id: 4356
+  AegisName: Beholder_Card
+  Script: |
+    // TODO: Spellcasting damage +5%
+    skill "CAST CANCEL",1;
+- Id: 4357
+  AegisName: B_Seyren_Card
+  Script: |
+    // TODO: Changes pending.
+    skill "BERSERK",1;
+- Id: 4359
+  AegisName: B_Eremes_Card
+  Script: |
+    // TODO: Enables perfect hiding.
+    skill "AS_CLOAKING",10;
+    // TODO: For every 2 Base Level above 200: Flee + 1
+- Id: 4360
+  AegisName: Eremes_Card
+  Script: |
+    bonus bCritAtkRate,4;
+    // TODO: Critical +100 when attacking Demi-Human race monster.
+- Id: 4361
+  AegisName: B_Harword_Card
+  Script: |
+    bonus4 bAutoSpell,"HAMMER FALL",10,10,BF_MELEE;
+    // TODO: For every 10 Base Levels above 100: Melee damage + 1%
+- Id: 4363
+  AegisName: B_Magaleta_Card
+  Script: |
+    skill "ASSUMPTIO",1;
+    skill "ANGELUS",10;
+    // TODO: For every 10 Base Levels above 110: All class resistance + 1%
+- Id: 4365
+  AegisName: B_Katrinn_Card
+  Script: |
+    // TODO: For every 20 Base Levels: Cast Time -1%
+    // TODO: If compound in an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4366
+  AegisName: Katrinn_Card
+  Script: |
+    bonus bCastrate,-7;
+    // TODO: If refine rate is +9 or higher: Cast time -3%
+    // TODO: If refine rate is +11 or higher: Magic damage +4%
+- Id: 4367
+  AegisName: B_Shecil_Card
+  Script: |
+    bonus bPerfectHitRate,100;
+    // TODO: For every 10 Base Levels above 200: Physical damage + 1%
+- Id: 4372
+  AegisName: Bacsojin_Card
+  Script: |
+    // TODO: For every 20 Base Levels: Heal Power + 1%
+    // TODO: If compound on an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4373
+  AegisName: Chung_E_Card
+  Script: |
+    // TODO: For each Refine Level: Critical +1 (maximum 10)
+    bonus bLuk,1*(getrefine()/3);
+- Id: 4374
+  AegisName: Apocalips_H_Card
+  Script: |
+    // TODO: For every 20 Base Levels: Damage against Boss monsters +1%
+    // TODO: If compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4376
+  AegisName: Lady_Tanee_Card
+  Script: |
+    bonus bMaxSPrate,1*(BaseLevel/5);
+    bonus bMaxHPrate,-1*(BaseLevel/10);
+    // TODO: 20% chance a defeated monster will drop Banana.
+    // TODO: Increases recovery amount gained from Banana by 1000%
+- Id: 4378
+  AegisName: Acidus_Card
+  Script: |
+    if (getrefine()<=4) {
+    bonus bMaxHPrate,11;
+    }
+    bonus bMaxSPrate,11;
+    bonus bHPrecovRate,15;
+    // TODO: Natural SP recovery +15%
+    if (getrefine()>=5) {
+    bonus bMaxHPrate,7;
+    }
+    bonus bMaxSPrate,7;
+- Id: 4379
+  AegisName: Acidus__Card
+  Script: |
+    bonus bMaxSPrate,70;
+    // TODO: If refine level is 0 and compound in an upper headgear: MaxSP +20
+    // TODO: Natural SP Recovery Rate +25%
+- Id: 4380
+  AegisName: Ferus_Card
+  Script: |
+    bonus bMatk,20;
+    // TODO: Fire Magic +10%
+- Id: 4382
+  AegisName: Novus__Card
+  Script: |
+    bonus bMaxHPrate,1000;
+    // TODO: Natural HP Recovery Rate +30%
+- Id: 4384
+  AegisName: Hydro_Card
+  Script: |
+    bonus4 bAutoSpell,"SA_SPELLBREAKER",3,10,BF_MELEE;
+    bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",1,5;
+    // TODO: Cold Bolt or Fire Bolt when auto-attacking.
+- Id: 4388
+  AegisName: Deathword_Card
+  Script: |
+    bonus bInt,2;
+    bonus bMatk,5;
+    // TODO: Ghost Magic +10%
+    bonus2 bAddEle,Ele_Ghost,10;
+- Id: 4389
+  AegisName: Plasma_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,2;
+    bonus2 bSubEle,Ele_Water,2;
+    bonus2 bSubEle,Ele_Earth,2;
+    bonus2 bSubEle,Ele_Fire,2;
+    bonus2 bSubEle,Ele_Wind,2;
+    bonus2 bSubEle,Ele_Poison,2;
+    bonus2 bSubEle,Ele_Holy,2;
+    bonus2 bSubEle,Ele_Dark,2;
+    bonus2 bSubEle,Ele_Dark,2;
+    bonus2 bSubEle,Ele_Ghost,2;
+    bonus2 bSubEle,Ele_Undead,2;
+    bonus2 bSubEle,['Ele_Ghost', 'Ele_Undead'],2;
+    bonus2 bSubEle,['Ele_Holy', 'Ele_Water'],2;
+    bonus2 bSubEle,['Ele_Dark', 'Ele_Undead'],2;
+    bonus3 bAddMonsterDropItem,12118,50;
+    // TODO: Coldproof Potion
+    // TODO: Earthproof Potion or Thunderproof Potion.
+- Id: 4394
+  AegisName: Solace_Card
+  Script: |
+    // TODO: When equipped by Priest classes: Magic damage +10%
+    bonus4 bAutoSpell,"CR_GRANDCROSS",2,10,BF_MELEE;
+    // TODO: When equipped by any other class: Physical damage +10%
+    bonus4 bAutoSpell,"CR_HOLYCROSS",2,10,BF_MELEE;
+- Id: 4397
+  AegisName: Tha_Despero_Card
+  Script: |
+    // TODO: Reflect 14% of ranged damage.
+- Id: 4399
+  AegisName: Thanatos_Card
+  Script: |
+    // TODO: Your weapon gains the Piercing effect.
+    bonus bPhysicalRate,1*((BaseLevel-40)/10);
+- Id: 4400
+  AegisName: Aliza_Card
+  Script: |
+    bonus bFlee,45;
+    bonus bFlee2,2;
+    // TODO: When worn by a dancer class: 2.5% chance to auto-cast Lv.1 Wink Charm on the attacker when taking damage.
+    // TODO: For any other class: Grants Lv.1 Wink Charm.
+- Id: 4402
+  AegisName: Aliot_Card
+  Script: |
+    // TODO: When equipped by Swordman
+    // TODO: Merchant or Thief classes: STR +2
+    bonus bMaxHPrate,10;
+    // TODO: When equipped by Archer
+    // TODO: Acolyte or Mage classes: INT +2
+    bonus bMaxSPrate,10;
+- Id: 4403
+  AegisName: Kiel_Card
+  Script: |
+    bonus bDelayrate,-1*(BaseLevel/20);
+    // TODO: If compound in an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4405
+  AegisName: Frus_Card
+  Script: |
+    bonus bMagicReflect,4;
+    // TODO: For each 2 Refine Levels: Additional 1% chance to reflect magic attacks.
+- Id: 4407
+  AegisName: Randgris_Card
+  Script: |
+    // TODO: Compounded weapon becomes indestructible in battle
+    bonus4 bAutoSpell,"DISPELL",1,5,BF_MELEE,1;
+    // TODO: For every 10 Base Levels above 50: Damage against all class monsters +1%
+- Id: 4408
+  AegisName: Gloom_Under_Night_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Damage against Shadow monster +1%
+    bonus2 bAddEle,Ele_Holy,+1;
+    // TODO: Resistance against Angel monsters +1%
+    // TODO: Resistance against Demon monsters +1%
+- Id: 4409
+  AegisName: Agav_Card
+  Script: |
+    bonus bInt,2;
+    bonus bMatkRate,10;
+    bonus bDef,-25;
+    // TODO: When equipped by Mage classes: MaxSP +120
+    // TODO: When equipped by any other classes: MaxHP +1500
+- Id: 4410
+  AegisName: Echio_Card
+  Script: |
+    bonus bStr,4;
+    bonus bBaseAtk,20;
+    // TODO: When equipped by Swordman classes: MaxHP +500
+    // TODO: When equipped by any other classes: MaxSP +40
+- Id: 4411
+  AegisName: Vanberk_Card
+  Script: |
+    // TODO: 1% chance to increase Critical by 100 for 5 seconds when dealing physical damage.
+- Id: 4412
+  AegisName: Isilla_Card
+  Script: |
+    // TODO: 1% chance to reduce Cast Time by 100% for 5 seconds when dealing magical damage.
+- Id: 4414
+  AegisName: Seeker_Card
+  Script: |
+    skill "STONE CURSE",10;
+    // TODO: Stone curse resistance +25%
+- Id: 4415
+  AegisName: Snowier_Card
+  Script: |
+    bonus3 bAddMonsterDropItem,1100017,200;
+    // TODO: Increases recovery amount gained from Ice Cream by 500%
+    bonus2 bResEff,Eff_Freeze,20;
+- Id: 4416
+  AegisName: Siroma_Card
+  Script: |
+    // TODO: Water Magic +5%
+    // TODO: Cold bolt cast time -25%
+- Id: 4417
+  AegisName: Ice_Titan_Card
+  Script: |
+    // TODO: Random chance to increase DEF by 50 for 10 seconds when receiving physical or magical damage.
+- Id: 4418
+  AegisName: Gazeti_Card
+  Script: |
+    bonus bInt,3;
+    // TODO: Water Magic +5%
+    bonus4 bAutoSpell,"MG_COLDBOLT",2,10,BF_MELEE;
+- Id: 4419
+  AegisName: Ktullanux_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Fire enemies +1%
+    bonus2 bSubEle,Ele_Fire,1;
+- Id: 4422
+  AegisName: Roween_Card
+  Script: |
+    bonus bFlee,5;
+    bonus2 bAddEle,Ele_Water,10;
+    // TODO: Critical against Fish +50
+- Id: 4423
+  AegisName: Galion_Card
+  Script: |
+    bonus bAspd,2;
+    // TODO: When auto-attacking
+    // TODO: has a 5% chance to auto-cast a random level of Combo Attack on the target.
+- Id: 4424
+  AegisName: Stapo_Card
+  Script: |
+    skill "PICK STONE",1;
+    skill "THROW STONE",1;
+    // TODO: When using Pick Stone
+    // TODO: Critical +25 for 10 seconds.
+- Id: 4425
+  AegisName: Atroce_Card
+  Script: |
+    // TODO: Changes pending
+    bonus bAspd,-100;
+    // TODO: When auto-attacking: ASPD +193
+    bonus bBaseAtk,60;
+- Id: 4426
+  AegisName: Byorgue_Card
+  Script: |
+    // TODO: When equipped by Rogue classes: Damage +15%
+    // TODO: When equipped by any other class: Monster resistance +15%
+- Id: 4427
+  AegisName: Sword_Guardian_Card
+  Script: |
+    // TODO: When compounded on a One-Handed Sword or Two-Handed Sword class weapon: Auto-attack damage +7%
+    bonus bShortAtkRate,7;
+- Id: 4428
+  AegisName: Bow_Guardian_Card
+  Script: |
+    // TODO: When compounded on a Bow or Gun class weapon: Auto-attack damage +7%
+    bonus bLongAtkRate,7;
+- Id: 4429
+  AegisName: Salamander_Card
+  Script: |
+    bonus3 bAutoSpellWhenHit,"MG_FIREWALL",5,10;
+    bonus3 bAutoSpellWhenHit,"WZ_FIREPILLAR",5,10;
+    // TODO: Fire magic +10%
+- Id: 4431
+  AegisName: Kasa_Card
+  Script: |
+    bonus4 bAutoSpell,"MG_FIREBOLT",5,5,BF_MELEE;
+    bonus4 bAutoSpell,"MG_FIREBALL",5,5,BF_MELEE;
+    // TODO: Fire magic +10%
+- Id: 4432
+  AegisName: Magmaring_Card
+  Script: |
+    bonus bBaseAtk,15;
+    bonus2 bAddEle,Ele_Earth,10;
+    // TODO: Critical against Plant enemies +20
+- Id: 4433
+  AegisName: Imp_Card
+  Script: |
+    // TODO: Fire Magic +5%
+    // TODO: Fire Bolt cast time -25%
+- Id: 4435
+  AegisName: Zombie_Slaughter_Card
+  Script: |
+    bonus2 bAddRace,RC_DemiHuman,25;
+    // TODO: Heal 500 HP when killing an enemy.
+- Id: 4436
+  AegisName: Ragged_Zombie_Card
+  Script: |
+    // TODO: Critical against Demi-Human enemies +30
+    bonus3 bAddEff,Eff_Bleed,15,ATF_LONG;
+- Id: 4437
+  AegisName: Hell_Poodle_Card
+  Script: |
+    // TODO: Increases recovery amount gained from Meat by 500%
+- Id: 4438
+  AegisName: Banshee_Card
+  Script: |
+    bonus bMatk,13;
+    // TODO: Ghost Magic +7%
+    // TODO: SP Cost +5%
+    // TODO: When equipped by Mage classes: MaxSP +80
+    bonus bMaxHPrate,-1000;
+- Id: 4439
+  AegisName: Flame_Skull_Card
+  Script: |
+    // TODO: Blind
+    // TODO: Stun
+    // TODO: Curse and Stone Curse resistance +10%
+    bonus2 bAddEff,Eff_Blind,5;
+    // TODO: Stun
+    // TODO: Curse or Stone Curse on the attacker when the user gets hit.
+- Id: 4440
+  AegisName: Necromancer_Card
+  Script: |
+    // TODO: When compounded on a Staff or two-handed Staff class weapon: Attack range +5
+    // TODO: Damage +10%
+- Id: 4441
+  AegisName: Fallen_Bishop_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Angel enemies +1%
+    bonus2 bAddRace,RC_DemiHuman,1;
+- Id: 4456
+  AegisName: Nidhogg_Shadow_Card
+  Script: |
+    // TODO: For every 10 Base Levels: Cast Time -1%
+- Id: 4457
+  AegisName: Nahtzigger_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Ghost Magic +1%
+- Id: 4458
+  AegisName: Duneirre_Card
+  Script: |
+    // TODO: 1% chance to increase Perfect Dodge by 100 for 10 seconds when dealing physical damage.
+- Id: 4459
+  AegisName: Lata_Card
+  Script: |
+    // TODO: 1% chance to Skill Delay by 100% for 10 seconds when dealing damage.
+- Id: 4460
+  AegisName: Ringco_Card
+  Script: |
+    bonus bInt,2;
+    bonus bHealPower,7;
+    // TODO: SP Cost +10%
+- Id: 4461
+  AegisName: Pillar_Card
+  Script: |
+    // TODO: 1% chance to increase Perfect Hit by 100 for 10 seconds when dealing physical damage.
+- Id: 4465
+  AegisName: Panat_Card
+  Script: |
+    bonus bShortAtkRate,2;
+    // TODO: When compounded on a Two-Handed Sword class weapon: Refine Level +10: ASPD +3
+    if (getrefine()>=14) {
+    bonus bAspd,3;
+    }
+- Id: 4466
+  AegisName: Beholder_Master_Card
+  Script: |
+    bonus bLongAtkRate,2;
+    // TODO: When compounded on a Bow class weapon: Refine Level +10: ASPD +3
+    if (getrefine()>=14) {
+    bonus bAspd,3;
+    }
+- Id: 4467
+  AegisName: Heavy_Metaling_Card
+  Script: |
+    bonus bStr,2;
+    // TODO: When equipped by Merchant classes: Area Damage +10%
+    // TODO: When equipped by any other classes: Single target Damage +10%
+- Id: 4468
+  AegisName: Pinguicula_Dark_Card
+  Script: |
+    bonus bHomunculusAtk,4;
+    bonus bMaxHPrate,250;
+    // TODO: Random chance a defeated monster will drop Poisonous Herb.
+- Id: 4509
+  AegisName: Gold_Q_Scaraba_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Silence resistance + 1%
+    // TODO: For every 8 Base Levels: Curse resistance + 1%
+    // TODO: If this is compound in an upper headgear
+    // TODO: the bonus is doubled.
+- Id: 4510
+  AegisName: Miming_Card
+  Script: |
+    // TODO: Changes pending.
+    bonus bInt,1;
+- Id: 4512
+  AegisName: Parus_Card
+  Script: |
+    bonus bHealPower,7;
+    // TODO: If refine level is +10 or higher: When equipped by Acolyte classes: Heal power +7%
+    // TODO: When equipped by any other classes: Healing received +7%
+- Id: 4513
+  AegisName: Angra_Mantis_Card
+  Script: |
+    bonus bCritical,5;
+    bonus bCritAtkRate,5;
+    // TODO: If refine level is +10 or higher: When equipped by Thief classes: Critical Damage +7%
+    // TODO: When equipped by any other classes: Critical +(refine rate) -3
+- Id: 4514
+  AegisName: Pom_Spider_Card
+  Script: |
+    // TODO: Changes pending
+    bonus bStr,1;
+- Id: 4523
+  AegisName: Pot_Dofle_Card
+  Script: |
+    // TODO: Enchants compounded Armor with Water elemental.
+    bonus2 bSubRace,RC_Fish,30;
+- Id: 4525
+  AegisName: Kraken_Card
+  Script: |
+    skill "HIDING",10;
+    skill "RAID",10;
+    // TODO: When using Raid
+    // TODO: has a 10% chance to auto-cast Wide Bleeding.
+    // TODO: The level of Wide Bleeding is dependant on your base level.
+- Id: 4526
+  AegisName: Odd_Coelacanth_Card
+  Script: |
+    bonus bMaxSPrate,1*(BaseLevel/20);
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4527
+  AegisName: Black_Coelacanth_Card
+  Script: |
+    bonus bMaxHPrate,1*(BaseLevel/20);
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4528
+  AegisName: Mutant_Coelacanth_Card
+  Script: |
+    bonus bMatkRate,1*(BaseLevel/20);
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4529
+  AegisName: Cruel_Coelacanth_Card
+  Script: |
+    bonus bPhysicalRate,1*(BaseLevel/20);
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4532
+  AegisName: Wild_Rider_Card
+  Script: |
+    // TODO: Low chance to max your movement speed when dealing damage.
+- Id: 4533
+  AegisName: Mini_Octopus_Card
+  Script: |
+    // TODO: Pending changes
+    // TODO: Random chance to inflict Blind status on the target when dealing magical damage.
+- Id: 4556
+  AegisName: Fenrir_Card
+  Script: |
+    bonus bMatk,1*(BaseLevel/8);
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4560
+  AegisName: Clown_Card
+  Script: |
+    // TODO: When using Encore
+    // TODO: auto-cast Lv.5 Whistle.
+    bonus bHealPower,1*((BaseLevel-50)/10);
+- Id: 4561
+  AegisName: Professor_Card
+  Script: |
+    // TODO: While equipped
+    // TODO: the user loses 1 SP every second.
+    bonus4 bAutoSpellWhenHit,"WALL OF FOG",1,10,0;
+    bonus bMagicAtkDef,1*(BaseLevel/10);
+- Id: 4562
+  AegisName: Champion_Card
+  Script: |
+    // TODO: When using Power Absorb: The user heals SP depending on the user's Base Level every second.
+    bonus bMaxHPrate,1*(BaseLevel/20);
+- Id: 4563
+  AegisName: Creator_Card
+  Script: |
+    // TODO: For every 10 Base Levels: Summon Damage +1%
+- Id: 4564
+  AegisName: Stalker_Card
+  Script: |
+    // TODO: When hit by an enemy: 10% chance to auto-cast Strip skills on the attacker.
+- Id: 4565
+  AegisName: Paladin_Card
+  Script: |
+    // TODO: For every 25 Base Levels: Damage against all class enemies +1%
+    // TODO: All class resistance +1%
+    // TODO: If Demon Bane is learned: Damage against all class enemies changes to every (25 - Demon bane)'s level.
+    // TODO: If Divine Protection is learned: All class resistance changes to every (25 - Divine Protection)'s levels.
+- Id: 4566
+  AegisName: Gypsy_Card
+  Script: |
+    bonus bFlee2,1*((BaseLevel-50)/10);
+    // TODO: When casting Into the Abyss
+    // TODO: chain-cast Lv.5 Scream.
+- Id: 4568
+  AegisName: Ceila_Card
+  Script: |
+    // TODO: Spellcasting damage +15%
+    bonus bDex,-3;
+    bonus bInt,3;
+- Id: 4570
+  AegisName: Flamel_Card
+  Script: |
+    // TODO: Increases recovery amount gained from Red Potion
+    // TODO: Orange Potion
+    // TODO: Yellow Potion and White Potion by 500%
+- Id: 4575
+  AegisName: Soheon_Card
+  Script: |
+    bonus bBaseAtk,10;
+    // TODO: When compounded on a Dagger class weapon: Refine Level +10: ASPD +1
+    if (getrefine()>=14) {
+    bonus bAspd,1;
+    }
+- Id: 4576
+  AegisName: Gioia_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Wind magic +1%
+    // TODO: Ghost magic +1%
+    // TODO: For every 8 Base Levels: Water magic -1%
+    // TODO: Neutral magic -1%
+- Id: 4577
+  AegisName: Elvira_Card
+  Script: |
+    // TODO: Wind Magic +20%
+    // TODO: Ghost Magic +20%
+    // TODO: Earth Magic -10%
+    // TODO: Neutral Magic -10%
+- Id: 4579
+  AegisName: Lora_Card
+  Script: |
+    // TODO: When equipped with Mace class weapon: ATK +20
+    bonus bCritical,10;
+    bonus bBaseAtk,1*getrefine();
+    bonus bCritical,1;
+- Id: 4580
+  AegisName: Kades_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Shadow and Undead element resistance +1%
+    // TODO: Holy and Ghost resistance -1%
+    // TODO: For every 8 Base Levels: Water
+    // TODO: Earth
+    // TODO: Fire
+    // TODO: and Wind resistance +1%
+- Id: 4581
+  AegisName: Rudo_Card
+  Script: |
+    // TODO: Random chance to increase movement speed for 3 seconds and AGI by 44 but at the same time lose 40 SP when dealing physical damage.
+- Id: 4584
+  AegisName: Manananggal_Card
+  Script: |
+    bonus bMaxSPrate,-1;
+    // TODO: Regain 1 SP with each attack.
+- Id: 4585
+  AegisName: Mangkukulam_Card
+  Script: |
+    bonus bMaxSPrate,10;
+    // TODO: Drain 666 HPeach time an enemy is killed.
+- Id: 4586
+  AegisName: Tikbalang_Card
+  Script: |
+    bonus bInt,2;
+    // TODO: Wind magic +10%
+    if (getrefine()>=9) {
+    bonus bInt,2;
+    }
+    // TODO: Wind magic +10%
+- Id: 4587
+  AegisName: Tiyanak_Card
+  Script: |
+    // TODO: Critical +20 when attacking Demi-Human
+    // TODO: Brute and Fish race monsters.
+- Id: 4590
+  AegisName: Bangungot_Card
+  Script: |
+    bonus bInt,4;
+    // TODO: Random chance to inflict Sleep status on the targets within a 23x23 cell area around wearer when attacke by magical attack.
+- Id: 4591
+  AegisName: Bakonawa_Card
+  Script: |
+    bonus bStr,4;
+    // TODO: Random chance to inflict Bleeding status on the targets within a 23x23 cell area around wearer when receiving physical damage.
+- Id: 4592
+  AegisName: Buwaya_Card
+  Script: |
+    bonus bVit,4;
+    // TODO: Random chance to inflict Stone Curse on the targets within a 23x23 cell area around wearer when receiving magical attack.
+- Id: 4597
+  AegisName: LichternB_Card
+  Script: |
+    bonus bInt,2;
+    // TODO: Water Magic +10%
+    if (getrefine()>=9) {
+    bonus bInt,2;
+    }
+    // TODO: Water Magic +10%
+- Id: 4598
+  AegisName: LichternY_Card
+  Script: |
+    bonus bInt,2;
+    // TODO: Ghost Magic +10%
+    if (getrefine()>=9) {
+    bonus bInt,2;
+    }
+    // TODO: Ghost Magic +10%
+- Id: 4599
+  AegisName: LichternR_Card
+  Script: |
+    bonus bInt,2;
+    // TODO: Fire Magic +10%
+    if (getrefine()>=9) {
+    bonus bInt,2;
+    }
+    // TODO: Fire Magic +10%
+- Id: 4600
+  AegisName: LichternG_Card
+  Script: |
+    bonus bInt,2;
+    // TODO: Earth Magic +10%
+    if (getrefine()>=9) {
+    bonus bInt,2;
+    }
+    // TODO: Earth Magic +10%
+- Id: 4601
+  AegisName: Amdarais_Card
+  Script: |
+    // TODO: For every 5 Base Levels: Increase damage against all class enemies by 1%
+    bonus bMaxHPrate,-1*(BaseLevel/10);
+- Id: 4602
+  AegisName: AmdaraisH_Card
+  Script: |
+    // TODO: For every 5 Base Levels: Increase damage against all class enemies by 1%
+    bonus bMaxSPrate,-1*(BaseLevel/10);
+- Id: 4603
+  AegisName: CorruptionRoot_Card
+  Script: |
+    bonus bBaseAtk,1*((BaseLevel-30)/2);
+    // TODO: When dealing melee damage
+    bonus3 bAutoSpell,"NPC_WIDESTONE",1,10;
+    // TODO: Wide Sleep Lv.1 or Wide Curse Lv.1
+- Id: 4605
+  AegisName: UndeadKnightM_Card
+  Script: |
+    bonus bMaxHPrate,-44;
+    // TODO: Recover 200 HP for each defeated monster with physical attacks.
+    // TODO: Drains 4444 HP as the Armor is unequipped.
+    // TODO: For each Refine Level: Increasesy recovery by 10.
+- Id: 4606
+  AegisName: UndeadKnightF_Card
+  Script: |
+    bonus bMaxSPrate,-44;
+    // TODO: Recover 20 SP for each defeated monster with physical attacks.
+    // TODO: Drain 444 SP as the garment is unequipped.
+    // TODO: For each Refine Level: Increasesy recovery by 1.
+- Id: 4607
+  AegisName: FaithfulManager_Card
+  Script: |
+    bonus bBaseAtk,5;
+    bonus bMatk,5;
+    // TODO: When equipped with Book class weapon: Refine Level +10: ATK +20
+    bonus bMatk,20;
+    if (getrefine()>=14) {
+    bonus bBaseAtk,20;
+    }
+    bonus bMatk,20;
+- Id: 4610
+  AegisName: Sarah_Card
+  Script: |
+    // TODO: When the damage taken exceeds the user's MaxHP
+    // TODO: user will only take the amount that exceeds the user's MaxHP.
+    // TODO: However
+    // TODO: it cannot decrease the static damage.
+- Id: 4626
+  AegisName: Big_Ben_Card
+  Script: |
+    // TODO: Magic Formless killer +20%
+    // TODO: Magic Demon killer +20%
+- Id: 4629
+  AegisName: Arc_Elder_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,15;
+    // TODO: For each Refine Level: Earth magic +1%
+- Id: 4630
+  AegisName: Time_Keeper_Card
+  Script: |
+    // TODO: Random chance to inflict Curse status to all targets within 11x11 cells when dealing physical damage.
+- Id: 4631
+  AegisName: Owl_Viscount_Card
+  Script: |
+    bonus4 bAutoSpell,"THUNDERSTORM",10,10,BF_MELEE;
+    // TODO: When equipped with Owl Marquees Card: 10% chance to auto-cast Level 3 Thunder Storm when dealing physical damage.
+- Id: 4632
+  AegisName: Owl_Marquees_Card
+  Script: |
+    bonus4 bAutoSpell,"FIRST WIND",10,10,BF_MELEE;
+    // TODO: When equipped with Owl Viscount Card: 10% chance to auto-cast Level 3 Thunder Storm when dealing physical damage.
+- Id: 4636
+  AegisName: Bijou_Card
+  Script: |
+    // TODO: Prevents Frozen status.
+    // TODO: For every 10 Base Levels above 100: Damage against all class monsters +1%
+- Id: 4637
+  AegisName: Immotal_Corps_Card
+  Script: |
+    // TODO: Disables HP and SP Recovery Rate.
+    // TODO: When killing a monster
+    // TODO: heal 6500 HP
+    // TODO: When killing a monster
+    // TODO: heal 650 SP
+- Id: 4638
+  AegisName: Watcher_Card
+  Script: |
+    bonus bBaseAtk,30;
+    // TODO: Drain 5 SP from wearer when receiving physical damage.
+- Id: 4641
+  AegisName: Zombie_Guard_Card
+  Script: |
+    // TODO: Decreases SP Recovery Rate by 100%
+    // TODO: Recover 1 SP for each physical attack.
+- Id: 4647
+  AegisName: Min_Osiris_Card
+  Script: |
+    // TODO: For every Base Level: Heal 13 HP when killing a monster
+- Id: 4648
+  AegisName: Min_Eddga_Card
+  Script: |
+    // TODO: While equipped
+    // TODO: the user will be under the effects of Provoke Lv.10.
+    bonus bPhysicalRate,1*((BaseLevel-100)/10);
+- Id: 4650
+  AegisName: Min_Orc_Hero_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Confusion resistance +1%
+    // TODO: For every 8 Base Levels: Fear resistance +1%
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 4651
+  AegisName: Min_Tao_Gunka_Card
+  Script: |
+    // TODO: For every 50 Base Levels: Heal 1% MaxHP per second.
+- Id: 4652
+  AegisName: Grave_Amon_Ra_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Damage against Demon and Undead race +1%
+    bonus2 bAddEle,Ele_Dark,+1;
+    bonus2 bAddEle,Ele_Undead,+1;
+- Id: 4654
+  AegisName: Grave_Mimic_Card
+  Script: |
+    bonus2 bAddRace,RC_Brute,15;
+    bonus2 bAddEle,Ele_Undead,15;
+    // TODO: Maximum weight +100
+- Id: 4655
+  AegisName: Grave_Minorous_Card
+  Script: |
+    // TODO: Changes pending
+- Id: 4656
+  AegisName: Grave_Mummy_Card
+  Script: |
+    bonus bMaxHPrate,4;
+    bonus bMaxSPrate,4;
+    // TODO: Fire magic +20%
+- Id: 4657
+  AegisName: Grave_A_Mummy_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,15;
+    // TODO: For each Refine Level: Fire magic +1%
+- Id: 4661
+  AegisName: Basilisk2_Card
+  Script: |
+    bonus2 bSubSize,Size_Medium,20;
+    bonus2 bSubSize,Size_Large,20;
+    // TODO: Increases Damage taken from Small size by 15%
+- Id: 4662
+  AegisName: Big_Eggring_Card
+  Script: |
+    bonus bMaxHPrate,1000;
+    bonus bBaseAtk,25;
+    bonus bMatk,25;
+    bonus bAspd,10;
+    bonus bLongAtkRate,5;
+    bonus bCritAtkRate,10;
+    bonus bBaseAtk,-5*(readparam(bStr)/10);
+    bonus bAspd,-2*(readparam(bAgi)/10);
+    bonus bMaxHPrate,-200*(readparam(bVit)/10);
+    bonus bMatk,-5*(readparam(bInt)/10);
+    bonus bLongAtkRate,1*(readparam(bDex)/10);
+    // TODO: For each 10 base LUK: Decreases Critical Damage by 2%
+    // TODO: All Stats bonuses can't be less than 0.
+- Id: 4669
+  AegisName: Ju_Mandragora_Card
+  Script: |
+    bonus2 bMagicAddEle,Ele_Wind,3;
+    // TODO: Refine Level +7: Increases Magical Damage against Wind elemental by additional 5%
+    // TODO: Refine Level +9: Increases Magical Damage against Wind elemental by additional 7%
+- Id: 4670
+  AegisName: Fru_Pom_Spider_Card
+  Script: |
+    bonus2 bMagicAddEle,Ele_Fire,3;
+    // TODO: Refine Level +7: Increases Magical Damage against monsters of Fire elemental by additional 5%
+    // TODO: Refine Level +9: Increases Magical Damage against monsters of Fire elemental by additional 7%
+- Id: 4680
+  AegisName: RoyalGuard_Card
+  Script: |
+    bonus bVit,1*(BaseLevel/20);
+    // TODO: If the user has learned Genesis Ray: Damage against all class monsters +1%
+    // TODO: Otherwise: Physical damage +1%
+- Id: 4684
+  AegisName: Real_Eremes_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: When compounded to Level 3 or higher weapon: Critical damage +5%
+    if (getrefine()>=10) {
+    bonus bCritAtkRate,5;
+    }
+- Id: 4685
+  AegisName: Real_Magaleta_Card
+  Script: |
+    bonus bHealPower,10;
+    // TODO: When compounded to Level 3 or higher weapon: Heal Power +5%
+    if (getrefine()>=10) {
+    bonus bHealPower,5;
+    }
+- Id: 4686
+  AegisName: Real_Katrinn_Card
+  Script: |
+    // TODO: Spellcasting damage +10%
+    // TODO: When compounded to Level 3 or higher weapon: Spellcasting damage +5%
+    // TODO: Refine Level +10: Spellcasting damage +5%
+- Id: 4687
+  AegisName: Real_Shecil_Card
+  Script: |
+    bonus bLongAtkRate,10;
+    // TODO: When compounded to Level 3 or higher weapon: Ranged damage +5%
+    if (getrefine()>=10) {
+    bonus bLongAtkRate,5;
+    }
+- Id: 4688
+  AegisName: Real_Harword_Card
+  Script: |
+    bonus bAoe,10;
+    // TODO: When compounded to Level 3 or higher weapon: Area damage +5%
+    if (getrefine()>=10) {
+    bonus bAoe,5;
+    }
+- Id: 4689
+  AegisName: Real_Seyren_Card
+  Script: |
+    bonus bShortAtkRate,10;
+    // TODO: When compounded to Level 3 or higher weapon: Melee damage +5%
+    if (getrefine()>=10) {
+    bonus bShortAtkRate,5;
+    }
+- Id: 4690
+  AegisName: Real_Randel_Card
+  Script: |
+    bonus bAutoattack,10;
+    // TODO: When compounded to Level 3 or higher weapon: Auto-attack damage +5%
+    if (getrefine()>=10) {
+    bonus bAutoattack,5;
+    }
+- Id: 4691
+  AegisName: Real_Flamel_Card
+  Script: |
+    bonus bHomunculusAtk,10;
+    bonus bHomunculusAtk,10;
+    // TODO: When compounded to Level 3 or higher weapon: Summon Damage +5%
+    bonus bHomunculusAtk,5;
+    if (getrefine()>=10) {
+    bonus bHomunculusAtk,5;
+    }
+    bonus bHomunculusAtk,5;
+- Id: 4692
+  AegisName: Real_Ceila_Card
+  Script: |
+    bonus bMatkRate,10;
+    // TODO: When compounded to Level 3 or higher weapon: Magic damage +5%
+    if (getrefine()>=10) {
+    bonus bMatkRate,5;
+    }
+- Id: 4693
+  AegisName: Real_Chen_Card
+  Script: |
+    bonus bMaxHPrate,10;
+    // TODO: When compounded to Level 3 or higher weapon: MaxHP +5%
+    if (getrefine()>=10) {
+    bonus bMaxHPrate,5;
+    }
+- Id: 4694
+  AegisName: Real_Gertie_Card
+  Script: |
+    bonus bSingle,10;
+    // TODO: When compounded to Level 3 or higher weapon: Single target damage +5%
+    if (getrefine()>=10) {
+    bonus bSingle,5;
+    }
+- Id: 4695
+  AegisName: Real_Trentini_Card
+  Script: |
+    bonus bPhysicalRate,10;
+    // TODO: When compounded to Level 3 or higher weapon: Physical Damage +5%
+    if (getrefine()>=10) {
+    bonus bPhysicalRate,5;
+    }
+- Id: 4696
+  AegisName: Real_Alphoccio_Card
+  Script: |
+    bonus bCastrate,-10;
+    // TODO: When compounded to Level 3 or higher weapon: Cast time -5%
+    if (getrefine()>=10) {
+    bonus bCastrate,-5;
+    }
+- Id: 4697
+  AegisName: Charleston_Card
+  Script: |
+    // TODO: For every Base Level: SP steal +1
+    bonus bPhysicalRate,1*((BaseLevel-100)/10);
+    // TODO: When equipped with Kick Step Card: Nullifies Mado Gear's Fuel Consumption.
+- Id: 4699
+  AegisName: Rock_Step_Card
+  Script: |
+    // TODO: CHANGES PENDING
+    // TODO: Reduces the cooldown of Acceleration by 20 seconds.
+    // TODO: When equipped with Kick Step Card: Nullifies Mado Gear's Fuel Consumption.
+- Id: 4910
+  AegisName: Force3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bStr,10;
+    bonus bBaseAtk,20;
+    bonus bInt,-4;
+- Id: 4913
+  AegisName: Intellect3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bInt,10;
+    bonus bMatk,20;
+    bonus bStr,-4;
+- Id: 4916
+  AegisName: Swiftness3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bAgi,10;
+    bonus bFlee,40;
+    bonus bVit,-4;
+- Id: 4919
+  AegisName: Tough3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bVit,10;
+    bonus bDef,10;
+    bonus bMdef,10;
+    bonus bAgi,-4;
+- Id: 4922
+  AegisName: Artful3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bDex,10;
+    bonus bHit,40;
+    bonus bLuk,-4;
+- Id: 4925
+  AegisName: Fortune3
+  Script: |
+    // TODO: An essence of Satan Morocc. Contains part of demon's power.
+    bonus bLuk,10;
+    bonus bCritical,10;
+    bonus bDex,-4;
+- Id: 27012
+  AegisName: Kick_Step_Card
+  Script: |
+    bonus bMaxHPrate,8;
+    // TODO: When equipped by Mechanic: Decreases damage taken from Ranged Physical Damage by 30%
+- Id: 27013
+  AegisName: KickAndKick_Card
+  Script: |
+    // TODO: Increases damage of Vulcan Arm by 10%
+    // TODO: Refine Level +10: Increases damage of Vulcan Arm by 10%
+    // TODO: When equipped with Kick Step Card: Nullifies Mado Gear's Fuel Consumption.
+- Id: 27014
+  AegisName: GreenCenere_Card
+  Script: |
+    bonus bMaxHPrate,2;
+    // TODO: Adds a chance of restoring HP by 1000 every second for 5 second when wearer attacked by physical or magical attack.
+- Id: 27015
+  AegisName: RepairRobot_T_Card
+  Script: |
+    bonus bHPrecovRate,20;
+    // TODO: Natural SP recovery +20%
+    // TODO: Refine Level +7: Heal 1000 HP when killing an enemy.
+    // TODO: Heal 100 SP when killing an enemy.
+- Id: 27016
+  AegisName: ExplorationRover_T_Card
+  Script: |
+    bonus bCritAtkRate,6;
+    // TODO: Critical +100 when attacking Formless monster.
+- Id: 27017
+  AegisName: Scr_MT_Robots_Card
+  Script: |
+    bonus2 bSubRace,RC_Formless,10;
+    // TODO: Refine Level +7: Decreases damage taken by 5%
+    // TODO: Random chance a defeated monster will drop various Accessories.
+- Id: 27020
+  AegisName: T_W_O_Card
+  Script: |
+    bonus4 bAutoSpell,"NPC_WIDESOUL",5,10,BF_MELEE;
+    // TODO: For every 10 Base Levels above 50: Damage against all class monsters +1%
+- Id: 27026
+  AegisName: Fire_Condor_Card
+  Script: |
+    // TODO: Fire magic +5%
+    // TODO: Fireball cast time -25%
+- Id: 27030
+  AegisName: Fulbuk_Card
+  Script: |
+    // TODO: Fire magic +10%
+    bonus3 bAddEff,Eff_Burn,15,ATF_TARGET;
+- Id: 27081
+  AegisName: AngerMoonlight_Card
+  Script: |
+    // TODO: If Base Level is 50 or higher: 3% chance to auto-cast Pressure Lv.7 when auto-attacking.
+    // TODO: If Base Level is 100 or higher: 3% chance to auto-cast Fire Bolt Lv.7 when auto-attacking.
+    // TODO: If Base Level is 200 or higher: 3% chance to auto-cast Cold Bolt Lv.7 when auto-attacking.
+    // TODO: If Base Level is 250 or higher: 3% chance to auto-cast Lightning Bolt Lv.7 when auto-attacking.
+- Id: 27085
+  AegisName: BitterMunak_Card
+  Script: |
+    bonus bBaseAtk,50;
+    bonus bMatk,50;
+    // TODO: When equipped with Girl's Diary: ATK +100
+    bonus bMatk,100;
+- Id: 27086
+  AegisName: BitterArcherSk_Card
+  Script: |
+    // TODO: Random chance to auto-cast Level 5 Double Strafing when dealing physical attack with Bow weapon.
+    // TODO: Refine Level +10: Increases Bow class weapon damage by 20%
+- Id: 27087
+  AegisName: WizardOfVeritas_Card
+  Script: |
+    bonus bMatk,15;
+    // TODO: Casts can not be interrupted.
+    // TODO: 10% chance to heal 500 HP per second for 5 seconds when dealing magic damage.
+- Id: 27088
+  AegisName: FuryHero_Card
+  Script: |
+    bonus bBaseAtk,5;
+    bonus bMatk,5;
+    // TODO: Adds 1% chance of auto-casting Lv.5 Endure when dealing melee damage.
+- Id: 27101
+  AegisName: SweetNightM_Card
+  Script: |
+    bonus bMatk,20;
+    // TODO: Protects from skill cast interruption.
+- Id: 27103
+  AegisName: LivingDead_Card
+  Script: |
+    bonus bBaseAtk,20;
+    // TODO: Weapon and Armor becomes indestructible.
+- Id: 27104
+  AegisName: Ill_Dracula_Card
+  Script: |
+    // TODO: If this card is compound in a right hand weapon: For every Base Level: Heal 13 HP when dealing damage.
+    // TODO: If this card is compound in a garment: Allows usage of HP Conversion Lv.1
+    // TODO: For every 60 Base Levels
+    // TODO: increase the level by 1.
+    // TODO: For every Base Level above 50: MaxHP +13
+- Id: 27105
+  AegisName: Bomi_Card
+  Script: |
+    // TODO: Ghost magic +10%
+    skill "NAPALM VULCAN",6;
+- Id: 27106
+  AegisName: Grand_Pere_Card
+  Script: |
+    // TODO: When equipped by Bard classes: For every 4 Base Levels: MATK +1
+    // TODO: When equipped by Dancer classes: For every 2 Base Levels: Flee +1
+- Id: 27109
+  AegisName: JitterbugCard
+  Script: |
+    // TODO: MaxHP +250.
+    bonus2 bSubEle,Ele_Neutral,10;
+- Id: 27111
+  AegisName: AngerSnowier_Card
+  Script: |
+    // TODO: Item heal effectiveness +10%
+    // TODO: Heal effectiveness of Red
+    // TODO: Yellow and White Raffle sap +100%
+- Id: 27113
+  AegisName: AwakenKtullanux_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Water magic +1%
+- Id: 27115
+  AegisName: OminousPermeter_Card
+  Script: |
+    bonus bInt,2;
+    bonus bMaxSPrate,80;
+    // TODO: For every 2 Refine Levels: MaxSP +5
+    // TODO: Refine Level +7: Natural SP recovery +25%
+- Id: 27117
+  AegisName: OminousAssulter_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: When equipped with Whip
+    // TODO: Musical Instrument
+    // TODO: Book
+    // TODO: Two-Handed Sword or Two-Handed Spear class weapon: Critical +5
+    bonus bBaseAtk,3*getrefine();
+    bonus bCritAtkRate,1;
+- Id: 27118
+  AegisName: OminousFreezer_Card
+  Script: |
+    bonus bMaxHPrate,10;
+    bonus bStr,2;
+    // TODO: If Base Level at least 160: Ranged damage +10%
+    if (getrefine()>=9) {
+    bonus bLongAtkRate,10;
+    }
+- Id: 27119
+  AegisName: OminousTurtleG_Card
+  Script: |
+    // TODO: For every 10 Base Levels: All size resistance +1%
+- Id: 27121
+  AegisName: Piranha_Card
+  Script: |
+    bonus2 bAddRace,RC_Fish,10;
+    // TODO: Refine Level +9: Increases Damage against monsters of Fish race by additional 5%
+- Id: 27122
+  AegisName: Curupira_Card
+  Script: |
+    bonus2 bMagicAddEle,Ele_Water,3;
+    // TODO: Refine Level +7: Increases Magical Damage against Water elemental by additional 5%
+    // TODO: Refine Level +9: Increases Magical Damage against Water elemental by additional 7%
+- Id: 27125
+  AegisName: Headless_Mule_Card
+  Script: |
+    // TODO: Water magic +20%
+    // TODO: Holy magic +20%
+    // TODO: Wind magic -10%
+    // TODO: Shadow magic -10%
+- Id: 27126
+  AegisName: Boitata_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Damage against Wind and Earth element enemies +1%
+    bonus2 bAddRace,['RC_Brute', 'RC_Insect'],1;
+- Id: 27149
+  AegisName: Heart_Hunter_Card
+  Script: |
+    // TODO: When compounded with Revolver
+    // TODO: Rifle or Grenade Launcher class weapon: Ranged Damage +5%
+    // TODO: For each Refine Level: Ranged Damage +additional 1%
+- Id: 27150
+  AegisName: Venom_Kimera_Card
+  Script: |
+    // TODO: For every Base Level: MaxHP +13
+    bonus bMaxSPrate,1;
+- Id: 27151
+  AegisName: Evil_Card
+  Script: |
+    bonus2 bResEff,Eff_Crystalization,100;
+    // TODO: For every 2 Base Levels above 200: 1% chance to inflict Crystalize on attackers when getting hit by physical damage.
+- Id: 27157
+  AegisName: Wood_Goblin_Card
+  Script: |
+    // TODO: Increases Physical Damage against enemies of Water and Earth elemental by 5%
+    // TODO: Increases Physical Damage taken from Water and Earth elemental by 5%
+    // TODO: Refine Level +9: Increases Physical Damage against enemies of Water and Earth elemental by 5%
+- Id: 27160
+  AegisName: Vavayaga_Card
+  Script: |
+    // TODO: For each Refine Level of Shoes: FLEE +2
+- Id: 27161
+  AegisName: Mavka_Card
+  Script: |
+    // TODO: Fire magic +20%
+    // TODO: Earth magic +20%
+    // TODO: Water magic -10%
+    // TODO: Wind magic -10%
+- Id: 27162
+  AegisName: Gopinich_Card
+  Script: |
+    // TODO: For every Base Level: SP Steal +1
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 27166
+  AegisName: Faceworm_Egg_Card
+  Script: |
+    bonus2 bSubEle,Ele_Fire,2;
+    // TODO: Refine Level +7: Decreases damage taken from Fire elemental by additional 1%
+    // TODO: Refine Level +9: Decreases damage taken from Fire elemental by additional 2%
+- Id: 27167
+  AegisName: Faceworm_L_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,15;
+    // TODO: For each Refine Level: Water magic +1%
+- Id: 27169
+  AegisName: Payon_Soldier_Card
+  Script: |
+    bonus bBaseAtk,5;
+    bonus bMatk,5;
+    // TODO: When compounded with Spear class weapon: Refine Level +10: ATK +20
+    bonus bMatk,20;
+    if (getrefine()>=14) {
+    bonus bBaseAtk,20;
+    }
+    bonus bMatk,20;
+- Id: 27172
+  AegisName: Cowraiders3_Card
+  Script: |
+    bonus bBaseAtk,5;
+    bonus bMatk,5;
+    // TODO: When compounded on a Dagger class weapon: Refine Level +10: ATK +20
+    bonus bMatk,20;
+    if (getrefine()>=14) {
+    bonus bBaseAtk,20;
+    }
+    bonus bMatk,20;
+- Id: 27175
+  AegisName: E_Cowraiders3_Card
+  Script: |
+    // TODO: Increases Damage against Small size by 10%
+- Id: 27178
+  AegisName: Gaster_Card
+  Script: |
+    bonus2 bSubClass,Class_Normal,25;
+    // TODO: Increases damage taken from Boss class by 50%
+- Id: 27179
+  AegisName: Coyote_Card
+  Script: |
+    bonus bMaxHPrate,-12;
+    bonus bMaxSPrate,-6;
+    // TODO: Protects from skill cast interruption.
+    if (getrefine()>=10) {
+    bonus bMaxHPrate,6;
+    }
+    bonus bMaxSPrate,3;
+- Id: 27181
+  AegisName: AirShip_Raid_Card
+  Script: |
+    bonus bLongAtkRate,1;
+    bonus bCritical,1*(getrefine()/2);
+    // TODO: Ranged Damage +additional 1%
+- Id: 27182
+  AegisName: Felock_Card
+  Script: |
+    bonus bBaseAtk,1*(BaseLevel/8);
+    // TODO: If the user's base job is Gunslinger: For every 20 Base Levels: Physical damage +1%
+- Id: 27184
+  AegisName: Knight_Sakray_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Demon monsters +1%
+- Id: 27250
+  AegisName: Dio_Anemos_Card
+  Script: |
+    bonus bMatkRate,10;
+    // TODO: Earth magic +5%
+    bonus2 bMagicAtkEle,Ele_Neutral,5;
+- Id: 27253
+  AegisName: Geffen_Thief_Card
+  Script: |
+    bonus bMatkRate,10;
+    // TODO: Fire magic +5%
+    // TODO: Holy magic +5%
+- Id: 27254
+  AegisName: Pa_Monk_Card
+  Script: |
+    // TODO: Natural SP recovery +65%
+    bonus3 bAutoSpellWhenHit,"CH_SOULCOLLECT",1,10;
+- Id: 27255
+  AegisName: Ordre_Card
+  Script: |
+    bonus bMatkRate,10;
+    // TODO: Wind magic +5%
+    // TODO: Water magic +5%
+- Id: 27257
+  AegisName: Kuro_Akuma_Card
+  Script: |
+    // TODO: Variable Cast Time -4%
+    // TODO: All element magic +5%
+    bonus bLongAtkRate,5;
+- Id: 27259
+  AegisName: Rechenier_Card
+  Script: |
+    bonus bMatkRate,5;
+    bonus bHealPower,5;
+    // TODO: Holy Magic Damage +10%
+- Id: 27261
+  AegisName: Jew_Card
+  Script: |
+    // TODO: Increases damage of Fire Bolt
+    // TODO: Cold Bolt and Lightning Bolt by 14%
+- Id: 27262
+  AegisName: Dy_Card
+  Script: |
+    // TODO: Shadow magic +20%
+    bonus2 bMagicAtkEle,Ele_Neutral,20;
+    // TODO: Holy magic -10%
+    // TODO: Ghost magic -10%
+- Id: 27263
+  AegisName: Fei_Kanabian_Card
+  Script: |
+    // TODO: Random chance to transform user into Golem for 10 seconds when dealing physical damage.
+    // TODO: During possession: DEF +300
+- Id: 27265
+  AegisName: Evil_Fanatics_Card
+  Script: |
+    // TODO: For every 8 Base Levels: Damage against Shadow and Undead element enemies +1%
+- Id: 27287
+  AegisName: Shiny_Teddy_Bear_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Holy Magic +1%
+- Id: 27294
+  AegisName: Ancient_Tao_Gunka_Card
+  Script: |
+    // TODO: For every 20 Base Levels: Damage against Normal monsters +1%
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 27298
+  AegisName: Ancient_Wootan_Defender_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Boss resistance +1%
+- Id: 27305
+  AegisName: EL_A17T_Card
+  Script: |
+    bonus3 bAutoSpell,"WZ_THUNDERSTORM",1,10;
+    // TODO: Frost Diver or Fireball when auto-attacking.
+- Id: 27306
+  AegisName: Bellare_Card
+  Script: |
+    // TODO: When compounded on a Revolver class weapon: Ranged Damage +5%
+    if (getrefine()>=10) {
+    bonus bLongAtkRate,7;
+    }
+- Id: 27307
+  AegisName: High_Bellare_Card
+  Script: |
+    // TODO: When compounded on a Gatling Gun class weapon: HIT +20
+    bonus bLongAtkRate,5;
+    // TODO: For each Refine Level: Ranged Damage +additional 1%
+    // TODO: Refine Level +10: auto attack damage +15%
+- Id: 27309
+  AegisName: High_Sanare_Card
+  Script: |
+    bonus bInt,3;
+    // TODO: Holy Magic Damage +12%
+    if (getrefine()>=9) {
+    bonus bInt,3;
+    }
+    // TODO: Holy Magic Damage +13%
+- Id: 27310
+  AegisName: Plaga_Card
+  Script: |
+    bonus bInt,3;
+    // TODO: Neutral Magic Damage +12%
+    if (getrefine()>=9) {
+    bonus bInt,3;
+    }
+    // TODO: Neutral Magic Damage +13%
+- Id: 27311
+  AegisName: Mutant_Plaga_Card
+  Script: |
+    // TODO: When compounded on a Knuckle class weapon: ATK +15
+    // TODO: For each Refine Level: Damage against Large enemies +1%
+    if (getrefine()>=10) {
+    bonus2 bAddSize,Size_Large,15;
+    }
+- Id: 27313
+  AegisName: Mt_Dolor_Card
+  Script: |
+    // TODO: When compounded on a Katar class weapon: Critical +7
+    bonus bBaseAtk,15;
+    bonus bCritAtkRate,2*(getrefine()/2);
+    if (getrefine()>=10) {
+    bonus2 bAddSize,Size_Large,15;
+    }
+- Id: 27315
+  AegisName: Mt_Venenum_Card
+  Script: |
+    // TODO: Magical brute killer +20%
+- Id: 27319
+  AegisName: R48_85_Bestia_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Poison monsters +1%
+- Id: 27320
+  AegisName: E_EA1L_Card
+  Script: |
+    // TODO: Fire magic +10%
+    // TODO: Refine Level +7: Fire magic +10%
+    // TODO: Refine Level +9: Fire magic +10%
+- Id: 27321
+  AegisName: Despair_God_Morocc_Card
+  Script: |
+    // TODO: Transforms into Despair God Morocc for 30 seconds
+    // TODO: when using the First Aid skill.
+    // TODO: While transformed: For every 8 Base Levels: Damage against Angel enemies +1%
+    // TODO: For every 20 Base Levels: Damage against all class enemies +1%
+- Id: 27324
+  AegisName: Brinaranea_Card
+  Script: |
+    // TODO: Water magic +30%
+- Id: 27327
+  AegisName: Grim_Reaper_Ankou_Card
+  Script: |
+    // TODO: For every 8 Base Levels: Damage against Angel monsters +1%
+    // TODO: If this card is compound on an upper headgear
+    // TODO: the effect is doubled.
+- Id: 27329
+  AegisName: Schmidt_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Fire monsters +1%
+- Id: 27337
+  AegisName: Chaotic_Hunter_Fly_Card
+  Script: |
+    // TODO: When compound on a shield: Wind resistance +25%
+    bonus2 bSubRace,RC_Insect,25;
+    // TODO: When compound on a weapon: Lifesteal +0.2%
+- Id: 27339
+  AegisName: Chaotic_Ghostring_Card
+  Script: |
+    // TODO: When using Soul Strike or Napalm Beat: 10% chance to increase Ghost magic by 10%
+    // TODO: While this buff is active
+    // TODO: drain 100 SP per second.
+    // TODO: (Auto-bonuses can not stack)
+- Id: 27346
+  AegisName: Rigid_Muspellskoll_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Dragon resistance +1%
+    bonus2 bSubRace,RC_Demon,1;
+- Id: 27356
+  AegisName: Frozen_Gargoyle_Card
+  Script: |
+    // TODO: DEF +5.
+    bonus2 bSubSize,Size_Medium,20;
+    bonus2 bSubSize,Size_Large,20;
+    // TODO: Small size resistance -5%
+- Id: 27362
+  AegisName: Contaminated_Spider_Queen_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Earth Magic +1%
+    // TODO: Water Magic +1%
+    // TODO: For every 8 Base Levels: Wind Magic -1%
+    // TODO: Fire Magic -1%
+- Id: 27363
+  AegisName: Contaminated_Dark_Lord_Card
+  Script: |
+    bonus bMaxHPrate,-10;
+    bonus bAspd,5;
+    // TODO: For every 8 Base Levels: Fire magic +1%
+- Id: 27381
+  AegisName: C_Himel_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Holy Magic +1%
+    bonus2 bMagicAtkEle,Ele_Neutral,1;
+    // TODO: For every 8 Base Levels: Shadow Magic -1%
+    // TODO: Ghost Magic -1%
+- Id: 27382
+  AegisName: C_CorruptionRoot_Card
+  Script: |
+    // TODO: When equipped with Corruption Root Card: For each 20 Base Levels: VIT +1
+    bonus bLuk,1;
+    // TODO: When equipped with Realized Corruption Root Card: For each 8 Base Levels: Fire Magic +1%
+    // TODO: Earth Magic +1%
+- Id: 27383
+  AegisName: C_Amdarais_Card
+  Script: |
+    // TODO: When equipped with Amdarais Card: For every 20 Base Levels: Physical damage +1%
+    bonus bAoe,1;
+    // TODO: When equipped with Realized Amdarais Card: Damage against all class enemies +1%
+    bonus bAoe,1;
+- Id: 27384
+  AegisName: C_White_Knight_Card
+  Script: |
+    bonus bMatk,15;
+    // TODO: Magical medium size killer +15%
+    // TODO: Magical Large size killer +15%
+- Id: 31018
+  AegisName: XM_Mystcase_Card
+  Script: |
+    bonus bMaxHPrate,-1225;
+    // TODO: Random chance to inflict Curse on the target when dealing magical damage.
+- Id: 31021
+  AegisName: XM_Marionette_Card
+  Script: |
+    // TODO: Monster killer -3%
+    bonus bAspd,4;
+- Id: 31024
+  AegisName: As_Bdy_Knight_Card
+  Script: |
+    // TODO: Damage +10%
+    bonus4 bAutoSpell,"NPC_IGNITIONBREAK",5,10,BF_MELEE;
+- Id: 31026
+  AegisName: As_Ragged_Golem_Card
+  Script: |
+    bonus bFlee,1*(BaseLevel/2);
+    // TODO: When equipped with Immortal Cursed Knight Card: ASPD +2
+    // TODO: When equipped with Immortal Wind Ghost Card: Cast Time -4%
+- Id: 50900
+  AegisName: Rubylit_Card
+  Script: |
+    bonus bNearAtkDef,11;
+    bonus bLongAtkDef,5;
+    // TODO: ________________________
+- Id: 50901
+  AegisName: Sapphlit_Card
+  Script: |
+    bonus bMagicAtkDef,16;
+    // TODO: ________________________
+- Id: 50902
+  AegisName: Emelit_Card
+  Script: |
+    // TODO: All class resistance +15%
+    // TODO: ________________________
+- Id: 50903
+  AegisName: Topalit_Card
+  Script: |
+    bonus bHPrecovRate,15;
+    // TODO: When using First Aid
+    // TODO: autocast Lv.5 Renovatio on the user.
+    // TODO: ________________________
+- Id: 50904
+  AegisName: Amelit_Card
+  Script: |
+    // TODO: When compound on an item in the left hand: Magic resistance +16%
+    // TODO: ________________________
+    // TODO: When compound on an item in the right hand: Damage +16%
+    // TODO: ________________________
+- Id: 50905
+  AegisName: Flame_Knight_Card
+  Script: |
+    bonus bBaseAtk,10;
+    bonus bPhysicalRate,11;
+    skill "FLAME LAUNCHER",1;
+    // TODO: ________________________
+- Id: 50906
+  AegisName: Ice_Knight_Card
+  Script: |
+    bonus bBaseAtk,10;
+    bonus bPhysicalRate,11;
+    skill "FROST WEAPON",1;
+    // TODO: ________________________
+- Id: 50907
+  AegisName: Earth_Knight_Card
+  Script: |
+    bonus bBaseAtk,10;
+    bonus bPhysicalRate,11;
+    skill "SEISMIC WEAPON",1;
+    // TODO: ________________________
+- Id: 50908
+  AegisName: Light_Knight_Card
+  Script: |
+    // TODO: If equipped by a Crusader: Restore 1% max HP every 5 seconds.
+    // TODO: Holy magic +20%
+    bonus2 bMagicAtkEle,Ele_Neutral,20;
+    // TODO: ________________________
+    // TODO: If equipped by any other class: Heal Power +16%
+    // TODO: ________________________
+- Id: 50909
+  AegisName: Dark_Knight_Card
+  Script: |
+    // TODO: If equipped by a Dark Knight: Restore 1% max HP every 5 seconds.
+    bonus bPhysicalRate,11;
+    // TODO: ________________________
+    // TODO: If equipped by any other class: Auto-attack damage +16%
+    // TODO: ________________________
+- Id: 300005
+  AegisName: Abyss_Man_Card
+  Script: |
+    bonus bInt,2;
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Earth magic +20%
+- Id: 300007
+  AegisName: Jungoliant_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Damage against Fire and Water enemies +1%
+    bonus2 bAddRace,['RC_Formless', 'RC_Plant'],1;
+- Id: 300009
+  AegisName: Plasma_Spt_Card
+  Script: |
+    // TODO: Ghost Magic +30%
+    // TODO: Refine Level +10: Ghost Magic +10%
+    // TODO: Refine Level +14: Ghost Magic +10%
+- Id: 300010
+  AegisName: Plasma_Arch_Card
+  Script: |
+    // TODO: Wind Magic +30%
+    // TODO: Refine Level +10: Wind Magic +10%
+    // TODO: Refine Level +14: Wind Magic +10%
+- Id: 300011
+  AegisName: Holy_Frus_Card
+  Script: |
+    // TODO: Holy Magic +30%
+    // TODO: Refine Level +10: Holy Magic +10%
+    // TODO: Refine Level +14: Holy Magic +10%
+- Id: 300013
+  AegisName: Reginleif_Card
+  Script: |
+    // TODO: Indestructible in battle
+    bonus bMaxHPrate,-4;
+    // TODO: For every 10 Base Levels: Damage against all class monsters +1%
+- Id: 300014
+  AegisName: Ingrid_Card
+  Script: |
+    // TODO: Indestructible in battle
+    bonus2 bAddClass,Class_All,-4;
+    // TODO: For every 2 Base Levels: Heal 10 HP per second.
+    // TODO: For every 10 Base Levels: Damage against all class monsters -1%
+    bonus bMaxHPrate,1;
+- Id: 300015
+  AegisName: Ferus_P_Card
+  Script: |
+    bonus2 bAddClass,Class_All,+10;
+    // TODO: For each 2 Refine Levels: Damage against all class monsters +1%
+- Id: 300021
+  AegisName: Bone_Detale_Card
+  Script: |
+    // TODO: for every 16 Base Levels: Damage against Undead and Dragon races +1%
+    bonus2 bAddEle,Ele_Ghost,+1;
+    bonus2 bAddEle,Ele_Undead,+1;
+- Id: 300078
+  AegisName: Sweetie_Card
+  Script: |
+    // TODO: Physical Damage +(baseLevel / 20)%
+    // TODO: SP Cost -(baseLevel / 4)%
+- Id: 300079
+  AegisName: Red_Pepper_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Fish and Formless resistance +1%
+    bonus2 bSubEle,['Ele_Holy', 'Ele_Water'],1;
+- Id: 300080
+  AegisName: Red_Pepper_H_Card
+  Script: |
+    // TODO: For every 16 Base Levels: Damage against Fish and Formless monsters +1%
+    bonus2 bAddEle,['Ele_Holy', 'Ele_Water'],1;
+- Id: 300081
+  AegisName: Assistant_Card
+  Script: |
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Fire magic +20%
+- Id: 300083
+  AegisName: Dry_Rafflesia_Card
+  Script: |
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Water magic +20%
+- Id: 300085
+  AegisName: Alnoldi_Ex_Card
+  Script: |
+    bonus bMaxHPrate,5;
+    bonus bMaxSPrate,5;
+    // TODO: For each Level of Kihop: ATK +1
+- Id: 300086
+  AegisName: Alnoldi_Ex_H_Card
+  Script: |
+    bonus bShortAtkRate,6;
+    bonus bShortAtkRate,1*(getrefine()/2);
+    // TODO: Refine Level +11: Indestructible in battle
+- Id: 300090
+  AegisName: Verporte_Card
+  Script: |
+    bonus bInt,1;
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Shadow magic +20%
+- Id: 300093
+  AegisName: Papila_Ruba_Card
+  Script: |
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Holy magic +20%
+- Id: 300097
+  AegisName: Aries_Card
+  Script: |
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Poison Magic +20%
+- Id: 300098
+  AegisName: Aries_H_Card
+  Script: |
+    bonus bMatk,10;
+    // TODO: Fire magic +25%
+    // TODO: Wind magic +25%
+    // TODO: Variable Cast Time +4%
+- Id: 300099
+  AegisName: Silva_Papilia_Card
+  Script: |
+    // TODO: For every 8 Base Levels: Normal monster resistance +1%
+    bonus bHealPower2,1*(BaseLevel/20);
+- Id: 300100
+  AegisName: Gran_Papilia_Card
+  Script: |
+    // TODO: For every 8 Base Levels: Boss resistance +1%
+    bonus bHealPower2,1*(BaseLevel/20);
+- Id: 300104
+  AegisName: Bookworm_Card
+  Script: |
+    bonus bInt,1;
+    bonus bMaxHPrate,3;
+    // TODO: Spellcasting damage +3%
+- Id: 300105
+  AegisName: Roaming_Splbook_Card
+  Script: |
+    bonus bInt,1;
+    bonus bMaxHPrate,3;
+    // TODO: All element magic +3%
+- Id: 300106
+  AegisName: Pitaya_R_Card
+  Script: |
+    // TODO: Fire magic +25%
+    // TODO: Refine Level +10: Fire magic +5%
+    // TODO: Refine Level +14: Fire magic +5%
+- Id: 300107
+  AegisName: Pitaya_Boss_Card
+  Script: |
+    // TODO: For every 2 Base Levels: Heal 1 SP when dealing damage to an enemy.
+- Id: 300111
+  AegisName: Bellare3_Card
+  Script: |
+    bonus bAgi,1;
+    // TODO: Fire magic +5%
+    // TODO: Water magic +5%
+    // TODO: Wind magic +5%
+- Id: 300115
+  AegisName: Sanare3_Card
+  Script: |
+    bonus bMatk,10;
+    // TODO: Holy magic +20%
+    // TODO: SP Cost +10%
+- Id: 300118
+  AegisName: EP17_2_Phen_Card
+  Script: |
+    bonus bStr,1;
+    bonus bMaxHPrate,3;
+    // TODO: Autoattack damage +3%
+- Id: 300121
+  AegisName: EP17_2_Marc_Card
+  Script: |
+    bonus bMaxHPrate,3;
+    bonus bMaxSPrate,3;
+    // TODO: Water magic +20%
+- Id: 300122
+  AegisName: Pitaya_Y_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,20;
+    // TODO: If baseLevel is 150 or higher: Holy magic +5%
+    // TODO: If baseLevel is 200 or higher: Holy magic +5%
+    // TODO: For each Refine Level: Holy magic damage +1%
+- Id: 300123
+  AegisName: Pitaya_V_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,20;
+    // TODO: If baseLevel is 150 or higher: Neutral magic +5%
+    // TODO: If baseLevel is 200 or higher: Neutral magic +5%
+    // TODO: For each Refine Level: Neutral magic damage +1%
+- Id: 300124
+  AegisName: Pitaya_B_Card
+  Script: |
+    // TODO: Water magic +20%
+    // TODO: Refine Level +10: Water magic +5%
+    // TODO: Refine Level +14: Water magic +10%
+- Id: 300145
+  AegisName: ILL_Abysmal_Witch_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Fire magic +1%
+    // TODO: Shadow magic +1%
+    // TODO: For every 8 Base Levels: Earth magic -1%
+    // TODO: Holy magic -1%
+- Id: 300146
+  AegisName: ILL_Sedora_Card
+  Script: |
+    bonus bCritAtkRate,10;
+    // TODO: Critical against Fish monsters +100
+- Id: 300149
+  AegisName: ILL_Phen_Card
+  Script: |
+    bonus2 bSubEle,Ele_Neutral,20;
+    // TODO: For each refine level: Wind Magic +1%
+    // TODO: If BaseLevel is 150 or higher: Wind Magic +5%
+    // TODO: If BaseLevel is 200 or higher: Wind Magic +5%
+- Id: 300150
+  AegisName: ILL_King_Dramoh_Card
+  Script: |
+    // TODO: If refine level is 0: MaxHP +3%
+    bonus2 bAddClass,Class_All,+7;
+    if (getrefine()>0) {
+    bonus2 bAddClass,Class_All,+20;
+    }
+    // TODO: For each 2 refine levels: MaxHP -1%
+    bonus2 bAddClass,Class_All,+1;
+- Id: 300211
+  AegisName: EP18_Ash_Toad_Card
+  Script: |
+    bonus bMatk,10;
+    // TODO: Earth magic +20%
+    // TODO: SP Cost +10%
+- Id: 300212
+  AegisName: EP18_Rakehand_Card
+  Script: |
+    bonus bDef,40;
+    // TODO: Resistance against Shadow monsters +10%
+- Id: 300214
+  AegisName: EP18_Hot_Molar_Card
+  Script: |
+    bonus bCritAtkRate,1*(getrefine()/2);
+    // TODO: When compounded on Katar: For each 2 Refine Levels: Melee damage +1%
+    // TODO: When compounded on any other weapon: For each 2 Refine Levels: Ranged damage +1%
+- Id: 300215
+  AegisName: EP18_Volcaring_Card
+  Script: |
+    // TODO: Earth magic +5%
+    // TODO: Fire magic +5%
+    // TODO: For each refine level: Earth magic +1%
+    // TODO: Fire magic +1%
+- Id: 300216
+  AegisName: EP18_Lava_Toad_Card
+  Script: |
+    bonus bMatk,10;
+    // TODO: Fire magic +20%
+    // TODO: SP Cost +10%
+- Id: 300217
+  AegisName: EP18_Burning_Fang_Card
+  Script: |
+    bonus bBaseAtk,25;
+    // TODO: All element resistance -10%
+    bonus bShortAtkRate,1*(BaseLevel/10);
+- Id: 300218
+  AegisName: EP18_Ashhopper_Card
+  Script: |
+    bonus bMatk,10;
+    bonus2 bMagicAtkEle,Ele_Neutral,20;
+    // TODO: SP Cost +10%
+- Id: 300219
+  AegisName: EP18_Ashring_Card
+  Script: |
+    // TODO: Shadow magic +30%
+    // TODO: Refine rate +10: Shadow magic +10%
+    // TODO: Refine rate +14: Shadow magic +10%
+- Id: 300221
+  AegisName: EP18_Tumble_Ring_Card
+  Script: |
+    bonus2 bMagicAtkEle,Ele_Neutral,5;
+    // TODO: Shadow magic +5%
+    // TODO: For each refine level: Neutral magic +1%
+    // TODO: Shadow magic +1%
+- Id: 300222
+  AegisName: EP18_Firewind_Kite_Card
+  Script: |
+    bonus bMatk,10;
+    // TODO: Wind Magic +20%
+    // TODO: SP Cost +10%
+- Id: 300227
+  AegisName: EP18_Schulang_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Angel enemies +1%
+- Id: 300228
+  AegisName: EP18_Demi_Freyja_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Demon enemies +1%
+- Id: 300236
+  AegisName: ILL_Giearth_Card
+  Script: |
+    bonus2 bResEff,Eff_Confusion,25;
+    bonus2 bResEff,Eff_Blind,25;
+    // TODO: For each 4 Refine Levels: Damage against Insect monsters +5%
+- Id: 300237
+  AegisName: ILL_Farmiliar_Card
+  Script: |
+    bonus2 bAddRace,RC_Brute,30;
+    // TODO: For each Refine Level: Damage against Brute monsters +1%
+- Id: 300238
+  AegisName: ILL_Vitata_Card
+  Script: |
+    bonus bInt,4;
+    // TODO: Poison Magic +15%
+    if (getrefine()>=9) {
+    bonus bInt,4;
+    }
+    // TODO: Poison Magic +15%
+- Id: 300239
+  AegisName: ILL_Maya_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Insect resistance +1%
+    bonus2 bSubRace,RC_Brute,1;
+- Id: 300240
+  AegisName: Gan_Ceann_Card
+  Script: |
+    bonus bStr,2;
+    bonus bBaseAtk,10;
+    // TODO: Damage to Large size monsters +20%
+    // TODO: If Base Level is 200 or higher: Damage to Large size monsters +20%
+- Id: 300241
+  AegisName: Brutal_Murderer_Card
+  Script: |
+    bonus bStr,2;
+    bonus bBaseAtk,10;
+    // TODO: Damage to Medium size monsters +20%
+    // TODO: If Base Level is 200 or higher: Damage to medium size monsters +20%
+- Id: 300242
+  AegisName: Ghost_Cube_Card
+  Script: |
+    // TODO: When equipped by Novice or Super Novice: Physical damage +7%
+    bonus bMaxHPrate,500;
+- Id: 300243
+  AegisName: Lude_Gal_Card
+  Script: |
+    // TODO: When equipped by Novice or Super Novice: Magic damage +7%
+    bonus bMaxSPrate,10;
+- Id: 300244
+  AegisName: Disguiser_Card
+  Script: |
+    bonus bLongAtkRate,7;
+    bonus bDelayrate,-5;
+    if (getrefine()>=11) {
+    bonus bLongAtkRate,2;
+    }
+    // TODO: For every 4 refine levels: Skill delay +1%
+    bonus bLongAtkRate,1;
+- Id: 300245
+  AegisName: Bluemoon_Loli_Ruri_Card
+  Script: |
+    bonus bHealPower,7;
+    bonus bCastrate,-5;
+    if (getrefine()>=11) {
+    bonus bHealPower,4;
+    }
+    // TODO: For every 2 refine levels: Cast time -1%
+    bonus bHealPower,1;
+- Id: 300246
+  AegisName: Grote_Card
+  Script: |
+    bonus bShortAtkRate,7;
+    bonus bDelayrate,-5;
+    if (getrefine()>=11) {
+    bonus bShortAtkRate,4;
+    }
+    // TODO: For every 2 refine levels: Melee damage +1%
+    bonus bDelayrate,-1;
+- Id: 300247
+  AegisName: Pierrotzoist_Card
+  Script: |
+    bonus bMatkRate,7;
+    bonus bCastrate,-5;
+    if (getrefine()>=11) {
+    bonus bMatkRate,4;
+    }
+    // TODO: For every 2 refine levels: Magic damage +1%
+    bonus bCastrate,-1;
+- Id: 300248
+  AegisName: Death_Witch_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against Demon enemies +1%
+    bonus2 bAddRace,RC_Formless,1;
+- Id: 300249
+  AegisName: Giant_Caput_Card
+  Script: |
+    bonus2 bAddRace,RC_Formless,13;
+    // TODO: Base Level at least 200: Damage against Formless monsters +15%
+- Id: 300250
+  AegisName: Dolorian_Card
+  Script: |
+    bonus2 bAddRace,RC_Demon,13;
+    // TODO: Base Level at least 200: Damage against Demon monsters +15%
+- Id: 300251
+  AegisName: Plagarion_Card
+  Script: |
+    bonus bMatk,25;
+    bonus2 bMagicAtkEle,Ele_Neutral,15;
+    // TODO: SP Cost +25%
+- Id: 300252
+  AegisName: Deadre_Card
+  Script: |
+    bonus bMatk,25;
+    // TODO: Holy Magic Damage +15%
+    // TODO: SP Cost +25%
+- Id: 300253
+  AegisName: Venedi_Card
+  Script: |
+    bonus bMatk,25;
+    // TODO: Poison Magic +15%
+    // TODO: SP Cost +25%
+- Id: 300254
+  AegisName: Amitera_Card
+  Script: |
+    bonus bMaxHPrate,7;
+    // TODO: If Call Homunculus is learned: Homunculus damage +15%
+    // TODO: Otherwise: MaxHP +5%
+    // TODO: For every 2 refine levels: MaxHP +1%
+- Id: 300255
+  AegisName: Litus_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: Homunculus damage +11%
+    // TODO: Otherwise: MATK +25
+    // TODO: Wind Magic +15%
+    // TODO: SP Cost +25%
+- Id: 300256
+  AegisName: Fillia_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: Homunculus damage +11%
+    // TODO: Otherwise: MATK +25
+    // TODO: Fire Magic +15%
+    // TODO: SP Cost +25%
+- Id: 300257
+  AegisName: Vanilaqus_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: Homunculus damage +11%
+    // TODO: Otherwise: MATK +25
+    // TODO: Water Magic +15%
+    // TODO: SP Cost +25%
+- Id: 300258
+  AegisName: Lava_Eater_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: Homunculus damage +11%
+    // TODO: Otherwise: MATK +25
+    // TODO: Shadow magic +15%
+    // TODO: SP Cost +25%
+- Id: 300259
+  AegisName: Fulgor_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: Homunculus damage +11%
+    // TODO: Otherwise: MATK +25
+    // TODO: Earth Magic +15%
+    // TODO: SP Cost +25%
+- Id: 300260
+  AegisName: Napeo_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: INT +2
+    bonus bHomunculusAtk,20;
+    // TODO: Otherwise: For every 13 base INT: MATK +4
+    // TODO: If Base INT is 125 or higher: MATK +10
+- Id: 300261
+  AegisName: Galensis_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: LUK +2
+    bonus bHomunculusAtk,20;
+    // TODO: Otherwise: For every 13 base LUK: Critical +2
+    // TODO: If base LUK is 125 or higher: Critical damage +14%
+- Id: 300262
+  AegisName: The_One_Card
+  Script: |
+    // TODO: If Call Homunculus is learned: For every 10 Base Levels: Homunculus damage +1%
+    // TODO: Otherwise: For every 4 Base Levels: Damage against Undead race +1%
+    bonus2 bAddRace,RC_Dragon,1;
+- Id: 300263
+  AegisName: Reken_Guard_Card
+  Script: |
+    bonus bAtkRate,+1;
+    // TODO: When compounded on either Dagger
+    // TODO: One-Handed Sword or Two-Handed Sword: Melee damage +5%
+    // TODO: For every 4 Refine Levels: Melee damage +1%
+    if (BaseLevel>=200) { bonus bShortAtkRate,1; };
+    // TODO: For every 5 Refine Levels: Melee damage +1%
+- Id: 300264
+  AegisName: Reken_H_Guard_Card
+  Script: |
+    bonus bAtkRate,+1;
+    // TODO: When compounded on either One-Handed Spear or Two-Handed Spear: Ranged damage +5%
+    // TODO: For every 4 Refine Levels: Ranged damage +1%
+    if (BaseLevel>=200) { bonus bLongAtkRate,1; };
+    // TODO: For every 5 Refine Levels: Ranged damage +1%
+- Id: 300265
+  AegisName: Regen_Scientist_Card
+  Script: |
+    bonus bMatkRate,1;
+    // TODO: When compounded on Staff or Two-Handed Staff: All Element Magic Damage +5%
+    // TODO: For every 4 Refine Levels: All Element Magic Damage +1%
+    // TODO: Base Level is at least 200: All Element Magic Damage +1%
+    // TODO: For every 5 Refine Levels: All Element Magic Damage +1%
+- Id: 300267
+  AegisName: Crow_Baron_Card
+  Script: |
+    // TODO: Fire magic +11%
+    // TODO: Wind magic +11%
+    // TODO: If base level is 200 or higher: 2% chance to auto-cast Conflagration Lv.1 when auto-attacking
+    bonus4 bAutoSpell,"LIGHTNING LAND",1,2,BF_MELEE;
+- Id: 300268
+  AegisName: Crow_Duke_Card
+  Script: |
+    // TODO: Earth magic +11%
+    // TODO: Water magic +11%
+    // TODO: If base level is 200 or higher: 2% chance to auto-cast Terra Drive Lv.1 when auto-attacking
+    bonus4 bAutoSpell,"DIAMOND STORM",1,2,BF_MELEE;
+- Id: 300281
+  AegisName: R001_Bestia_Card
+  Script: |
+    // TODO: For every 4 Base Levels: Damage against fish enemies +1%
+    bonus2 bAddRace,RC_Insect,1;

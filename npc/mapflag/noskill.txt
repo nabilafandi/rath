@@ -34,4 +34,4 @@ p_track02	mapflag	noskill
 //============================================================
 // Events
 //============================================================
-//evt_zombie	mapflag	noskill
+evt_zombie	mapflag	noskill

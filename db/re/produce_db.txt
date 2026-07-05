@@ -683,7 +683,7 @@
 // Little Unripe Apple (12846) <-- 1 Apple, 1 Green Herb
 275,12846,30,0,0,11058,0,512,1,511,1
 // Four Leaf Clover (706) <-- 200 Clovers, 200 Sticky Mucus
-276,706,30,0,0,11058,0,705,200,938,200
+276,706,30,0,0,11058,0,705,30
 // Banana Juice (532) <-- 1 Banana, 1 Milk
 277,532,30,0,0,11058,0,513,1,519,1
 // Apple Juice (531) <-- 1 Apple, 1 Milk

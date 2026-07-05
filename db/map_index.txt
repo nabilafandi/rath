@@ -783,8 +783,8 @@ dic_dun02
 job3_gen01
 s_atelier
 job3_sha01
-//evt_zombie
-//evt_coke
+evt_zombie
+evt_coke
 //ac_sl_area
 //ac_cl_hall
 //ac_cl_room

@@ -49,9 +49,9 @@ payon,184,128,3	duplicate(idRO_acc)	Acc and Kartu#pay	721
 payon,184,130,3	duplicate(idRO_acc2)	Acc and Kartu 2#pay	80
 payon,187,128,3	duplicate(idRO_rental)	Rental Shop#pay	874
 
-payon,184,104,3	duplicate(idRO_kafra)	Kafra Shop#pay-1	721
-payon,183,104,3	duplicate(idRO_kafra2)	Kafra Shop 2#pay-1	80
-payon,188,104,3	duplicate(idRO_rental)	Rental Shop#pay-1	874
+payon,191,115,3	duplicate(idRO_kafra)	Kafra Shop#pay-1	721
+payon,191,117,3	duplicate(idRO_kafra2)	Kafra Shop 2#pay-1	80
+payon,191,120,3	duplicate(idRO_rental)	Rental Shop#pay-1	874
 
 payon,177,226,3	duplicate(idRO_kafra)	Kafra Shop#pay-2	721
 payon,178,226,3	duplicate(idRO_kafra2)	Kafra Shop 2#pay-2	80
@@ -76,8 +76,8 @@ prontera,29,210,5	duplicate(idRO_kafra2)	Kafra Shop 2#prt-2	80
 prontera,32,212,5	duplicate(idRO_rental)	Rental Shop#prt-2	874
 
 // South
-prontera,146,91,5	duplicate(idRO_kafra)	Kafra Shop#prt-3	721
-prontera,146,92,5	duplicate(idRO_kafra2)	Kafra Shop 2#prt-3	80
+prontera,142,95,5	duplicate(idRO_kafra)	Kafra Shop#prt-3	721
+prontera,146,79,5	duplicate(idRO_kafra2)	Kafra Shop 2#prt-3	80
 prontera,146,95,5	duplicate(idRO_rental)	Rental Shop#prt-3	874
 
 // South-Gate
