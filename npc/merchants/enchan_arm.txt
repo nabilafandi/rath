@@ -20,7 +20,7 @@
 prontera,165,60,2	script	Apprentice Craftsman	73,{
 	disable_items;
 	mes "[Apprentice Craftsman]";
-	if (Zeny >= 400000) {
+	if (Zeny >= 4000) {
 		mes "I've been studying ways to enhance an armor to maximize its capability.";
 		next;
 		mes "[Apprentice Craftsman]";
@@ -63,7 +63,7 @@ prontera,165,60,2	script	Apprentice Craftsman	73,{
 	mes "I am in charge of Enchanting Armors. Simply put, I've been studying ways to power-up armor.";
 	next;
 	mes "[Apprentice Craftsman]";
-	mes "If by any chance, you would want to enchant your armor, bring me 400,000 zeny and the armor you want to enchant and you are all set to go.";
+	mes "If by any chance, you would want to enchant your armor, bring me 4000 zeny and the armor you want to enchant and you are all set to go.";
 	close;
 
 S_EnchantArmor:
@@ -71,7 +71,7 @@ S_EnchantArmor:
 	set .@failrate,getarg(1);
 	mes "[Apprentice Craftsman]";
 	if (countitem(.@itemid) == 1) {
-		mes "Socket enchant will cost you 400,000 zeny. And there will be a random option enchanted. Of course, there is a chance of breaking your armor.";
+		mes "Socket enchant will cost you 4000 zeny. And there will be a random option enchanted. Of course, there is a chance of breaking your armor.";
 		next;
 		mes "[Apprentice Craftsman]";
 		mes "First and most importantly.";
@@ -89,13 +89,13 @@ S_EnchantArmor:
 		mes "Quite of an adventurer huh? Well, shall we?";
 		close2;
 		specialeffect2 EF_MAPPILLAR;
-		if (Zeny < 400000) {
+		if (Zeny < 4000) {
 			mes "[Apprentice Craftsman]";
 			mes "Sorry, but you don't have enough zeny.";
 			close;
 		}
 		progressbar "ffff00",7;
-		set Zeny, Zeny-400000;
+		set Zeny, Zeny-4000;
 		delitem .@itemid,1;
 		switch (rand(1,.@failrate)) {
 			case 1: set .@addpart,4702;break;

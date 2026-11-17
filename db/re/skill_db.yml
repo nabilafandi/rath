@@ -1407,25 +1407,25 @@ Body:
     AfterCastActDelay: 400
     Duration1:
       - Level: 1
-        Time: 60000
-      - Level: 2
-        Time: 80000
-      - Level: 3
-        Time: 100000
-      - Level: 4
         Time: 120000
-      - Level: 5
-        Time: 140000
-      - Level: 6
+      - Level: 2
         Time: 160000
-      - Level: 7
-        Time: 180000
-      - Level: 8
+      - Level: 3
         Time: 200000
-      - Level: 9
-        Time: 220000
-      - Level: 10
+      - Level: 4
         Time: 240000
+      - Level: 5
+        Time: 280000
+      - Level: 6
+        Time: 320000
+      - Level: 7
+        Time: 360000
+      - Level: 8
+        Time: 400000
+      - Level: 9
+        Time: 440000
+      - Level: 10
+        Time: 600000
     FixedCastTime: 200
     Requires:
       HpCost: 15
@@ -1561,25 +1561,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 30000
-      - Level: 2
-        Time: 60000
-      - Level: 3
-        Time: 90000
-      - Level: 4
         Time: 120000
-      - Level: 5
-        Time: 150000
-      - Level: 6
-        Time: 180000
-      - Level: 7
-        Time: 210000
-      - Level: 8
+      - Level: 2
+        Time: 160000
+      - Level: 3
+        Time: 200000
+      - Level: 4
         Time: 240000
+      - Level: 5
+        Time: 280000
+      - Level: 6
+        Time: 320000
+      - Level: 7
+        Time: 360000
+      - Level: 8
+        Time: 400000
       - Level: 9
-        Time: 270000
+        Time: 440000
       - Level: 10
-        Time: 300000
+        Time: 600000
     Cooldown: 30000
     FixedCastTime: 150
     Requires:
@@ -1618,25 +1618,25 @@ Body:
     HitCount: 1
     Duration1:
       - Level: 1
-        Time: 60000
-      - Level: 2
-        Time: 80000
-      - Level: 3
-        Time: 100000
-      - Level: 4
         Time: 120000
-      - Level: 5
-        Time: 140000
-      - Level: 6
+      - Level: 2
         Time: 160000
-      - Level: 7
-        Time: 180000
-      - Level: 8
+      - Level: 3
         Time: 200000
-      - Level: 9
-        Time: 220000
-      - Level: 10
+      - Level: 4
         Time: 240000
+      - Level: 5
+        Time: 280000
+      - Level: 6
+        Time: 320000
+      - Level: 7
+        Time: 360000
+      - Level: 8
+        Time: 400000
+      - Level: 9
+        Time: 440000
+      - Level: 10
+        Time: 600000
     Requires:
       SpCost:
         - Level: 1
@@ -1782,25 +1782,25 @@ Body:
     SplashArea: 3
     Duration1:
       - Level: 1
-        Time: 60000
-      - Level: 2
-        Time: 80000
-      - Level: 3
-        Time: 100000
-      - Level: 4
         Time: 120000
-      - Level: 5
-        Time: 140000
-      - Level: 6
+      - Level: 2
         Time: 160000
-      - Level: 7
-        Time: 180000
-      - Level: 8
+      - Level: 3
         Time: 200000
-      - Level: 9
+      - Level: 4
         Time: 220000
-      - Level: 10
+      - Level: 5
         Time: 240000
+      - Level: 6
+        Time: 360000
+      - Level: 7
+        Time: 380000
+      - Level: 8
+        Time: 400000
+      - Level: 9
+        Time: 420000
+      - Level: 10
+        Time: 540000
     Requires:
       SpCost:
         - Level: 1
@@ -13779,10 +13779,10 @@ Body:
     Hit: Single
     HitCount: 1
     AfterCastActDelay: 1000
-    Duration1: 60000
+    Duration1: 360000
     Requires:
       SpCost: 30
-      SpiritSphereCost: 4
+      SpiritSphereCost: 2
     Status: Increasing
   - Id: 507
     Name: GS_MAGICALBULLET

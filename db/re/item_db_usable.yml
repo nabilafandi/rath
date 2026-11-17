@@ -36802,19 +36802,9 @@ Body:
     AegisName: Costama_Egg22
     Name: Shapeshifter Costume
     Type: Cash
-    Weight: 10
-    Flags:
-      Container: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Weight: 1
     Script: |
-      getgroupitem(IG_COSTAMA_EGG22);
+      getgroupitem(IG_MASK);
   - Id: 14739
     AegisName: Sealed_B_Ygnizem_Scroll
     Name: Sealed General Egnigem Cenia Scroll
@@ -46183,7 +46173,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getgroupitem(IG_C_ENRICHED_ELUNIUM_BOX);
+      getitem(6241,10);
   - Id: 16815
     AegisName: C_Enriched_Elunium_Box5
     Name: Enriched Elunium Box(5)
@@ -46219,7 +46209,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getgroupitem(IG_C_ENRICHED_ORIDECON_BOX);
+      getitem(6240,10);
   - Id: 16817
     AegisName: C_Enc_Oridecon_Box5
     Name: Enriched Oridecon Box(5)
@@ -60398,15 +60388,6 @@ Body:
     AegisName: C_Giant_Fly_Wing
     Name: Infinite Giant Flywing
     Type: DelayConsume
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       callfunc "F_CashPartyCall";
   - Id: 23024

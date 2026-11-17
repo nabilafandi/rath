@@ -21503,44 +21503,1457 @@ Body:
       - SubGroup: 1
         List:
           - Index: 0
-            Item: Mr_Smile
-            Rate: 10
+            Item: C_Hair_Of_The_Strong
+            Rate: 1
           - Index: 1
-            Item: Phantom_Of_Opera
-            Rate: 10
+            Item: C_Will_O_Wisp
+            Rate: 1
           - Index: 2
-            Item: Mr_Scream
-            Rate: 10
+            Item: C_MoonStar_Accessory
+            Rate: 1
           - Index: 3
-            Item: Welding_Mask
-            Rate: 10
+            Item: C_Shiba_Inu
+            Rate: 1
           - Index: 4
-            Item: Goblini_Mask
-            Rate: 10
+            Item: C_CatEars_Cyber_HeadP_R
+            Rate: 1
           - Index: 5
-            Item: Gas_Mask
-            Rate: 10
+            Item: Clear_Sun
+            Rate: 1
           - Index: 6
-            Item: Alarm_Mask
-            Rate: 10
+            Item: Butterfly_Wing_Ear
+            Rate: 1
           - Index: 7
-            Item: Goblin_Mask_01
-            Rate: 10
+            Item: Nut_On_Head
+            Rate: 1
           - Index: 8
-            Item: Goblin_Mask_02
-            Rate: 10
+            Item: Heart_Eye_Patch1
+            Rate: 1
           - Index: 9
-            Item: Goblin_Mask_03
-            Rate: 10
+            Item: Heart_Eye_Patch2
+            Rate: 1
           - Index: 10
-            Item: Goblin_Mask_04
-            Rate: 10
+            Item: Chicken_Beak
+            Rate: 1
           - Index: 11
-            Item: Zherlthsh_Mask
+            Item: Charlie_Beard
             Rate: 1
           - Index: 12
-            Item: Hahoe_Mask
-            Rate: 2
+            Item: Yellow_Hat
+            Rate: 1
+          - Index: 13
+            Item: Singing_Bird
+            Rate: 1
+          - Index: 14
+            Item: Cocks_Comb
+            Rate: 1
+          - Index: 15
+            Item: Rainbow
+            Rate: 1
+          - Index: 16
+            Item: Lightning_Cloud
+            Rate: 1
+          - Index: 17
+            Item: Rain_Cloud
+            Rate: 1
+          - Index: 18
+            Item: Charlie_Hat
+            Rate: 1
+          - Index: 19
+            Item: Mini_Crown1
+            Rate: 1
+          - Index: 20
+            Item: Donation_Ribbon
+            Rate: 1
+          - Index: 21
+            Item: C_Green_Feeler
+            Rate: 1
+          - Index: 22
+            Item: C_Jack_A_Dandy
+            Rate: 1
+          - Index: 23
+            Item: C_Helm
+            Rate: 1
+          - Index: 24
+            Item: C_Sharp_Gear
+            Rate: 1
+          - Index: 25
+            Item: C_Iron_Cane
+            Rate: 1
+          - Index: 26
+            Item: C_Angelic_Chain
+            Rate: 1
+          - Index: 27
+            Item: C_Gryphon_Hat
+            Rate: 1
+          - Index: 28
+            Item: Oliver_Wolf_Hood
+            Rate: 1
+          - Index: 29
+            Item: C_Tare_Neko_Cru
+            Rate: 1
+          - Index: 30
+            Item: C_Boys_Cap
+            Rate: 1
+          - Index: 31
+            Item: C_Valkyrie_Helm
+            Rate: 1
+          - Index: 32
+            Item: C_Deviruchi_Cap
+            Rate: 1
+          - Index: 33
+            Item: C_Frog_Cap
+            Rate: 1
+          - Index: 34
+            Item: C_Magestic_Goat
+            Rate: 1
+          - Index: 35
+            Item: C_Blush
+            Rate: 1
+          - Index: 36
+            Item: C_Elven_Ears
+            Rate: 1
+          - Index: 37
+            Item: C_Centimental_Flower
+            Rate: 1
+          - Index: 38
+            Item: C_Assassin_Mask_
+            Rate: 1
+          - Index: 39
+            Item: C_Hahoe_Mask
+            Rate: 1
+          - Index: 40
+            Item: C_Kabuki_Mask
+            Rate: 1
+          - Index: 41
+            Item: C_Dragon_Arhat_Mask
+            Rate: 1
+          - Index: 42
+            Item: C_Tiger_Arhat_Mask
+            Rate: 1
+          - Index: 43
+            Item: C_Samurai_Mask
+            Rate: 1
+          - Index: 44
+            Item: C_Heart_Wing_Hairband
+            Rate: 1
+          - Index: 45
+            Item: C_Lord_of_Death
+            Rate: 1
+          - Index: 46
+            Item: C_Rising_Black_Dragon
+            Rate: 1
+          - Index: 47
+            Item: C_Tare_Pope
+            Rate: 1
+          - Index: 48
+            Item: 10th_Anni_Poring_Hat
+            Rate: 1
+          - Index: 49
+            Item: C_Goggle
+            Rate: 1
+          - Index: 50
+            Item: C_Feather_Beret
+            Rate: 1
+          - Index: 51
+            Item: C_Pink_Bunny_Band_J
+            Rate: 1
+          - Index: 52
+            Item: C_King_Poring_Hat
+            Rate: 1
+          - Index: 53
+            Item: C_Twin_Ribbon_J
+            Rate: 1
+          - Index: 54
+            Item: C_Hibiscus_J
+            Rate: 1
+          - Index: 55
+            Item: C_Imp_Hat
+            Rate: 1
+          - Index: 56
+            Item: C_Invisible_Cap
+            Rate: 1
+          - Index: 57
+            Item: C_Invisible_Sunglasses
+            Rate: 1
+          - Index: 58
+            Item: C_Invisible_Mask
+            Rate: 1
+          - Index: 59
+            Item: C_Ninja_Scroll
+            Rate: 1
+          - Index: 60
+            Item: C_Chick_Hat
+            Rate: 1
+          - Index: 61
+            Item: C_Headset_OST
+            Rate: 1
+          - Index: 62
+            Item: C_Valkyrie_Feather_Band
+            Rate: 1
+          - Index: 63
+            Item: C_Mask_Of_Fox
+            Rate: 1
+          - Index: 64
+            Item: C_Ear_Of_Devils_Wing
+            Rate: 1
+          - Index: 65
+            Item: C_Round_Eyes
+            Rate: 1
+          - Index: 66
+            Item: C_Bunny_Band
+            Rate: 1
+          - Index: 67
+            Item: C_Tiara
+            Rate: 1
+          - Index: 68
+            Item: C_Crown
+            Rate: 1
+          - Index: 69
+            Item: C_Hat
+            Rate: 1
+          - Index: 70
+            Item: C_Flower_Hairband
+            Rate: 1
+          - Index: 71
+            Item: C_Flu_Mask
+            Rate: 1
+          - Index: 72
+            Item: C_Mini_Propeller
+            Rate: 1
+          - Index: 73
+            Item: C_Pierrot_Nose
+            Rate: 1
+          - Index: 74
+            Item: C_Nurse_Cap
+            Rate: 1
+          - Index: 75
+            Item: C_Mr_Smile
+            Rate: 1
+          - Index: 76
+            Item: C_Sahkkat
+            Rate: 1
+          - Index: 77
+            Item: C_Whikebain_Ears
+            Rate: 1
+          - Index: 78
+            Item: C_Ramen_Hat
+            Rate: 1
+          - Index: 79
+            Item: C_Red_Deviruchi_Cap
+            Rate: 1
+          - Index: 80
+            Item: C_Rainbow_Feather_Deco
+            Rate: 1
+          - Index: 81
+            Item: C_Marcher_Hat
+            Rate: 1
+          - Index: 82
+            Item: C_J_Captain_Hat
+            Rate: 1
+          - Index: 83
+            Item: C_Tiraya_Bonnet
+            Rate: 1
+          - Index: 84
+            Item: C_Minstrel_Hat
+            Rate: 1
+          - Index: 85
+            Item: C_Captain_Hat
+            Rate: 1
+          - Index: 86
+            Item: C_Gray_Fur_Hat
+            Rate: 1
+          - Index: 87
+            Item: C_Poring_Cake_Cap
+            Rate: 1
+          - Index: 88
+            Item: C_Helm_Of_Dragoon
+            Rate: 1
+          - Index: 89
+            Item: C_Poring_Letter
+            Rate: 1
+          - Index: 90
+            Item: C_Soulless_Wing
+            Rate: 1
+          - Index: 91
+            Item: C_Santa_Poring_Hat
+            Rate: 1
+          - Index: 92
+            Item: C_Happy_Wig
+            Rate: 1
+          - Index: 93
+            Item: C_Vane_Hairpin
+            Rate: 1
+          - Index: 94
+            Item: C_Santa_Hat_1
+            Rate: 1
+          - Index: 95
+            Item: C_Red_Dress_Hat
+            Rate: 1
+          - Index: 96
+            Item: C_Wings_Of_Victory
+            Rate: 1
+          - Index: 97
+            Item: C_Little_Angel_Doll
+            Rate: 1
+          - Index: 98
+            Item: C_Scarf
+            Rate: 1
+          - Index: 99
+            Item: C_Coronet
+            Rate: 1
+          - Index: 100
+            Item: C_Darkness_Helm
+            Rate: 1
+          - Index: 101
+            Item: C_Tare_Zonda
+            Rate: 1
+          - Index: 102
+            Item: C_Neko_Mimi_Kafra
+            Rate: 1
+          - Index: 103
+            Item: C_Satanic_Chain
+            Rate: 1
+          - Index: 104
+            Item: C_Goblin_Mask_04
+            Rate: 1
+          - Index: 105
+            Item: C_Panda_Cap
+            Rate: 1
+          - Index: 106
+            Item: C_Binoculars
+            Rate: 1
+          - Index: 107
+            Item: C_Fin_Helm
+            Rate: 1
+          - Index: 108
+            Item: C_Gas_Mask
+            Rate: 1
+          - Index: 109
+            Item: C_Corsair_K
+            Rate: 1
+          - Index: 110
+            Item: C_Detective_Hat_K
+            Rate: 1
+          - Index: 111
+            Item: C_Sleeping_Kitty_Cat
+            Rate: 1
+          - Index: 112
+            Item: C_Cap_Of_Blindness
+            Rate: 1
+          - Index: 113
+            Item: C_Saint_Frill_Ribbon
+            Rate: 1
+          - Index: 114
+            Item: C_Shelter_Wing_Ears
+            Rate: 1
+          - Index: 115
+            Item: C_YinYang_Earring
+            Rate: 1
+          - Index: 116
+            Item: C_King_Frog_Hat
+            Rate: 1
+          - Index: 117
+            Item: C_White_Lily
+            Rate: 1
+          - Index: 118
+            Item: C_Happy_Peace_Proof
+            Rate: 1
+          - Index: 119
+            Item: C_Butterfly_Hairpin
+            Rate: 1
+          - Index: 120
+            Item: C_Marvelous_Wig
+            Rate: 1
+          - Index: 121
+            Item: C_Ear_Of_Angel's_Wing_
+            Rate: 1
+          - Index: 122
+            Item: C_Drooping_Kitty
+            Rate: 1
+          - Index: 123
+            Item: C_Granpa_Beard
+            Rate: 1
+          - Index: 124
+            Item: C_Morrigane's_Helm
+            Rate: 1
+          - Index: 125
+            Item: C_Well_Baked_Toast
+            Rate: 1
+          - Index: 126
+            Item: C_Mistress_Crown
+            Rate: 1
+          - Index: 127
+            Item: C_Sweet_Gents
+            Rate: 1
+          - Index: 128
+            Item: C_Wedding_Veil
+            Rate: 1
+          - Index: 129
+            Item: C_Alarm_Mask
+            Rate: 1
+          - Index: 130
+            Item: C_Goblin_Mask_01
+            Rate: 1
+          - Index: 131
+            Item: C_Goblin_Mask_02
+            Rate: 1
+          - Index: 132
+            Item: C_Goblin_Mask_03
+            Rate: 1
+          - Index: 133
+            Item: C_Lord_Circlet
+            Rate: 1
+          - Index: 134
+            Item: C_Bone_Helm
+            Rate: 1
+          - Index: 135
+            Item: C_Apple_Of_Archer
+            Rate: 1
+          - Index: 136
+            Item: C_Angry_Mouth
+            Rate: 1
+          - Index: 137
+            Item: C_Golden_Gear
+            Rate: 1
+          - Index: 138
+            Item: C_Carnation_Hairband
+            Rate: 1
+          - Index: 139
+            Item: C_Majestic_Helmet
+            Rate: 1
+          - Index: 140
+            Item: C_Droop_Morocc_Minion
+            Rate: 1
+          - Index: 141
+            Item: C_Hyegun_Hat
+            Rate: 1
+          - Index: 142
+            Item: C_White_Cat_Hood
+            Rate: 1
+          - Index: 143
+            Item: C_Evil_Druid_Hat
+            Rate: 1
+          - Index: 144
+            Item: C_Ice_Wing_Ear
+            Rate: 1
+          - Index: 145
+            Item: C_Amistr_Cap
+            Rate: 1
+          - Index: 146
+            Item: C_Fedora
+            Rate: 1
+          - Index: 147
+            Item: C_Straw_Hat
+            Rate: 1
+          - Index: 148
+            Item: C_Sunglasses
+            Rate: 1
+          - Index: 149
+            Item: C_Filir_Hat
+            Rate: 1
+          - Index: 150
+            Item: C_Fillet
+            Rate: 1
+          - Index: 151
+            Item: C_Lif_Doll_Hat
+            Rate: 1
+          - Index: 152
+            Item: C_Vanilmirth_Hat
+            Rate: 1
+          - Index: 153
+            Item: C_Puppy_Hat
+            Rate: 1
+          - Index: 154
+            Item: C_Cat_Hairband
+            Rate: 1
+          - Index: 155
+            Item: C_Turban
+            Rate: 1
+          - Index: 156
+            Item: C_Hair_Protector
+            Rate: 1
+          - Index: 157
+            Item: C_Opera_Ghost_Mask
+            Rate: 1
+          - Index: 158
+            Item: C_Big_Sis_Ribbon
+            Rate: 1
+          - Index: 159
+            Item: C_Angeling_Hat
+            Rate: 1
+          - Index: 160
+            Item: C_Munak_Turban
+            Rate: 1
+          - Index: 161
+            Item: C_Bongun_Hat
+            Rate: 1
+          - Index: 162
+            Item: C_Brown_Bear_Cap
+            Rate: 1
+          - Index: 163
+            Item: C_Galapago_Cap
+            Rate: 1
+          - Index: 164
+            Item: C_Leaf_Headgear
+            Rate: 1
+          - Index: 165
+            Item: C_Flying_Angel
+            Rate: 1
+          - Index: 166
+            Item: C_Cryptura_Hair_Cap
+            Rate: 1
+          - Index: 167
+            Item: C_Heart_Hair_Pin
+            Rate: 1
+          - Index: 168
+            Item: C_Horn_Of_Succubus
+            Rate: 1
+          - Index: 169
+            Item: C_Inccubus_Horn
+            Rate: 1
+          - Index: 170
+            Item: C_Afro_Wig
+            Rate: 1
+          - Index: 171
+            Item: C_Joker_Jester
+            Rate: 1
+          - Index: 172
+            Item: C_Blue_Pajamas_Hat
+            Rate: 1
+          - Index: 173
+            Item: C_Music_Decoration
+            Rate: 1
+          - Index: 174
+            Item: C_Carnival_Circlet
+            Rate: 1
+          - Index: 175
+            Item: C_Rabbit_Ear_Hat
+            Rate: 1
+          - Index: 176
+            Item: C_Drooping_Bunny
+            Rate: 1
+          - Index: 177
+            Item: C_Flowerpot_Mask
+            Rate: 1
+          - Index: 178
+            Item: C_Piamette_Hood
+            Rate: 1
+          - Index: 179
+            Item: C_Vanargandr_Helm
+            Rate: 1
+          - Index: 180
+            Item: C_Blinker
+            Rate: 1
+          - Index: 181
+            Item: C_Luxury_Sunglasses
+            Rate: 1
+          - Index: 182
+            Item: C_One_Eyed_Glass
+            Rate: 1
+          - Index: 183
+            Item: C_Glasses
+            Rate: 1
+          - Index: 184
+            Item: C_Pair_Of_Red_Ribbon
+            Rate: 1
+          - Index: 185
+            Item: C_Cigar
+            Rate: 1
+          - Index: 186
+            Item: C_Poo_Poo_Hat
+            Rate: 1
+          - Index: 187
+            Item: C_Lazy_Raccoon
+            Rate: 1
+          - Index: 188
+            Item: C_Cap_Of_Concentration
+            Rate: 1
+          - Index: 189
+            Item: C_10Gallon_Hat_Of_Flame
+            Rate: 1
+          - Index: 190
+            Item: C_Hunting_Cap_Of_Gust
+            Rate: 1
+          - Index: 191
+            Item: C_Knit_Cap_Of_Water
+            Rate: 1
+          - Index: 192
+            Item: C_Silk_Hat_Of_Earth
+            Rate: 1
+          - Index: 193
+            Item: C_Antler
+            Rate: 1
+          - Index: 194
+            Item: C_Ear_Mufs
+            Rate: 1
+          - Index: 195
+            Item: C_3D_Glasses
+            Rate: 1
+          - Index: 196
+            Item: C_Mini_Tree_J
+            Rate: 1
+          - Index: 197
+            Item: C_Golden_Exclamation
+            Rate: 1
+          - Index: 198
+            Item: C_Silver_Question
+            Rate: 1
+          - Index: 199
+            Item: C_Flower_Hairpin
+            Rate: 1
+          - Index: 200
+            Item: C_Winter_Hat
+            Rate: 1
+          - Index: 201
+            Item: C_Mouton_Life
+            Rate: 1
+          - Index: 202
+            Item: C_Marionette_Doll
+            Rate: 1
+          - Index: 203
+            Item: C_Jack_Castle_Bat
+            Rate: 1
+          - Index: 204
+            Item: C_Sword_Master_Crown
+            Rate: 1
+          - Index: 205
+            Item: C_Decoration_bluerose
+            Rate: 1
+          - Index: 206
+            Item: C_Plaster
+            Rate: 1
+          - Index: 207
+            Item: C_Ph.D_Hat
+            Rate: 1
+          - Index: 208
+            Item: C_Baby_Pacifier
+            Rate: 1
+          - Index: 209
+            Item: C_Feather_Bonnet
+            Rate: 1
+          - Index: 210
+            Item: Yellow_Brain_Hat
+            Rate: 1
+          - Index: 211
+            Item: Blue_Brain_Hat
+            Rate: 1
+          - Index: 212
+            Item: C_Worg_In_Mouth
+            Rate: 1
+          - Index: 213
+            Item: C_Hair_Band
+            Rate: 1
+          - Index: 214
+            Item: C_Biretta
+            Rate: 1
+          - Index: 215
+            Item: C_Egg_Shell
+            Rate: 1
+          - Index: 216
+            Item: C_Smoking_Pipe
+            Rate: 1
+          - Index: 217
+            Item: C_Sales_Signboard
+            Rate: 1
+          - Index: 218
+            Item: C_Star_Sparkling
+            Rate: 1
+          - Index: 219
+            Item: C_Fillet_Green
+            Rate: 1
+          - Index: 220
+            Item: C_Fillet_Red
+            Rate: 1
+          - Index: 221
+            Item: C_Fillet_Blue
+            Rate: 1
+          - Index: 222
+            Item: C_Fillet_White
+            Rate: 1
+          - Index: 223
+            Item: C_Funeral_Costume
+            Rate: 1
+          - Index: 224
+            Item: C_Hat_Of_Cake
+            Rate: 1
+          - Index: 225
+            Item: C_Fur_Hat
+            Rate: 1
+          - Index: 226
+            Item: C_Antenna
+            Rate: 1
+          - Index: 227
+            Item: C_Lotus_Flower_Hat
+            Rate: 1
+          - Index: 228
+            Item: C_Whisper_Tall_Hat
+            Rate: 1
+          - Index: 229
+            Item: C_Subject_Aura
+            Rate: 1
+          - Index: 230
+            Item: C_Poring_Mascot_Costume
+            Rate: 1
+          - Index: 231
+            Item: C_Robo_Eye
+            Rate: 1
+          - Index: 232
+            Item: C_Angel_Spirit
+            Rate: 1
+          - Index: 233
+            Item: C_Bell_Pigeon
+            Rate: 1
+          - Index: 234
+            Item: C_Poison_Spore_Hat
+            Rate: 1
+          - Index: 235
+            Item: C_Fish_On_Head
+            Rate: 1
+          - Index: 236
+            Item: C_Circlet
+            Rate: 1
+          - Index: 237
+            Item: C_Blue_Hair_Band
+            Rate: 1
+          - Index: 238
+            Item: C_Fried_Egg
+            Rate: 1
+          - Index: 239
+            Item: C_Prontera_Army_Cap
+            Rate: 1
+          - Index: 240
+            Item: C_Hockey_Mask
+            Rate: 1
+          - Index: 241
+            Item: C_Long_Tongue
+            Rate: 1
+          - Index: 242
+            Item: C_Diabolic_Headphone
+            Rate: 1
+          - Index: 243
+            Item: C_Mistic_Rose
+            Rate: 1
+          - Index: 244
+            Item: C_Mottled_Egg_Shell
+            Rate: 1
+          - Index: 245
+            Item: C_Party_Hat
+            Rate: 1
+          - Index: 246
+            Item: C_Magni_Cap
+            Rate: 1
+          - Index: 247
+            Item: C_Scratching_Cat
+            Rate: 1
+          - Index: 248
+            Item: C_Amistr_Beret
+            Rate: 1
+          - Index: 249
+            Item: C_Evil_Marcher_Hat
+            Rate: 1
+          - Index: 250
+            Item: C_Rabbit_Head_Dress
+            Rate: 1
+          - Index: 251
+            Item: C_Deviruchi_Balloon
+            Rate: 1
+          - Index: 252
+            Item: C_Bandana
+            Rate: 1
+          - Index: 253
+            Item: C_Fancy_Flower
+            Rate: 1
+          - Index: 254
+            Item: C_Stripe_Band
+            Rate: 1
+          - Index: 255
+            Item: C_Necktie
+            Rate: 1
+          - Index: 256
+            Item: C_Evil_Marcher_Hat_J
+            Rate: 1
+          - Index: 257
+            Item: C_Black_Devil_Mask
+            Rate: 1
+          - Index: 258
+            Item: C_Eyes_Of_Ifrit
+            Rate: 1
+          - Index: 259
+            Item: C_Centimental_Leaf
+            Rate: 1
+          - Index: 260
+            Item: C_Pumpkin_Hat
+            Rate: 1
+          - Index: 261
+            Item: C_Hair_Brush
+            Rate: 1
+          - Index: 262
+            Item: C_Puppy_Hat2
+            Rate: 1
+          - Index: 263
+            Item: C_Mask_Of_Bankrupt
+            Rate: 1
+          - Index: 264
+            Item: C_Snowman_Hat
+            Rate: 1
+          - Index: 265
+            Item: C_Celines_Ribbon
+            Rate: 1
+          - Index: 266
+            Item: C_Gold_Angel_Sculpture
+            Rate: 1
+          - Index: 267
+            Item: C_Blue_Drooping_Kitty
+            Rate: 1
+          - Index: 268
+            Item: C_Large_Ribbon_Muffler
+            Rate: 1
+          - Index: 269
+            Item: C_Gift_Of_Snow
+            Rate: 1
+          - Index: 270
+            Item: C_Snownow_Hat
+            Rate: 1
+          - Index: 271
+            Item: C_Black_Strong_Hair
+            Rate: 1
+          - Index: 272
+            Item: C_Red_Strong_Hair
+            Rate: 1
+          - Index: 273
+            Item: C_White_Strong_Hair
+            Rate: 1
+          - Index: 274
+            Item: C_Love_Cheek
+            Rate: 1
+          - Index: 275
+            Item: C_Fox_Ears_Bell_Ribbon
+            Rate: 1
+          - Index: 276
+            Item: C_Secret_Zipper
+            Rate: 1
+          - Index: 277
+            Item: C_White_Fox_Ear_Ribbon
+            Rate: 1
+          - Index: 278
+            Item: C_Sunflower
+            Rate: 1
+          - Index: 279
+            Item: C_Snowy_Horn
+            Rate: 1
+          - Index: 280
+            Item: C_Soft_Sheep_Hat
+            Rate: 1
+          - Index: 281
+            Item: C_Balloon_Hat
+            Rate: 1
+          - Index: 282
+            Item: C_Over_Protector
+            Rate: 1
+          - Index: 283
+            Item: C_Poring_Sunglasses_J
+            Rate: 1
+          - Index: 284
+            Item: C_Happy_Lunatic_Ear
+            Rate: 1
+          - Index: 285
+            Item: C_Face_Crusher
+            Rate: 1
+          - Index: 286
+            Item: C_NettyHeart_BalloonGum
+            Rate: 1
+          - Index: 287
+            Item: C_Charleston_Antenna
+            Rate: 1
+          - Index: 288
+            Item: C_Crimson_Booster
+            Rate: 1
+          - Index: 289
+            Item: C_Little_Aquarium
+            Rate: 1
+          - Index: 290
+            Item: C_Straight_Pony_BL
+            Rate: 1
+          - Index: 291
+            Item: C_Loose_Wave_Twin_BL
+            Rate: 1
+          - Index: 292
+            Item: C_Straight_Pony_YL
+            Rate: 1
+          - Index: 293
+            Item: C_Straight_Pony_GN
+            Rate: 1
+          - Index: 294
+            Item: C_Straight_Pony_PP
+            Rate: 1
+          - Index: 295
+            Item: C_Straight_Pony_RD
+            Rate: 1
+          - Index: 296
+            Item: C_Straight_Pony_OM
+            Rate: 1
+          - Index: 297
+            Item: C_Straight_Pony_BU
+            Rate: 1
+          - Index: 298
+            Item: C_Straight_Pony_WH
+            Rate: 1
+          - Index: 299
+            Item: C_Loose_Wave_Twin_YL
+            Rate: 1
+          - Index: 300
+            Item: C_Loose_Wave_Twin_GN
+            Rate: 1
+          - Index: 301
+            Item: C_Loose_Wave_Twin_PP
+            Rate: 1
+          - Index: 302
+            Item: C_Loose_Wave_Twin_RD
+            Rate: 1
+          - Index: 303
+            Item: C_Loose_Wave_Twin_OM
+            Rate: 1
+          - Index: 304
+            Item: C_Loose_Wave_Twin_BU
+            Rate: 1
+          - Index: 305
+            Item: C_Loose_Wave_Twin_WH
+            Rate: 1
+          - Index: 306
+            Item: C_Crow_Tengu_Mask
+            Rate: 1
+          - Index: 307
+            Item: C_Holy_Klobuk
+            Rate: 1
+          - Index: 308
+            Item: C_Blessing_Of_Angels
+            Rate: 1
+          - Index: 309
+            Item: C_Eremes_Scarf
+            Rate: 1
+          - Index: 310
+            Item: C_Subject_Aura_Red
+            Rate: 1
+          - Index: 311
+            Item: C_Piamette_BowTie
+            Rate: 1
+          - Index: 312
+            Item: C_Morocc_Kid_Servant
+            Rate: 1
+          - Index: 313
+            Item: C_Louise_Red_Hat
+            Rate: 1
+          - Index: 314
+            Item: C_Tone_Of_Gold
+            Rate: 1
+          - Index: 315
+            Item: C_Small_Poring_Band
+            Rate: 1
+          - Index: 316
+            Item: C_Cons_Of_Water
+            Rate: 1
+          - Index: 317
+            Item: C_berry_Prince_Crown
+            Rate: 1
+          - Index: 318
+            Item: C_Wild_Poring_Rider
+            Rate: 1
+          - Index: 319
+            Item: C_Cat_Ears_Cape
+            Rate: 1
+          - Index: 320
+            Item: C_Two_Tone_Beret
+            Rate: 1
+          - Index: 321
+            Item: C_Monochrome_RibbonHat
+            Rate: 1
+          - Index: 322
+            Item: C_Elemental_Crown
+            Rate: 1
+          - Index: 323
+            Item: C_Mask_of_Ifrit
+            Rate: 1
+          - Index: 324
+            Item: C_Pope_Crown
+            Rate: 1
+          - Index: 325
+            Item: C_Laser_Of_Eagle
+            Rate: 1
+          - Index: 326
+            Item: C_Umbala_Spirit
+            Rate: 1
+          - Index: 327
+            Item: C_Devil_Wing
+            Rate: 4
+          - Index: 328
+            Item: C_Cupid_Wing_Pink
+            Rate: 4
+          - Index: 329
+            Item: C_Cupid_Wing_Skyblue
+            Rate: 4
+          - Index: 330
+            Item: C_Invisible_Manteau
+            Rate: 4
+          - Index: 331
+            Item: C_Poring_Bag
+            Rate: 4
+          - Index: 332
+            Item: C_Wings_of_Uriel
+            Rate: 4
+          - Index: 333
+            Item: C_SwordWing
+            Rate: 4
+          - Index: 334
+            Item: C_Blue_Fairy_Wing
+            Rate: 4
+          - Index: 335
+            Item: C_WingOfHeart
+            Rate: 4
+          - Index: 336
+            Item: Brilliant_Golden_Wings
+            Rate: 4
+          - Index: 337
+            Item: C_Kirin_Wing
+            Rate: 4
+          - Index: 338
+            Item: C_Rudra_Wing
+            Rate: 4
+          - Index: 339
+            Item: C_Wing_Of_Happiness
+            Rate: 4
+          - Index: 340
+            Item: C_GreatDevilWing
+            Rate: 4
+          - Index: 341
+            Item: C_Amistr_Bag
+            Rate: 4
+          - Index: 342
+            Item: C_Fallen_Angel_Wing
+            Rate: 4
+          - Index: 343
+            Item: C_Archangel_Wing
+            Rate: 4
+          - Index: 344
+            Item: C_Pretty_Bear
+            Rate: 1
+          - Index: 345
+            Item: C_Pig_Nose
+            Rate: 1
+          - Index: 346
+            Item: C_Tare_Pope_Casual
+            Rate: 1
+          - Index: 347
+            Item: C_Magical_Feather
+            Rate: 1
+          - Index: 348
+            Item: C_Blue_Rear_Ribbon
+            Rate: 1
+          - Index: 349
+            Item: C_First_Love_Cheek
+            Rate: 1
+          - Index: 350
+            Item: C_Eremes_Scarf_Black
+            Rate: 1
+          - Index: 351
+            Item: C_Eleanor_Wig
+            Rate: 1
+          - Index: 352
+            Item: C_Hair_Bun_BU
+            Rate: 1
+          - Index: 353
+            Item: C_Hair_Bun_RD
+            Rate: 1
+          - Index: 354
+            Item: C_Hair_Bun_YL
+            Rate: 1
+          - Index: 355
+            Item: C_Hair_Bun_GN
+            Rate: 1
+          - Index: 356
+            Item: C_Hair_Bun_BL
+            Rate: 1
+          - Index: 357
+            Item: C_Hair_Bun_WH
+            Rate: 1
+          - Index: 358
+            Item: C_Hair_Bun_OM
+            Rate: 1
+          - Index: 359
+            Item: C_Hair_Bun_PP
+            Rate: 1
+          - Index: 360
+            Item: C_Long_Pony_BU
+            Rate: 1
+          - Index: 361
+            Item: C_Long_Pony_RD
+            Rate: 1
+          - Index: 362
+            Item: C_Long_Pony_YL
+            Rate: 1
+          - Index: 363
+            Item: C_Long_Pony_GN
+            Rate: 1
+          - Index: 364
+            Item: C_Long_Pony_BL
+            Rate: 1
+          - Index: 365
+            Item: C_Long_Pony_WH
+            Rate: 1
+          - Index: 366
+            Item: C_Long_Pony_OM
+            Rate: 1
+          - Index: 367
+            Item: C_Long_Pony_PP
+            Rate: 1
+          - Index: 368
+            Item: C_Ghostring_Tall_Hat
+            Rate: 1
+          - Index: 369
+            Item: C_QueenAnzRevenge
+            Rate: 1
+          - Index: 370
+            Item: C_Blue_Rose_Ornament
+            Rate: 1
+          - Index: 371
+            Item: C_White_Rabbit_Ear
+            Rate: 1
+          - Index: 372
+            Item: C_Tare_Domovoi
+            Rate: 1
+          - Index: 373
+            Item: C_Nydhog_Wig
+            Rate: 1
+          - Index: 374
+            Item: C_Chasher_Ear
+            Rate: 1
+          - Index: 375
+            Item: C_Squirrel_Ear_Hat
+            Rate: 1
+          - Index: 376
+            Item: C_Lunatic_Ear_Black
+            Rate: 1
+          - Index: 377
+            Item: C_Mouton_Life_BL
+            Rate: 1
+          - Index: 378
+            Item: C_Looking
+            Rate: 1
+          - Index: 379
+            Item: C_Tail_Hat
+            Rate: 1
+          - Index: 380
+            Item: C_Flame_Muffler
+            Rate: 1
+          - Index: 381
+            Item: C_Shura_King_Pledge
+            Rate: 1
+          - Index: 382
+            Item: C_Fallen_Angel_Blessing
+            Rate: 1
+          - Index: 383
+            Item: C_Engineer_Cap
+            Rate: 1
+          - Index: 384
+            Item: C_Black_Cat
+            Rate: 1
+          - Index: 385
+            Item: C_Cat_Ears_Cape_Red
+            Rate: 1
+          - Index: 386
+            Item: C_Wrapping_Ribbon
+            Rate: 1
+          - Index: 387
+            Item: C_Drooping_White_Kitty
+            Rate: 1
+          - Index: 388
+            Item: C_L_Orc_Hero_Helm
+            Rate: 1
+          - Index: 389
+            Item: C_Side_Pigtail_BU
+            Rate: 1
+          - Index: 390
+            Item: C_Side_Pigtail_RD
+            Rate: 1
+          - Index: 391
+            Item: C_Side_Pigtail_YL
+            Rate: 1
+          - Index: 392
+            Item: C_Side_Pigtail_GN
+            Rate: 1
+          - Index: 393
+            Item: C_Side_Pigtail_BL
+            Rate: 1
+          - Index: 394
+            Item: C_Side_Pigtail_WH
+            Rate: 1
+          - Index: 395
+            Item: C_Side_Pigtail_OM
+            Rate: 1
+          - Index: 396
+            Item: C_Side_Pigtail_PP
+            Rate: 1
+          - Index: 397
+            Item: C_Long_Twin_BU
+            Rate: 1
+          - Index: 398
+            Item: C_Long_Twin_RD
+            Rate: 1
+          - Index: 399
+            Item: C_Long_Twin_YL
+            Rate: 1
+          - Index: 400
+            Item: C_Long_Twin_GN
+            Rate: 1
+          - Index: 401
+            Item: C_Long_Twin_BL
+            Rate: 1
+          - Index: 402
+            Item: C_Long_Twin_WH
+            Rate: 1
+          - Index: 403
+            Item: C_Long_Twin_OM
+            Rate: 1
+          - Index: 404
+            Item: C_Long_Twin_PP
+            Rate: 1
+          - Index: 405
+            Item: C_Rabbit_Hopping
+            Rate: 1
+          - Index: 406
+            Item: C_Cat_Mouth
+            Rate: 1
+          - Index: 407
+            Item: C_Cat_Ear_Hat_White
+            Rate: 1
+          - Index: 408
+            Item: C_Strawberry_In_Mouth
+            Rate: 1
+          - Index: 409
+            Item: C_White_Rabbit
+            Rate: 1
+          - Index: 410
+            Item: C_Warm_Cat_Muffler
+            Rate: 1
+          - Index: 411
+            Item: C_Black_Magenta_Ribbon
+            Rate: 1
+          - Index: 412
+            Item: C_Protect_Feathers
+            Rate: 1
+          - Index: 413
+            Item: C_Ghost_Holiday
+            Rate: 1
+          - Index: 414
+            Item: C_Stall_Of_Angel
+            Rate: 1
+          - Index: 415
+            Item: C_Gerhard_Von_Devi
+            Rate: 1
+          - Index: 416
+            Item: C_Alice_Wig
+            Rate: 1
+          - Index: 417
+            Item: C_Fallen_Angel_Valletta
+            Rate: 1
+          - Index: 418
+            Item: C_Khalitzburg_Helm_BL
+            Rate: 1
+          - Index: 419
+            Item: C_Diabolic_Lapel
+            Rate: 1
+          - Index: 420
+            Item: C_Cat_Ears_Punkish
+            Rate: 1
+          - Index: 421
+            Item: C_Volume_Low_Twin
+            Rate: 1
+          - Index: 422
+            Item: C_Gothic_Pumpkin_Head
+            Rate: 1
+          - Index: 423
+            Item: C_Vajra
+            Rate: 1
+          - Index: 424
+            Item: C_Book_Of_Magic
+            Rate: 1
+          - Index: 425
+            Item: C_Sorcerer_Hood
+            Rate: 1
+          - Index: 426
+            Item: C_Blinking_Thin_Eyes
+            Rate: 1
+          - Index: 427
+            Item: C_Poring_Traffic_Light
+            Rate: 1
+          - Index: 428
+            Item: C_Eleanor_Wig_YL
+            Rate: 1
+          - Index: 429
+            Item: C_Nydhog_Wig_WH
+            Rate: 1
+          - Index: 430
+            Item: C_Alice_Wig_PK
+            Rate: 1
+          - Index: 431
+            Item: C_Barrel_Helm
+            Rate: 1
+          - Index: 432
+            Item: C_Wanderer_Sakkat
+            Rate: 1
+          - Index: 433
+            Item: C_Luwmin_Ice
+            Rate: 1
+          - Index: 434
+            Item: C_Astro_Circle
+            Rate: 1
+          - Index: 435
+            Item: C_Baby_Penguin
+            Rate: 1
+          - Index: 436
+            Item: C_Fluffy_Angel_Cape
+            Rate: 1
+          - Index: 437
+            Item: C_Fluffy_Heart_Earmuffs
+            Rate: 1
+          - Index: 438
+            Item: C_Snow_Bear_Food
+            Rate: 1
+          - Index: 439
+            Item: C_Lolita_Two_Side_Up
+            Rate: 1
+          - Index: 440
+            Item: C_Blue_Frill_Ribbon
+            Rate: 1
+          - Index: 441
+            Item: C_White_Cat
+            Rate: 1
+          - Index: 442
+            Item: C_L_RibbonMuff_Black
+            Rate: 1
+          - Index: 443
+            Item: C_Baby_Leopard_Cat
+            Rate: 1
+          - Index: 444
+            Item: C_Blessing_Sky_Lantern
+            Rate: 1
+          - Index: 445
+            Item: C_Flying_Drone
+            Rate: 1
+          - Index: 446
+            Item: C_Fairy_Feathers
+            Rate: 1
+          - Index: 447
+            Item: C_Tipsy
+            Rate: 1
+          - Index: 448
+            Item: C_Straight_Long_BL
+            Rate: 1
+          - Index: 449
+            Item: C_Black_Fox_Ear_Ribbon
+            Rate: 1
+          - Index: 450
+            Item: C_CatCoffeeCup_TW
+            Rate: 1
+          - Index: 451
+            Item: C_CatEarRibbon_TW
+            Rate: 1
+          - Index: 452
+            Item: C_Mvp
+            Rate: 1
+          - Index: 453
+            Item: C_Bouquet_Hat
+            Rate: 1
+          - Index: 454
+            Item: C_Poring_Muffler
+            Rate: 1
+          - Index: 455
+            Item: C_Cat_Ears_Cape_Brown
+            Rate: 1
+          - Index: 456
+            Item: C_Volume_Low_Twin_WH
+            Rate: 1
+          - Index: 457
+            Item: C_Elephangel_TH
+            Rate: 1
+          - Index: 458
+            Item: C_Falcon_Mask
+            Rate: 1
+          - Index: 459
+            Item: C_Fawn_Ear
+            Rate: 1
+          - Index: 460
+            Item: C_Panda_Rabbit
+            Rate: 1
+          - Index: 461
+            Item: C_Happy_Rabbit_Ribbon
+            Rate: 1
+          - Index: 462
+            Item: C_Warm_Cat_Muffler_BL
+            Rate: 1
+          - Index: 463
+            Item: C_Clock_Casket_RD
+            Rate: 1
+          - Index: 464
+            Item: C_Variant_Veil
+            Rate: 1
+          - Index: 465
+            Item: C_Princess_Ribbon_Crown
+            Rate: 1
+          - Index: 466
+            Item: C_Sheep_Horn
+            Rate: 1
+          - Index: 467
+            Item: C_Floating_Ball_TW
+            Rate: 1
+          - Index: 468
+            Item: C_Mobile_Pursuit_System
+            Rate: 1
+          - Index: 469
+            Item: C_Mecha_Cat_Ears
+            Rate: 1
+          - Index: 470
+            Item: C_Cyber_Income
+            Rate: 1
+          - Index: 471
+            Item: C_Jirant_Circlet_
+            Rate: 1
+          - Index: 472
+            Item: C_Poporing_Muffler
+            Rate: 1
+          - Index: 473
+            Item: C_Forest_Guide
+            Rate: 1
+          - Index: 474
+            Item: C_Kishu_Inu
+            Rate: 1
+          - Index: 475
+            Item: C_Dark_Snake_Lord_Stall
+            Rate: 1
+          - Index: 476
+            Item: C_Fox
+            Rate: 1
+          - Index: 477
+            Item: C_Sleep_Sheep_TW
+            Rate: 1
+          - Index: 478
+            Item: C_HeartOfCat_TW
+            Rate: 1
+          - Index: 479
+            Item: C_Protect_Cloth
+            Rate: 1
+          - Index: 480
+            Item: C_Picnic_Basket
+            Rate: 1
+          - Index: 481
+            Item: C_Poring_On_Shoulder
+            Rate: 1
+          - Index: 482
+            Item: C_Pigtail_Red_Hood
+            Rate: 1
+          - Index: 483
+            Item: C_Smiling_Eyes
+            Rate: 1
   - Group: MASQUERADE
     SubGroups:
       - SubGroup: 1
@@ -21707,7 +23120,7 @@ Body:
             Announced: true
           - Index: 1
             Item: Maya_Puple_Card
-            Rate: 2
+            Rate: 4
             Announced: true
           - Index: 2
             Item: Sealed_Samurai_Card
@@ -113573,7 +114986,7 @@ Body:
         Algorithm: All
         List:
           - Index: 0
-            Item: Enriched_Elunium
+            Item: HD_Elunium
             Amount: 10
   - Group: C_ENRICHED_ELUNIUM_BOX5
     SubGroups:
@@ -113589,7 +115002,7 @@ Body:
         Algorithm: All
         List:
           - Index: 0
-            Item: Enriched_Oridecon
+            Item: HD_Oridecon
             Amount: 10
   - Group: C_ENC_ORIDECON_BOX5
     SubGroups:

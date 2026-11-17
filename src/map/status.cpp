@@ -3676,7 +3676,7 @@ bool status_calc_weight(map_session_data *sd, enum e_status_calc_weight_opt flag
 		// Skill/Status bonus weight increases
 		sd->max_weight += sd->add_max_weight; // From bAddMaxWeight
 		if ((skill = pc_checkskill(sd, MC_INCCARRY)) > 0)
-			sd->max_weight += 2000 * skill;
+			sd->max_weight += 5000 * skill;
 		if (pc_isriding(sd) && pc_checkskill(sd, KN_RIDING) > 0)
 			sd->max_weight += 10000;
 		else if (pc_isridingdragon(sd))

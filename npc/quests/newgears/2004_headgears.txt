@@ -49,7 +49,7 @@ payon,115,131,3	script	Neko Neko#1	725,{
 		mes "- you put some items into Kafra Storage. -";
 		close;
 	}
-	if (countitem(2213) > 0 && countitem(983) > 0 && countitem(914) > 199 && Zeny > 9999) {
+	if (countitem(2213) > 0 && countitem(983) > 0 && countitem(914) > 19 && Zeny > 9999) {
 		mes "[Neko Neko]";
 		mes "Heh? You brought all the items~";
 		mes "Okay, give me some time.";
@@ -69,7 +69,7 @@ payon,115,131,3	script	Neko Neko#1	725,{
 		mes "of your very own~";
 		delitem 2213,1; //Cat_Hairband
 		delitem 983,1; //Black_Dyestuffs
-		delitem 914,200; //Fluff
+		delitem 914,20; //Fluff
 		set Zeny, Zeny-10000;
 		getitem 5057,1; //Ear_Of_Black_Cat
 		next;
@@ -156,7 +156,7 @@ geffen,129,148,3	script	Argen#1	779,{
 	emotion ET_SMILE;
 	switch(select("^3131FFX Hairpin^000000:^3131FFBand Aid^000000:^3131FFFlower Hairpin^000000:No thanks.")) {
 	case 1:
-		if (countitem(2294) > 0 && countitem(7220) > 399) {
+		if (countitem(2294) > 0 && countitem(7220) > 39) {
 			mes "[Argen]";
 			mes "X Hairpin!";
 			mes "Nice choice~!";
@@ -181,7 +181,7 @@ geffen,129,148,3	script	Argen#1	779,{
 				mes "So what do you think?";
 				mes "Pretty cool, eh?";
 				delitem 2294,1; //Star_Dust
-				delitem 7220,400; //Ectoplasm
+				delitem 7220,40; //Ectoplasm
 				getitem 5079,1; //Crossed_Hair_Band
 				next;
 				break;
@@ -205,7 +205,7 @@ geffen,129,148,3	script	Argen#1	779,{
 		}
 		break;
 	case 2:
-		if (countitem(970) > 0 && countitem(930) > 499) {
+		if (countitem(970) > 0 && countitem(930) > 49) {
 			mes "[Argen]";
 			mes "Band Aid, eh?";
 			mes "Got it! Hold on";
@@ -221,7 +221,7 @@ geffen,129,148,3	script	Argen#1	779,{
 			mes "I'm finished!";
 			mes "Pretty cool, huh?";
 			delitem 970,1; //Alchol
-			delitem 930,500; //Rotten_Bandage
+			delitem 930,50; //Rotten_Bandage
 			getitem 5063,1; //Plaster
 			next;
 		}
@@ -307,7 +307,7 @@ yuno,300,188,5	script	Zhenbolt#1	753,{
 		mes "- you put some items into Kafra Storage. -";
 		close;
 	}
-	if (countitem(7216) > 299 && countitem(7097) > 299 && countitem(2211) > 0 && countitem(982) > 0) {
+	if (countitem(7216) > 29 && countitem(7097) > 29 && countitem(2211) > 0 && countitem(982) > 0) {
 		mes "[Zhenbolt]";
 		mes "What's this?!";
 		mes "You've already brought everything I've asked! Good job, hero~! Let me get to work right away...";
@@ -324,8 +324,8 @@ yuno,300,188,5	script	Zhenbolt#1	753,{
 		mes "[Zhenbolt]";
 		mes "Take this...";
 		mes "It's known as the ^FF0000Hot-blooded Headband^000000, my personal symbol of fighting spirit! With this on your head, nothing can stop you!";
-		delitem 7216,300; //Red_Scarf
-		delitem 7097,300; //Burning_Heart
+		delitem 7216,30; //Red_Scarf
+		delitem 7097,30; //Burning_Heart
 		delitem 2211,1; //Bandana
 		delitem 982,1; //White_Dyestuffs
 		getitem 5070,1; //Headband_Of_Power
@@ -571,7 +571,7 @@ geffen,67,87,3	script	Ipore#1	700,{
 		mes "- you put some items into Kafra Storage. -";
 		close;
 	}
-	if (countitem(921) > 299) {
+	if (countitem(921) > 29) {
 		mes "[Ipore]";
 		mes "Wow! Did you really gather these 300 Mushroom Spores all by yoruself? Nice! Now it's time to use my magic~";
 		next;
@@ -603,7 +603,7 @@ geffen,67,87,3	script	Ipore#1	700,{
 		next;
 		mes "[Ipore]";
 		mes "Anyway, now you can wear that mushroom at a rakish angle, the way it's supposed to be worn. Stay cool, you fashion rebel, you.";
-		delitem 921,300; //Mushroom_Spore
+		delitem 921,30; //Mushroom_Spore
 		getitem 5082,1; //Mushroom_Band
 		close;
 	}
@@ -1088,7 +1088,7 @@ xmas,175,156,3	script	Fuzzy Fuzz#1	712,{
 		mes "- you put some items into Kafra Storage. -";
 		close;
 	}
-	if (countitem(5030) > 0 && countitem(7213) > 99  && countitem(7217) > 99 && countitem(7161) > 299) {
+	if (countitem(5030) > 0 && countitem(7213) > 9  && countitem(7217) > 9 && countitem(7161) > 29) {
 		if ((MaxWeight-Weight) < 2000) {
 			mes "[Fuzzy Fuzz]";
 			mes "You brought every material I need, but unfortunately you don't have enough space in your inventory. Try and place some of your items into Kafra Storage first.";
@@ -1112,9 +1112,9 @@ xmas,175,156,3	script	Fuzzy Fuzz#1	712,{
 		emotion ET_AHA;
 		mes "It's complete! There you go. I think this one will look really good on you! Please take good care of this hat.";
 		delitem 5030,1; //Panda_Cap
-		delitem 7213,100; //Needle_Pouch
-		delitem 7217,100; //Spool
-		delitem 7161,300; //Black_Bear's_Skin
+		delitem 7213,10; //Needle_Pouch
+		delitem 7217,10; //Spool
+		delitem 7161,30; //Black_Bear's_Skin
 		getitem 5059,1; //Brown_Bear_Cap
 		close;
 	}
@@ -1467,7 +1467,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 	next;
 	switch(select("Party Hat:Straw Hat:Cowboy Hat:Sombrero:Beanie")) {
 	case 1:
-		if (countitem(2236) > 0 && countitem(7151) > 99 && countitem(7111) > 99) {
+		if (countitem(2236) > 0 && countitem(7151) > 9 && countitem(7111) > 9) {
 			mes "[Mad Hatter]";
 			mes "Party Hat! It's a Santa Hat I've remade by adding colorful paper for a festive look. Celebrate good times with a Party Hat! Come on!";
 			next;
@@ -1491,8 +1491,8 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "^3355FF*Swish Swish Rustle Rustle*^000000";
 			next;
 			delitem 2236,1; //Santa's_Hat
-			delitem 7151,100; //Oil_Paper
-			delitem 7111,100; //Smooth_Paper
+			delitem 7151,10; //Oil_Paper
+			delitem 7111,10; //Smooth_Paper
 			mes "[Mad Hatter]";
 			mes "It's done! Your new life, as the life of the party, has officially begun. All you need to do is wear this Party Hat. Though, knowing a couple jokes would probably help too.";
 			getitem 5060,1; //Party_Hat
@@ -1522,7 +1522,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			close;
 		}
 	case 2:
-		if (countitem(2280) > 0 && countitem(7197) > 299 && countitem(7150) > 299) {
+		if (countitem(2280) > 0 && countitem(7197) > 29 && countitem(7150) > 29) {
 			mes "[Mad Hatter]";
 			mes "A Straw Hat! Made out of a Sakkat with bamboo and tough vines, it gives you a relaxed, rustic feeling when you wear it.";
 			next;
@@ -1547,8 +1547,8 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "^3355FF*Crunch Crunch Tap Tap*^000000";
 			next;
 			delitem 2280,1; //Sahkkat
-			delitem 7197,300; //Tough_Vines
-			delitem 7150,300; //Bamboo_Cut
+			delitem 7197,30; //Tough_Vines
+			delitem 7150,30; //Bamboo_Cut
 			mes "[Mad Hatter]";
 			mes "It's done!";
 			mes "Now you can wear this hat, feel cool, and relax with style.";
@@ -1571,7 +1571,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			close;
 		}
 	case 3:
-		if (countitem(2248) > 0 && countitem(7030) > 107 && countitem(7194) > 107 && countitem(7120) > 3) {
+		if (countitem(2248) > 0 && countitem(7030) > 17 && countitem(7194) > 17 && countitem(7120) > 3) {
 			mes "[Mad Hatter]";
 			mes "I take a Western Grace, add some manliness, um, do some finangling, and Voila~! A Cowboy Hat!";
 			next;
@@ -1599,8 +1599,8 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "^3355FF*Uk Uk Uk Uk Uhoh Uhoh*^000000";
 			next;
 			delitem 2248,1; //Western_Grace
-			delitem 7030,108; //Claw_Of_Desert_Wolf
-			delitem 7194,108; //Soft_Leaf
+			delitem 7030,18; //Claw_Of_Desert_Wolf
+			delitem 7194,18; //Soft_Leaf
 			delitem 7120,4; //Burning_Horse_Shoe
 			mes "[Mad Hatter]";
 			mes "Yeeeeehaw! With this hat on, you can tame broncos, rob stagecoaches, and look really stylish in duels!";
@@ -1626,7 +1626,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			close;
 		}
 	case 4:
-		if (countitem(5062) > 0 && countitem(952) > 49 && countitem(1907) > 0) {
+		if (countitem(5062) > 0 && countitem(952) > 4 && countitem(1907) > 0) {
 			mes "[Mad Hatter]";
 			mes "Ah yes. Now here's a classy hat for mariachi heroes and Latin lovers. You can't deny the sex appeal that just pours from someone wearing a Sombrero.";
 			next;
@@ -1651,7 +1651,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "^3355FFAdios Amigo^000000";
 			next;
 			delitem 5062,1; //Straw_Hat
-			delitem 952,50; //Cactus_Needle
+			delitem 952,5; //Cactus_Needle
 			delitem 1907,1; //Guitar
 			mes "[Mad Hatter]";
 			mes "With this Sombrero, you'll look like you have all kinds of style. Adios, cool guy~";
@@ -1677,7 +1677,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			close;
 		}
 	case 5:
-		if (countitem(2226) > 0 && countitem(7038) > 499) {
+		if (countitem(2226) > 0 && countitem(7038) > 49) {
 			mes "[Mad Hatter]";
 			mes "A Beanie...!";
 			mes "Whaddup, broham. This hat keeps your head toasty, but let's you play things cool with your homeys. And, um, fly girls.";
@@ -1703,7 +1703,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "^3355FF*Crunch Crunch Tap Tap*^000000";
 			next;
 			delitem 2226,1; //Cap
-			delitem 7038,500; //Yarn
+			delitem 7038,50; //Yarn
 			mes "[Mad Hatter]";
 			mes "There you go! Your very own Beanie! Cute, but still 'dope!'";
 			next;

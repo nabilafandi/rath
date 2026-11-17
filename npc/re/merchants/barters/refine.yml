@@ -50,31 +50,31 @@ Body:
   - Name: barter_refine_1
     Items:
       - Index: 0
-        Item: Oridecon
-        RequiredItems:
-          - Index: 0
-            Item: Oridecon_Stone
-            Amount: 5
-      - Index: 1
-        Item: Elunium
-        RequiredItems:
-          - Index: 0
-            Item: Elunium_Stone
-            Amount: 5
-      - Index: 2
-        Item: Bradium
-        Zeny: 50000
+        Item: Blacksmith_Blessing
         RequiredItems:
           - Index: 0
             Item: Oridecon
-            Amount: 3
-      - Index: 3
-        Item: Carnium
-        Zeny: 50000
+            Amount: 2
+      - Index: 1
+        Item: Blacksmith_Blessing
         RequiredItems:
           - Index: 0
             Item: Elunium
-            Amount: 3
+            Amount: 1
+      - Index: 2
+        Item: HD_Oridecon
+        Zeny: 100
+        RequiredItems:
+          - Index: 0
+            Item: Enriched_Oridecon
+            Amount: 1
+      - Index: 3
+        Item: HD_Elunium
+        Zeny: 100
+        RequiredItems:
+          - Index: 0
+            Item: Enriched_Elunium
+            Amount: 1
       - Index: 4
         Item: Carnium
         Zeny: 50000

@@ -1,43 +1,36 @@
-//-------------------------------------------------allmobs
 -	script	Costama_Egg22	-1,{
 OnNPCKillEvent:
-if ( rand( 100 ) <= 1 ) {
-.@item_id = F_Rand( 14735 );
-getitem .@item_id,1;
+	if (rand(100) < 1)
+		getitem 14735,1;
+	end;
 }
-end;
-}
+
 -	script	shadow_cube	-1,{
 OnNPCKillEvent:
-if ( rand( 100 ) <= 1 ) {
-.@item_id = F_Rand( 22827 );
-getitem .@item_id,1;
+	if (rand(100) < 1)
+		getitem 22827,1;
+	end;
 }
-end;
-}
+
 -	script	Wrapped_Mask	-1,{
 OnNPCKillEvent:
-if ( rand( 100 ) <= 2 ) {
-.@item_id = F_Rand( 12107 );
-getitem .@item_id,1;
+	if (rand(100) < 2)
+		getitem 12107,1;
+	end;
 }
-end;
-}
+
 -	script	HDelu	-1,{
 OnNPCKillEvent:
-if ( rand( 100 ) <= 15 ) {
-.@item_id = F_Rand( 6241 );
-getitem .@item_id,1;
+	if (rand(100) < 15)
+		getitem 6242,1;
+	end;
 }
-end;
-}
+
 -	script	Hdori	-1,{
 OnNPCKillEvent:
-if ( rand( 100 ) <= 10 ) {
-.@item_id = F_Rand( 6240  );
-getitem .@item_id,1;
-}
-end;
+	if (rand(100) < 10)
+		getitem 6241,1;
+	end;
 }
 //-------------------------------------------------bosstype
 -	script	BOSSCOSTAMA	-1,{

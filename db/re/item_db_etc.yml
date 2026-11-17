@@ -2879,11 +2879,14 @@ Body:
     Weight: 10
     Locations:
       Armor: true
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
     Flags:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,2;
   - Id: 4017
     AegisName: Savage_Babe_Card
     Name: Savage Babe Card
@@ -17842,38 +17845,19 @@ Body:
     Name: HD Oridecon
     Type: Etc
     Buy: 20
-    Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Weight: 0
   - Id: 6241
     AegisName: HD_Elunium
     Name: HD Elunium
     Type: Etc
     Buy: 20
-    Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Weight: 0
   - Id: 6242
     AegisName: Midgard_Coin
     Name: Midgard Coin
     Type: Etc
     Buy: 20
-    Weight: 10
-    Trade:
-      NoDrop: true
-      NoSell: true
+    Weight: 0
   - Id: 6243
     AegisName: Exchange_Coupon
     Name: Exchange Coupon
@@ -45644,7 +45628,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      skill "TF_DOUBLE",3;
+      skill "TF_DOUBLE",10;
   - Id: 29366
     AegisName: Strong_Blow1
     Name: Strong Blow 1

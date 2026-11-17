@@ -26467,7 +26467,7 @@ Body:
     Locations:
       Head_Top: true
     ArmorLevel: 1
-    EquipLevelMin: 30
+    EquipLevelMin: 2
     Refineable: true
     View: 72
     Script: |

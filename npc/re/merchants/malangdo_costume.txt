@@ -821,6 +821,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 	case EQI_COSTUME_HEAD_MID:
 		switch(.@equip_id) {
 			// mid
+		case 19669: // C_Eleanor_Wigs
 		case 18742:	// C_MoonStar_Accessory
 		case 19291:	// C_Shiba_Inu
 		case 19509:	// Butterfly_Wing_Ear

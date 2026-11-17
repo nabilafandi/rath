@@ -83,7 +83,7 @@ izlude,127,175,3	script	Hypnotist#novice	124,{
 		mes "Please travel in safety~";
 		close;
 	}
-	if ((Class >= Job_Swordman && Class <= Job_Thief) || Class == Job_Taekwon || Class == Job_Gunslinger || Class == Job_Ninja) {
+	if ((Class >= Job_Novice && Class <= Job_Thief) || Class == Job_Taekwon || Class == Job_Gunslinger || Class == Job_Ninja) {
 		if (checkcart()) {
 			mes "[Hypnotist]";
 			mes "Oh! Please remove your";
@@ -92,22 +92,22 @@ izlude,127,175,3	script	Hypnotist#novice	124,{
 			mes "Thanks for cooperating~";
 			close;
 		}
-		if (Weight != 0) {
-			mes "[Hypnotist]";
-			mes "If you're here for my "+.@str$;
-			mes "Reset service, please";
-			mes "remember that you can't";
-			mes "reset your "+.@str$+"s until the";
-			mes "^FF0000weight of your carried items in";
-			mes "your Inventory is reduced to 0^000000.";
-			next;
-			mes "[Hypnotist]";
-			mes "Why don't you place your";
-			mes "things into the Kafra Storage";
-			mes "for now? That way, you can";
-			mes "safely keep all of your goods.";
-			close;
-		}
+		// if (Weight != 0) {
+		// 	mes "[Hypnotist]";
+		// 	mes "If you're here for my "+.@str$;
+		// 	mes "Reset service, please";
+		// 	mes "remember that you can't";
+		// 	mes "reset your "+.@str$+"s until the";
+		// 	mes "^FF0000weight of your carried items in";
+		// 	mes "your Inventory is reduced to 0^000000.";
+		// 	next;
+		// 	mes "[Hypnotist]";
+		// 	mes "Why don't you place your";
+		// 	mes "things into the Kafra Storage";
+		// 	mes "for now? That way, you can";
+		// 	mes "safely keep all of your goods.";
+		// 	close;
+		// }
 		if (BaseLevel >= 50 && (Class == Job_Taekwon || Class == Job_Gunslinger || Class == Job_Ninja)) {
 			mes "[Hypnotist]";
 			mes "I'm sorry, but characters";

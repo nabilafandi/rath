@@ -36,17 +36,17 @@ Body:
   - Type: Exp
     LevelDifferences:
       - Difference: 16
-        Rate: 40
+        Rate: 170
       - Difference: 15
-        Rate: 115
+        Rate: 165
       - Difference: 14
-        Rate: 120
+        Rate: 160
       - Difference: 13
-        Rate: 125
+        Rate: 155
       - Difference: 12
-        Rate: 130
+        Rate: 150
       - Difference: 11
-        Rate: 135
+        Rate: 145
       - Difference: 10
         Rate: 140
       - Difference: 9
@@ -78,22 +78,22 @@ Body:
   - Type: Drop
     LevelDifferences:
       - Difference: 16
-        Rate: 50
+        Rate: 120
       - Difference: 13
-        Rate: 60
+        Rate: 115
       - Difference: 10
-        Rate: 70
+        Rate: 110
       - Difference: 7
-        Rate: 80
+        Rate: 100
       - Difference: 4
-        Rate: 90
+        Rate: 100
       - Difference: -4
-        Rate: 90
+        Rate: 100
       - Difference: -7
-        Rate: 80
+        Rate: 100
       - Difference: -10
-        Rate: 70
+        Rate: 100
       - Difference: -13
-        Rate: 60
+        Rate: 100
       - Difference: -16
-        Rate: 50
+        Rate: 100

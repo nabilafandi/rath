@@ -118,3 +118,4 @@ CREATE TABLE `item_db2_re` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `UniqueAegisName` (`name_aegis`)
 ) ENGINE=MyISAM;
+
