@@ -171,6 +171,8 @@ Body:
     Hit: Single
     HitCount: 1
     Element: Weapon
+    DamageFlags:
+      Critical: true
     CopyFlags:
       Skill:
         Plagiarism: true
@@ -226,12 +228,33 @@ Body:
     Name: SM_PROVOKE
     Description: Provoke
     MaxLevel: 10
-    TargetType: Attack
+    TargetType: Self
     DamageFlags:
       NoDamage: true
-    Range: 9
+      Splash: true
     Hit: Single
     HitCount: 1
+    SplashArea:
+      - Level: 1
+        Area: 1
+      - Level: 2
+        Area: 2
+      - Level: 3
+        Area: 3
+      - Level: 4
+        Area: 4
+      - Level: 5
+        Area: 5
+      - Level: 6
+        Area: 6
+      - Level: 7
+        Area: 7
+      - Level: 8
+        Area: 8
+      - Level: 9
+        Area: 9
+      - Level: 10
+        Area: 10
     Duration1: 30000
     Requires:
       SpCost:

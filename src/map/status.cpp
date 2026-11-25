@@ -8220,6 +8220,8 @@ static uint16 status_calc_speed(block_list *bl, status_change *sc, int32 speed)
 		speed = max(speed, 200);
 	if( sc->getSCE(SC_WALKSPEED) && sc->getSCE(SC_WALKSPEED)->val1 > 0 ) // ChangeSpeed
 		speed = speed * 100 / sc->getSCE(SC_WALKSPEED)->val1;
+	if (bl->type == BL_MOB && sc->getSCE(SC_PROVOKE))
+		speed = speed * 100 / 120;
 
 	return (uint16)cap_value(speed, MIN_WALK_SPEED, MAX_WALK_SPEED);
 }

@@ -276,6 +276,7 @@ Body:
       Def2: true
       Batk: true
       Watk: true
+      Speed: true
     Flags:
       BossResist: true
       Debuff: true

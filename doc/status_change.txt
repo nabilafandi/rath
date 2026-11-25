@@ -79,7 +79,7 @@ SC_DPOISON	()
 	val4: Remaining tick
 
 SC_PROVOKE	(EFST_PROVOKE)
-	desc: Decrease DEF by (5+(5*Skill Lv))%; Increase ATK by (2+(3*Skill lv))%
+	desc: Decrease DEF by (5+(5*Skill Lv))%; Increase ATK by (2+(3*Skill lv))%; Increase monster movement speed by 20%
 	val1:
 
 SC_ENDURE	(EFST_ENDURE)

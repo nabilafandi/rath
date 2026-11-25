@@ -15,6 +15,14 @@ SkillProvoke::SkillProvoke() : SkillImpl(SM_PROVOKE)
 
 void SkillProvoke::castendNoDamageId(block_list *src, block_list *bl, uint16 skill_lv, t_tick tick, int32& flag) const
 {
+	if (!(flag & 1))
+	{
+		map_foreachinallrange(skill_area_sub, src, skill_get_splash(getSkillId(), skill_lv), BL_CHAR, src, getSkillId(), skill_lv, tick,
+			flag | BCT_ENEMY | 1, skill_castend_nodamage_id);
+		clif_skill_nodamage(src, *bl, getSkillId(), skill_lv);
+		return;
+	}
+
 	sc_type type = skill_get_sc(getSkillId());
 	status_data *tstatus = status_get_status_data(*bl);
 	map_session_data *sd = BL_CAST(BL_PC, src);
@@ -27,12 +35,8 @@ void SkillProvoke::castendNoDamageId(block_list *src, block_list *bl, uint16 ski
 	// Official chance is 70% + 3%*skill_lv + srcBaseLevel% - tarBaseLevel%
 	int32 success = sc_start(src, bl, type, 70 + 3 * skill_lv + status_get_lv(src) - status_get_lv(bl), skill_lv, skill_get_time(getSkillId(), skill_lv));
 	if (!success)
-	{
-		if (sd)
-			clif_skill_fail(*sd, getSkillId());
 		return;
-	}
-	clif_skill_nodamage(src, *bl, getSkillId(), skill_lv, success != 0);
+
 	unit_skillcastcancel(bl, 2);
 
 	if (dstmd)
