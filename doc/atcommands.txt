@@ -1505,7 +1505,7 @@ Affected files:
 -- questdb: quest_db.yml
 -- script: /npc/*.txt, /npc/*.conf, /npc/barters.yml
 -- skilldb: skill_db.yml, skill_nocast_db.txt, skill_changematerial_db.txt, skill_damage_db.txt, abra_db.yml, create_arrow_db.yml, produce_db.txt, spellbook_db.yml, magicmushroom_db.yml
--- statusdb: attr_fix.yml, size_fix.yml, refine.yml
+-- statusdb: attr_fix.yml, size_fix.yml, weapon_splash.yml, refine.yml
 -- achievementdb: achievement_db.yml
 -- attendancedb: attendance.yml
 -- barterdb: /npc/barters.yml

@@ -155,6 +155,22 @@ public:
 
 extern SizeFixDatabase size_fix_db;
 
+struct s_weapon_splash_db {
+	int16 range;
+};
+
+class WeaponSplashDatabase : public TypesafeYamlDatabase<int32, s_weapon_splash_db> {
+public:
+	WeaponSplashDatabase() : TypesafeYamlDatabase("WEAPON_SPLASH_DB", 1) {
+
+	}
+
+	const std::string getDefaultLocation() override;
+	uint64 parseBodyNode(const ryml::NodeRef& node) override;
+};
+
+extern WeaponSplashDatabase weapon_splash_db;
+
 class AttributeDatabase : public YamlDatabase {
 private:
 	int16 attr_fix_table[MAX_ELE_LEVEL][ELE_MAX][ELE_MAX];

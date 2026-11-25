@@ -583,6 +583,60 @@ uint64 SizeFixDatabase::parseBodyNode(const ryml::NodeRef& node) {
 
 SizeFixDatabase size_fix_db;
 
+const std::string WeaponSplashDatabase::getDefaultLocation() {
+	return std::string(db_path) + "/weapon_splash.yml";
+}
+
+uint64 WeaponSplashDatabase::parseBodyNode(const ryml::NodeRef& node) {
+	std::string weapon_name;
+
+	if (!this->asString(node, "Weapon", weapon_name))
+		return 0;
+
+	std::string weapon_name_constant = "W_" + weapon_name;
+	int64 constant;
+
+	if (!script_get_constant(weapon_name_constant.c_str(), &constant)) {
+		this->invalidWarning(node["Weapon"], "Weapon Splash unknown weapon %s, skipping.\n", weapon_name.c_str());
+		return 0;
+	}
+
+	if (constant < W_FIST || constant > W_2HSTAFF) {
+		this->invalidWarning(node["Weapon"], "Weapon Splash weapon %s is an invalid weapon, skipping.\n", weapon_name.c_str());
+		return 0;
+	}
+
+	int32 weapon_id = static_cast<int32>(constant);
+	std::shared_ptr<s_weapon_splash_db> splash = this->find(weapon_id);
+	bool exists = splash != nullptr;
+
+	if (!exists) {
+		splash = std::make_shared<s_weapon_splash_db>();
+		splash->range = 1;
+	}
+
+	if (this->nodeExists(node, "SplashRange")) {
+		int16 range;
+
+		if (!this->asInt16(node, "SplashRange", range))
+			return 0;
+
+		if (range < 0) {
+			this->invalidWarning(node["SplashRange"], "Splash range %d for %s cannot be negative, skipping.\n", range, weapon_name.c_str());
+			return 0;
+		}
+
+		splash->range = range;
+	}
+
+	if (!exists)
+		this->put(weapon_id, splash);
+
+	return 1;
+}
+
+WeaponSplashDatabase weapon_splash_db;
+
 const std::string EnchantgradeDatabase::getDefaultLocation(){
 	return std::string(db_path) + "/enchantgrade.yml";
 }
@@ -4220,6 +4274,15 @@ int32 status_calc_pc_sub(map_session_data* sd, uint8 opt)
 
 	sd->bonus.double_rate += sd->bonus.double_add_rate;
 	sd->bonus.perfect_hit += sd->bonus.perfect_hit_add;
+
+	if (std::shared_ptr<s_weapon_splash_db> right_weapon = weapon_splash_db.find(sd->weapontype1); right_weapon != nullptr && sd->bonus.splash_range < right_weapon->range)
+		sd->bonus.splash_range = right_weapon->range;
+
+	if (sd->weapontype2 != W_FIST) {
+		if (std::shared_ptr<s_weapon_splash_db> left_weapon = weapon_splash_db.find(sd->weapontype2); left_weapon != nullptr && sd->bonus.splash_range < left_weapon->range)
+			sd->bonus.splash_range = left_weapon->range;
+	}
+
 	sd->bonus.splash_range += sd->bonus.splash_add_range;
 
 	// Damage modifiers from weapon type
@@ -16448,6 +16511,7 @@ StatusDatabase status_db;
  * DBs being read:
  *	attr_fix.yml: Attribute adjustment table for attacks
  *	size_fix.yml: Size adjustment table for weapons
+ *	weapon_splash.yml: Splash range by weapon type
  *	refine.yml: Refining data table
  * @return 0
  */
@@ -16484,11 +16548,13 @@ void status_readdb( bool reload ){
 
 	if( reload ){
 		size_fix_db.reload();
+		weapon_splash_db.reload();
 		refine_db.reload();
 		status_db.reload();
 		enchantgrade_db.reload();
 	}else{
 		size_fix_db.load();
+		weapon_splash_db.load();
 		refine_db.load();
 		status_db.load();
 		enchantgrade_db.load();
@@ -16517,6 +16583,7 @@ void do_init_status(void) {
 void do_final_status(void) {
 	enchantgrade_db.clear();
 	size_fix_db.clear();
+	weapon_splash_db.clear();
 	refine_db.clear();
 	status_db.clear();
 	elemental_attribute_db.clear();

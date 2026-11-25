@@ -1,0 +1,86 @@
+# This file is a part of rAthena.
+#   Copyright(C) rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Weapon Splash Database
+###########################################################################
+#
+# Weapon Splash Settings
+#
+###########################################################################
+# - Weapon      Weapon type.
+#   SplashRange Splash attack radius. (Default: 1; 0 disables weapon-type splash)
+#               A radius of 1 affects a 3x3 area, 2 affects a 5x5 area, etc.
+###########################################################################
+
+Header:
+  Type: WEAPON_SPLASH_DB
+  Version: 1
+
+Body:
+  - Weapon: Fist
+    SplashRange: 1
+  - Weapon: Dagger
+    SplashRange: 1
+  - Weapon: 1hSword
+    SplashRange: 1
+  - Weapon: 2hSword
+    SplashRange: 1
+  - Weapon: 1hSpear
+    SplashRange: 1
+  - Weapon: 2hSpear
+    SplashRange: 1
+  - Weapon: 1hAxe
+    SplashRange: 1
+  - Weapon: 2hAxe
+    SplashRange: 1
+  - Weapon: Mace
+    SplashRange: 1
+  - Weapon: 2hMace
+    SplashRange: 1
+  - Weapon: Staff
+    SplashRange: 1
+  - Weapon: Bow
+    SplashRange: 1
+  - Weapon: Knuckle
+    SplashRange: 1
+  - Weapon: Musical
+    SplashRange: 1
+  - Weapon: Whip
+    SplashRange: 1
+  - Weapon: Book
+    SplashRange: 1
+  - Weapon: Katar
+    SplashRange: 1
+  - Weapon: Revolver
+    SplashRange: 1
+  - Weapon: Rifle
+    SplashRange: 1
+  - Weapon: Gatling
+    SplashRange: 1
+  - Weapon: Shotgun
+    SplashRange: 1
+  - Weapon: Grenade
+    SplashRange: 1
+  - Weapon: Huuma
+    SplashRange: 1
+  - Weapon: 2hStaff
+    SplashRange: 1
+
+Footer:
+  Imports:
+  - Path: db/import/weapon_splash.yml
